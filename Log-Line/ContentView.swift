@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let logLine = LogLine()
+    
+    @State var displayText = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text(displayText)
+                .padding()
+            Button(action: {self.displayText = logLine.generateLogLine()}) {
+                Text("Generate LogLine")
+                   .foregroundColor(Color.blue)
+            }
+        }
+        
     }
 }
 
