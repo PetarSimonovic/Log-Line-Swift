@@ -12,7 +12,7 @@ struct LogLine {
     
     
     func generateLogLine() -> String {
-        return "\(capUp(setArticle(word: pickPosAdj()))) but \(pickNegAdj()) \(pickNoun()) must \(pickVerbFirstPerson()) \(setArticle(word: pickPosAdj())) \(pickNoun()) before \(setArticle(word: pickNegAdj())) \(pickNoun()) \(pickVerbThirdPerson()) \(setArticle(word: pickNoun()))"
+        return "\(capUp(setArticle(pickPosAdj()))) but \(pickNegAdj()) \(pickNoun()) must \(pickVerbFirstPerson()) \(setArticle(pickPosAdj())) \(pickNoun()) before \(setArticle(pickNegAdj())) \(pickNoun()) \(pickVerbThirdPerson()) \(setArticle(pickNoun()))"
     }
     
     func pickPosAdj() -> String {
@@ -46,7 +46,7 @@ struct LogLine {
         return Int.random(in: 0...bank - 1)
     }
     
-    func setArticle(word: String) -> String {
+    func setArticle(_ word: String) -> String {
         let vowels = ["a", "e", "i", "o", "u"]
         let letter = word.prefix(1)
         if vowels.contains(String(letter)) || word == "honest" {
