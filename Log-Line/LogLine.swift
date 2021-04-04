@@ -33,11 +33,13 @@ struct LogLine {
     }
     
     func pickVerbFirstPerson () -> String {
-        return "launch"
+        let verbFirstPersonBank = ["launch", "comfort", "hug", "cheer up", "defeat"]
+        return verbFirstPersonBank[makeChoice(verbFirstPersonBank.count)]
     }
     
     func pickVerbThirdPerson () -> String {
-        return "annoys"
+        let verbThirdPersonBank = ["annoys", "wrestles", "insults", "threatens", "slsps"]
+        return verbThirdPersonBank[makeChoice(verbThirdPersonBank.count)]
     }
     
     func makeChoice (_ bank: Int) -> Int {
