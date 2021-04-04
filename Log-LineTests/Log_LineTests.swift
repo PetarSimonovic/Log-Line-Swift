@@ -20,9 +20,10 @@ class Log_LineTests: XCTestCase {
 
     func generateLogLine() throws {
         let logline = LogLine()
+        let text = logline.generateLogLine()
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-       XCTAssert(logline.generateLogLine(), "fast")
+       XCTAssert(text == "A fast but satanic planet must launch a fast planet before a satanic planet annoys a planet")
     }
 
     func testPerformanceExample() throws {

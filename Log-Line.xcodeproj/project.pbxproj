@@ -31,13 +31,6 @@
 			remoteGlobalIDString = 0DD9CFBD2618956500E465AB;
 			remoteInfo = "Log-Line";
 		};
-		0DD9D0042618CA4E00E465AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0DD9CFB62618956500E465AB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0DD9CFBD2618956500E465AB;
-			remoteInfo = "Log-Line";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +47,7 @@
 		0DD9CFDE2618956600E465AB /* Log_LineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_LineUITests.swift; sourceTree = "<group>"; };
 		0DD9CFE02618956600E465AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DD9CFEF2618B04C00E465AB /* LogLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLine.swift; sourceTree = "<group>"; };
-		0DD9CFFF2618CA4E00E465AB /* LogLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DD9D0192619BF6600E465AB /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,13 +66,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0DD9CFD72618956600E465AB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0DD9CFFC2618CA4E00E465AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -105,7 +91,6 @@
 				0DD9CFBE2618956500E465AB /* Log-Line.app */,
 				0DD9CFCF2618956600E465AB /* Log-LineTests.xctest */,
 				0DD9CFDA2618956600E465AB /* Log-LineUITests.xctest */,
-				0DD9CFFF2618CA4E00E465AB /* LogLineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				0DD9CFD32618956600E465AB /* Log_LineTests.swift */,
+				0DD9D0192619BF6600E465AB /* TestPlan.xctestplan */,
 				0DD9CFD52618956600E465AB /* Info.plist */,
 			);
 			path = "Log-LineTests";
@@ -205,24 +191,6 @@
 			productReference = 0DD9CFDA2618956600E465AB /* Log-LineUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		0DD9CFFE2618CA4E00E465AB /* LogLineTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0DD9D0082618CA4E00E465AB /* Build configuration list for PBXNativeTarget "LogLineTests" */;
-			buildPhases = (
-				0DD9CFFB2618CA4E00E465AB /* Sources */,
-				0DD9CFFC2618CA4E00E465AB /* Frameworks */,
-				0DD9CFFD2618CA4E00E465AB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0DD9D0052618CA4E00E465AB /* PBXTargetDependency */,
-			);
-			name = LogLineTests;
-			productName = LogLineTests;
-			productReference = 0DD9CFFF2618CA4E00E465AB /* LogLineTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -240,10 +208,6 @@
 						TestTargetID = 0DD9CFBD2618956500E465AB;
 					};
 					0DD9CFD92618956600E465AB = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 0DD9CFBD2618956500E465AB;
-					};
-					0DD9CFFE2618CA4E00E465AB = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 0DD9CFBD2618956500E465AB;
 					};
@@ -265,7 +229,6 @@
 				0DD9CFBD2618956500E465AB /* Log-Line */,
 				0DD9CFCE2618956600E465AB /* Log-LineTests */,
 				0DD9CFD92618956600E465AB /* Log-LineUITests */,
-				0DD9CFFE2618CA4E00E465AB /* LogLineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,13 +251,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0DD9CFD82618956600E465AB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0DD9CFFD2618CA4E00E465AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -330,13 +286,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0DD9CFFB2618CA4E00E465AB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -349,11 +298,6 @@
 			isa = PBXTargetDependency;
 			target = 0DD9CFBD2618956500E465AB /* Log-Line */;
 			targetProxy = 0DD9CFDB2618956600E465AB /* PBXContainerItemProxy */;
-		};
-		0DD9D0052618CA4E00E465AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0DD9CFBD2618956500E465AB /* Log-Line */;
-			targetProxy = 0DD9D0042618CA4E00E465AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -596,44 +540,6 @@
 			};
 			name = Release;
 		};
-		0DD9D0062618CA4E00E465AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LogLineTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = PetarSimonovic.LogLineTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Log-Line.app/Log-Line";
-			};
-			name = Debug;
-		};
-		0DD9D0072618CA4E00E465AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LogLineTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = PetarSimonovic.LogLineTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Log-Line.app/Log-Line";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -669,15 +575,6 @@
 			buildConfigurations = (
 				0DD9CFEA2618956600E465AB /* Debug */,
 				0DD9CFEB2618956600E465AB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0DD9D0082618CA4E00E465AB /* Build configuration list for PBXNativeTarget "LogLineTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0DD9D0062618CA4E00E465AB /* Debug */,
-				0DD9D0072618CA4E00E465AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
