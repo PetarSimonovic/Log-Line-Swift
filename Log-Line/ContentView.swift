@@ -22,23 +22,28 @@ struct ContentView: View {
                         .background(Color .black)
                         .foregroundColor(Color .white)
                         .font(.custom("Courier", size: 60))
-                        .padding(3)
                     Text("Line")
                         .multilineTextAlignment(.center)
                     .background(Color .white)
                     .foregroundColor(Color .black)
                     .font(.custom("Courier", size: 60))
-                        .padding(3)
+                    
                    
-                } .padding(4)
+                }.padding(4)
                 .border(Color.black, width: 4)
-                Text("Generate high-concept story ideas or plausible excuses")
-                    .font(.custom("Courier", size: 11))
+                
+                Spacer()
+                    .frame(height: 10)
+                
+                Text("High-Concept Stories \n Plausible Excuses")
+                    .font(.custom("Courier", size: 16))
+                    .multilineTextAlignment(.center)
                     .background(Color .black)
                     .foregroundColor(Color .white)
-                    .padding(3)
+                    .allowsTightening(true)
             }
-            
+            Spacer()
+                .frame(height: 50)
             
             Text(displayText)
                 .padding()
@@ -53,7 +58,7 @@ struct ContentView: View {
                     Text("Story Mode")
                         .background(Color .black)
                         .foregroundColor(Color.white)
-                        .font(.custom("Courier", size: 18))
+                        .font(.custom("Courier", size: 16))
                         .padding(3)
 
                 }
@@ -61,27 +66,29 @@ struct ContentView: View {
                     Text("Excuse Mode")
                         .background(Color .black)
                         .foregroundColor(Color.white)
-                        .font(.custom("Courier", size: 18))
+                        .font(.custom("Courier", size: 16))
                         .padding(3)
                     
                 
                 }
                 
             }
-            Button(action: {self.displayText = logLine.generateLogLine()} ) {
+            Spacer()
+                .frame(height: 10)
+            NavigationLink(destination: AboutView()) {
                 Text("About")
                     .multilineTextAlignment(.center)
                     .background(Color .white)
                     .foregroundColor(Color .black)
-                    .font(.custom("Courier", size: 18))
+                    .font(.custom("Courier", size: 16))
                     .padding(5)
                     .border(Color .black, width: 2)
-
             }
         }
-        
     }
+
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

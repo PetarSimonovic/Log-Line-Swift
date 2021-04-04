@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D6C9CFC261A178B0098ED84 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9CFB261A178B0098ED84 /* AboutView.swift */; };
 		0DD9CFC22618956500E465AB /* Log_LineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9CFC12618956500E465AB /* Log_LineApp.swift */; };
 		0DD9CFC42618956500E465AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9CFC32618956500E465AB /* ContentView.swift */; };
 		0DD9CFC62618956600E465AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9CFC52618956600E465AB /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D6C9CFB261A178B0098ED84 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		0DD9CFBE2618956500E465AB /* Log-Line.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Log-Line.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD9CFC12618956500E465AB /* Log_LineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_LineApp.swift; sourceTree = "<group>"; };
 		0DD9CFC32618956500E465AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				0DD9CFCA2618956600E465AB /* Info.plist */,
 				0DD9CFC72618956600E465AB /* Preview Content */,
 				0DD9CFEF2618B04C00E465AB /* LogLine.swift */,
+				0D6C9CFB261A178B0098ED84 /* AboutView.swift */,
 			);
 			path = "Log-Line";
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D6C9CFC261A178B0098ED84 /* AboutView.swift in Sources */,
 				0DD9CFC42618956500E465AB /* ContentView.swift in Sources */,
 				0DD9CFF02618B04C00E465AB /* LogLine.swift in Sources */,
 				0DD9CFC22618956500E465AB /* Log_LineApp.swift in Sources */,

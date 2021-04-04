@@ -76,6 +76,10 @@ struct LogLine {
       return String(word.prefix(1)).uppercased() + String(word.dropFirst())
         
     }
+    
+    func aboutText() -> String {
+        return "A log line is a short summary of a story that is used to pitch screenplays and novels to producers or publishers. It needs to be concise - no more than one or two sentences - yet cover the narrative's central characters and conflicts. Most importantly, it needs to hook the reader in.\n Log Line is an automatic generator of synopses for fiction. It  produces short, compelling fictional scenarios designed to serve as a framework for narrative development.\n Excuse Mode repurposes its fictional scenarios into plausible explanations that can be used to justify offensive or inconsiderate behaviour."
+    }
 
 
 }
