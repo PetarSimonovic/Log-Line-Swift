@@ -15,6 +15,10 @@ struct LogLine {
         return "\(capUp(setArticle(pickPosAdj()))) but \(pickNegAdj()) \(pickNoun()) must \(pickVerbFirstPerson()) \(setArticle(pickPosAdj())) \(pickNoun()) before \(setArticle(pickNegAdj())) \(pickNoun()) \(pickVerbThirdPerson()) \(setArticle(pickNoun()))"
     }
     
+    func generateExcuse() -> String {
+     return "Sorry I \(pickExcuse()) but I had to \(pickVerbFirstPerson()) \(setArticle(pickPosAdj())) \(pickNoun()) because \(setArticle(pickNegAdj())) \(pickNoun()) \(pickVerbPastTense()) \(setArticle(pickNoun()))"
+        }
+    
     func pickPosAdj() -> String {
         let posAdjBank = ["fast", "accurate", "honest", "undemanding", "clever", "bright", "funny", "warm", "caring"]
         return posAdjBank[makeChoice(posAdjBank.count)]
@@ -40,6 +44,16 @@ struct LogLine {
     func pickVerbThirdPerson () -> String {
         let verbThirdPersonBank = ["annoys", "wrestles", "insults", "threatens", "slsps"]
         return verbThirdPersonBank[makeChoice(verbThirdPersonBank.count)]
+    }
+    
+    func pickExcuse() -> String {
+      let excuseBank = ["missed your wedding", "didn't come to work", "missed the deadline", "forgot your birthday", "wasn't at school", "missed your dinner party", "ate all of the cake", "sold your record collection", "threw away your hat", "fell asleep while you were talking", "interrupted you", "wandered off"];
+        return excuseBank[makeChoice(excuseBank.count)];
+      };
+    
+    func pickVerbPastTense() -> String {
+      let verbBankPast = ["destroyed", "ate", "ruined", "broke", "threatened", "insulted", "cajoled", "attacked", "ignored", "fought", "hurt", "upset", "drained", "vandalised", "truncated", "annoyed", "swore at", "slapped", "glared at", "intimidated", "slandered", "snubbed", "upset", "patronised", "offended"];
+        return verbBankPast[makeChoice(verbBankPast.count)];
     }
     
     func makeChoice (_ bank: Int) -> Int {

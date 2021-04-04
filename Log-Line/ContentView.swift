@@ -18,9 +18,23 @@ struct ContentView: View {
             Text(displayText)
                 .padding()
                 .font(.custom("Courier", size: 18))
-            Button(action: {self.displayText = logLine.generateLogLine()}) {
-                Text("Generate LogLine")
-                   .foregroundColor(Color.blue)
+            HStack {
+                Button(action: {self.displayText = logLine.generateLogLine()}) {
+                    Text("Story Mode")
+                        .background(Color .black)
+                        .foregroundColor(Color.white)
+                        .font(.custom("Courier", size: 12))
+                        .padding()
+
+                }
+                Button(action: {self.displayText = logLine.generateExcuse()}) {
+                    Text("Excuse Mode")
+                        .background(Color .black)
+                        .foregroundColor(Color.white)
+                        .font(.custom("Courier", size: 12))
+                        .padding()
+                
+                }
             }
         }
         
