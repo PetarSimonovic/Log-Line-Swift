@@ -20,29 +20,29 @@ struct LogLine {
         }
     
     func pickPosAdj() -> String {
-        let posAdjBank = ["fast", "accurate", "honest", "undemanding", "clever", "bright", "funny", "warm", "caring"]
+        let posAdjBank = ["accurate", "honest", "undemanding", "clever", "bright", "funny", "warm", "caring", "happy", "sentient", "friendly", "charismatic", "gentle", "fast", "rich", "talented", "musical", "organised", "chic", "fashionable", "intelligent", "smart", "harmonious", "famous", "generous", "fun", "traditional", "honest", "bright", "adventurous", "easygoing", "chilled out", "considerate", "loyal", "sincere", "sympathetic"]
         return posAdjBank[makeChoice(posAdjBank.count)]
     }
     
     func pickNegAdj() -> String {
-        let negAdjBank = ["satanic", "cruel", "mean", "humourless", "aggressive", "scheming"]
+        let negAdjBank = ["lazy", "slow", "hungry", "immoral", "rude", "insulting", "violent", "tired", "ignorant", "angry", "annoyed", "alienated", "sleepy", "boring", "bored", "bumbling", "clumsy", "evil", "satanic", "disenchanted", "boorish", "vulgar", "unfashionable", "moaning", "aggressive", "belligerent", "hostile", "cruel", "repressed", "uptight", "scheming", "humourless"]
         return negAdjBank[makeChoice(negAdjBank.count)]
 
     }
     
     func pickNoun() -> String {
-        let nounBank = ["planet", "rubber duck", "wizard", "houseplant", "cat", "elephant", "ant"]
+        let nounBank = ["computer", "watch maker", "ghost", "ninja", "pond", "frog", "dog", "robot", "android", "cat", "vampire", "houseplant", "chameleon", "penguin", "garden", "rubber duck", "alien", "turkey", "bartender", "lawyer", "criminal", "horse thief", "auditor", "beekeper", "hot dog", "astronaut", "scuba diver", "dancer", "coder", "liar", "CEO", "cook", "writer", "guitarist", "pedestrian", "electronic musician", "DJ", "wrestler", "rapper", "king", "queen", "pilot", "singer", "planet", "book", "engineer", "werewolf", "witch", "detective", "farmer", "editor", "writer", "brewer", "doctor", "salad", "pizza", "tree"]
         return nounBank[makeChoice(nounBank.count)]
 
     }
     
     func pickVerbFirstPerson () -> String {
-        let verbFirstPersonBank = ["launch", "comfort", "hug", "cheer up", "defeat"]
+        let verbFirstPersonBank = ["rescue", "thank", "serenade", "create", "help", "cheer up", "console", "hug", "understand", "vindicate", "defend", "find", "free", "cooperate with", "simulate", "harness", "believe", "launch", "inspire", "enlighten", "hide", "surprise", "save", "revive", "cure", "befriend", "liberate", "conjure", "invigorate", "repair", "cheer up", "frown upon"]
         return verbFirstPersonBank[makeChoice(verbFirstPersonBank.count)]
     }
     
     func pickVerbThirdPerson () -> String {
-        let verbThirdPersonBank = ["annoys", "wrestles", "insults", "threatens", "slsps"]
+        let verbThirdPersonBank = ["destroys", "surrenders to", "breaks", "threatens", "insults", "cajoles", "murders", "robs", "ignores", "fights", "attacks", "hurts", "upsets", "drains", "vandalises", "truncates", "annoys", "swears at", "slaps", "glares at", "intimidates", "demeans", "belittles", "upsets", "patronises", "slanders", "scorns", "wounds", "offends"]
         return verbThirdPersonBank[makeChoice(verbThirdPersonBank.count)]
     }
     
