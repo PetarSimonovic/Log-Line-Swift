@@ -12,7 +12,7 @@ struct LogLine {
     
     
     func generateLogLine() -> String {
-        return "\(setArticle(word: pickPosAdj())) but \(pickNegAdj()) \(pickNoun()) must \(pickVerbFirstPerson()) \(setArticle(word: pickPosAdj())) \(pickNoun()) before \(setArticle(word: pickNegAdj())) \(pickNoun()) \(pickVerbThirdPerson()) \(setArticle(word: pickNoun()))"
+        return "\(capUp(setArticle(word: pickPosAdj()))) but \(pickNegAdj()) \(pickNoun()) must \(pickVerbFirstPerson()) \(setArticle(word: pickPosAdj())) \(pickNoun()) before \(setArticle(word: pickNegAdj())) \(pickNoun()) \(pickVerbThirdPerson()) \(setArticle(word: pickNoun()))"
     }
     
     func pickPosAdj() -> String {
@@ -55,6 +55,12 @@ struct LogLine {
         else {
             return "a \(word)"
         }
+    }
+    
+    func capUp(_ word: String) -> String {
+        
+      return String(word.prefix(1)).uppercased() + String(word.dropFirst())
+        
     }
 
 
