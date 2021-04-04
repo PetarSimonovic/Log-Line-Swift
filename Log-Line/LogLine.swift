@@ -27,7 +27,9 @@ struct LogLine {
     }
     
     func pickNoun() -> String {
-        return "planet"
+        let nounBank = ["planet", "rubber duck", "wizard", "houseplant", "cat"]
+        return nounBank[makeChoice(nounBank.count)]
+
     }
     
     func pickVerbFirstPerson () -> String {
