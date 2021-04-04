@@ -12,7 +12,7 @@ struct LogLine {
     
     
     func generateLogLine() -> String {
-        return "A \(pickPosAdj()) but \(pickNegAdj()) \(pickNoun()) must \(pickVerbFirstPerson()) a \(pickPosAdj()) \(pickNoun()) before a \(pickNegAdj()) \(pickNoun()) \(pickVerbThirdPerson()) a [rubber] duck"
+        return "A \(pickPosAdj()) but \(pickNegAdj()) \(pickNoun()) must \(pickVerbFirstPerson()) a \(pickPosAdj()) \(pickNoun()) before a \(pickNegAdj()) \(pickNoun()) \(pickVerbThirdPerson()) a \(pickNoun())"
     }
     
     func pickPosAdj() -> String {
