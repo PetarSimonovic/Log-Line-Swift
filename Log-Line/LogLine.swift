@@ -12,22 +12,22 @@ struct LogLine {
     
     
     func generateLogLine() -> String {
-        return "A \(pickPosAdj()) but \(pickNegAdj()) \(pickNoun()) must \(pickVerbFirstPerson()) a \(pickPosAdj()) \(pickNoun()) before a \(pickNegAdj()) \(pickNoun()) \(pickVerbThirdPerson()) a \(pickNoun())"
+        return "\(setArticle(word: pickPosAdj())) but \(pickNegAdj()) \(pickNoun()) must \(pickVerbFirstPerson()) \(setArticle(word: pickPosAdj())) \(pickNoun()) before \(setArticle(word: pickNegAdj())) \(pickNoun()) \(pickVerbThirdPerson()) \(setArticle(word: pickNoun()))"
     }
     
     func pickPosAdj() -> String {
-        let posAdjBank = ["fast", "clever", "bright", "funny", "warm", "caring"]
+        let posAdjBank = ["fast", "accurate", "honest", "undemanding", "clever", "bright", "funny", "warm", "caring"]
         return posAdjBank[makeChoice(posAdjBank.count)]
     }
     
     func pickNegAdj() -> String {
-        let negAdjBank = ["satanic", "cruel", "mean", "hunourless", "aggressive", "scheming"]
+        let negAdjBank = ["satanic", "cruel", "mean", "humourless", "aggressive", "scheming"]
         return negAdjBank[makeChoice(negAdjBank.count)]
 
     }
     
     func pickNoun() -> String {
-        let nounBank = ["planet", "rubber duck", "wizard", "houseplant", "cat"]
+        let nounBank = ["planet", "rubber duck", "wizard", "houseplant", "cat", "elephant", "ant"]
         return nounBank[makeChoice(nounBank.count)]
 
     }
@@ -44,6 +44,17 @@ struct LogLine {
     
     func makeChoice (_ bank: Int) -> Int {
         return Int.random(in: 0...bank - 1)
+    }
+    
+    func setArticle(word: String) -> String {
+        let vowels = ["a", "e", "i", "o", "u"]
+        let letter = word.prefix(1)
+        if vowels.contains(String(letter)) || word == "honest" {
+          return "an \(word)"
+        }
+        else {
+            return "a \(word)"
+        }
     }
 
 
