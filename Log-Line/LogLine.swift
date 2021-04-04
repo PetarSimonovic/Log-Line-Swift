@@ -12,7 +12,6 @@ struct LogLine {
     
     
     func generateLogLine() -> String {
-        print("Here")
         return "A \(pickPosAdj()) but \(pickNegAdj()) \(pickNoun()) must \(pickVerbFirstPerson()) a \(pickPosAdj()) \(pickNoun()) before a \(pickNegAdj()) \(pickNoun()) \(pickVerbThirdPerson()) a \(pickNoun())"
     }
     
@@ -22,7 +21,9 @@ struct LogLine {
     }
     
     func pickNegAdj() -> String {
-        return "satanic"
+        let negAdjBank = ["satanic", "cruel", "mean", "hunourless", "aggressive", "scheming"]
+        return negAdjBank[makeChoice(negAdjBank.count)]
+
     }
     
     func pickNoun() -> String {
@@ -38,9 +39,7 @@ struct LogLine {
     }
     
     func makeChoice (_ bank: Int) -> Int {
-        let x = Int.random(in: 0...bank - 1)
-        print(x)
-        return x
+        return Int.random(in: 0...bank - 1)
     }
 
 
