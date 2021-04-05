@@ -34,6 +34,8 @@ struct ContentView: View {
     @State var holdNoun2 = ""
     
     
+    @State var negAdjButton2 = false
+    @State var holdNegAdj2 = ""
     
     @State var intro = true
     
@@ -170,6 +172,24 @@ struct ContentView: View {
                                 .foregroundColor(Color .white)
                         }
                         }
+                    }
+                    HStack {
+                        Text("before")
+                        Button(action: {
+                                negAdjButton2 = buttonControl(negAdjButton2)
+                                holdNegAdj2 = displayText[6]
+                        }) {
+                        if negAdjButton2 == false {
+                        Text(displayText[6])
+                            .background(Color .white)
+                            .foregroundColor(Color .black)
+                        } else {
+                            Text(holdNegAdj2)
+                                .background(Color .black)
+                                .foregroundColor(Color .white)
+                        }
+                        }
+                        
                     }
                 }  .padding()
                 .font(.custom("Courier", size: 18))
