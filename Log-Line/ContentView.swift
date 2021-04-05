@@ -13,6 +13,10 @@ struct ContentView: View {
     
     @State var displayText = "Press Story Mode to create a work of fiction or use Excuse Mode to justify your actions"
     
+    @State var nounOne = ""
+    
+    @State var nounButton = false
+    
     var body: some View {
         VStack {
             VStack {
@@ -49,7 +53,19 @@ struct ContentView: View {
                 .padding()
                 .font(.custom("Courier", size: 18))
                 .frame(height: 150)
-
+            
+            Button(action: {if nounButton == false {nounButton = true} else {nounButton = false}}) {
+                if nounButton == false {
+                Text("Not pressed")
+                    .background(Color .white)
+                    .foregroundColor(Color .black)
+                } else {
+                    Text("Pressed")
+                        .background(Color .black)
+                        .foregroundColor(Color .white)
+                }
+            }
+        
             Spacer()
                 .frame(height: 50)
 
