@@ -54,7 +54,7 @@ struct ContentView: View {
                 .font(.custom("Courier", size: 18))
                 .frame(height: 150)
             
-            Button(action: {if nounButton == false {nounButton = true} else {nounButton = false}}) {
+            Button(action: {nounButton = buttonControl(nounButton)}) {
                 if nounButton == false {
                 Text("Not pressed")
                     .background(Color .white)
