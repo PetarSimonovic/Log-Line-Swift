@@ -27,6 +27,9 @@ struct ContentView: View {
     @State var firstVerbButton = false
     @State var holdFirstVerb = ""
     
+    @State var posAdjButton2 = false
+    @State var holdPosAdj2 = ""
+    
     
     
     @State var intro = true
@@ -135,6 +138,22 @@ struct ContentView: View {
                     }
                     }
                 }
+                    HStack {
+                        Button(action: {
+                                posAdjButton2 = buttonControl(posAdjButton2)
+                                holdPosAdj2 = displayText[4]
+                        }) {
+                        if posAdjButton2 == false {
+                        Text(displayText[4])
+                            .background(Color .white)
+                            .foregroundColor(Color .black)
+                        } else {
+                            Text(holdPosAdj2)
+                                .background(Color .black)
+                                .foregroundColor(Color .white)
+                        }
+                        }
+                    }
                 }  .padding()
                 .font(.custom("Courier", size: 18))
                 .frame(height: 150)
