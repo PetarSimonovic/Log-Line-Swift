@@ -41,6 +41,9 @@ struct ContentView: View {
     @State var nounButton3 = false
     @State var holdNoun3 = ""
     
+    @State var thirdVerbButton = false
+    @State var holdThirdVerb = ""
+    
     @State var intro = true
     
     var body: some View {
@@ -206,6 +209,20 @@ struct ContentView: View {
                             .foregroundColor(Color .black)
                         } else {
                             Text(holdNoun3)
+                                .background(Color .black)
+                                .foregroundColor(Color .white)
+                        }
+                        }
+                        Button(action: {
+                                thirdVerbButton = buttonControl(thirdVerbButton)
+                                holdThirdVerb = displayText[8]
+                        }) {
+                        if thirdVerbButton == false {
+                        Text(displayText[8])
+                            .background(Color .white)
+                            .foregroundColor(Color .black)
+                        } else {
+                            Text(holdThirdVerb)
                                 .background(Color .black)
                                 .foregroundColor(Color .white)
                         }
