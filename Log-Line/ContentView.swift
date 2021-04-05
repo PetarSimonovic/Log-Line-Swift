@@ -249,9 +249,9 @@ struct ContentView: View {
                     }
                     
                 }  .padding()
-                .font(.custom("Courier", size: 18))
-                .frame(width: 500, height: 150)
-                
+                .font(.custom("Courier", size: 16))
+                .frame(width: 500, height: 150, alignment: .leading)
+                .offset(x: 100)
             }
         
             Spacer()
@@ -267,6 +267,7 @@ struct ContentView: View {
                         .foregroundColor(Color.white)
                         .font(.custom("Courier", size: 16))
                         .padding(3)
+                    
 
                 }
                 Button(action: {
@@ -277,7 +278,7 @@ struct ContentView: View {
                     Text("Excuse Mode")
                         .background(Color .black)
                         .foregroundColor(Color.white)
-                        .font(.custom("Courier", size: 16))
+                        .font(.custom("Courier", size: 14))
                         .padding(3)
                     
                 

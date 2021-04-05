@@ -33,7 +33,7 @@ struct LogLine {
     }
     
     func pickNoun() -> String {
-        let nounBank = ["computer", "watch maker", "ghost", "ninja", "pond", "frog", "dog", "robot", "android", "cat", "vampire", "houseplant", "chameleon", "penguin", "garden", "rubber duck", "alien", "turkey", "bartender", "lawyer", "criminal", "horse thief", "auditor", "beekeper", "hot dog", "astronaut", "scuba diver", "dancer", "coder", "liar", "CEO", "cook", "writer", "guitarist", "pedestrian", "electronic musician", "DJ", "wrestler", "rapper", "king", "queen", "pilot", "singer", "planet", "book", "engineer", "werewolf", "witch", "detective", "farmer", "editor", "writer", "brewer", "doctor", "salad", "pizza", "tree"]
+        let nounBank = ["computer", "watch maker", "ghost", "ninja", "pond", "frog", "dog", "robot", "android", "cat", "vampire", "houseplant", "chameleon", "penguin", "garden", "rubber duck", "alien", "turkey", "bartender", "lawyer", "criminal", "horse thief", "auditor", "beekeper", "hot dog", "astronaut", "scuba diver", "dancer", "coder", "liar", "CEO", "cook", "writer", "guitarist", "pedestrian", "IDM musician", "DJ", "wrestler", "rapper", "king", "queen", "pilot", "singer", "planet", "book", "engineer", "werewolf", "witch", "detective", "farmer", "editor", "writer", "brewer", "doctor", "salad", "pizza", "tree"]
         return nounBank[makeChoice(nounBank.count)]
 
     }
