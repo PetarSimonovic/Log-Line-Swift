@@ -37,6 +37,10 @@ struct ContentView: View {
     @State var negAdjButton2 = false
     @State var holdNegAdj2 = ""
     
+    
+    @State var nounButton3 = false
+    @State var holdNoun3 = ""
+    
     @State var intro = true
     
     var body: some View {
@@ -190,6 +194,22 @@ struct ContentView: View {
                         }
                         }
                         
+                    }
+                    HStack {
+                        Button(action: {
+                                nounButton3 = buttonControl(nounButton3)
+                                holdNoun3 = displayText[7]
+                        }) {
+                        if nounButton3 == false {
+                        Text(displayText[7])
+                            .background(Color .white)
+                            .foregroundColor(Color .black)
+                        } else {
+                            Text(holdNoun3)
+                                .background(Color .black)
+                                .foregroundColor(Color .white)
+                        }
+                        }
                     }
                 }  .padding()
                 .font(.custom("Courier", size: 18))
