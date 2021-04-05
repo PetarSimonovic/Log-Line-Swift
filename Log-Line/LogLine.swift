@@ -49,7 +49,7 @@ struct LogLine {
     }
     
     func pickExcuse() -> String {
-      let excuseBank = ["missed your wedding", "didn't come to work", "missed the deadline", "forgot your birthday", "wasn't at school", "missed your dinner party", "ate all of the cake", "sold your record collection", "threw away your hat", "fell asleep while you were talking", "interrupted you", "wandered off"];
+      let excuseBank = ["missed your wedding", "didn't come to work", "missed the deadline", "forgot your birthday", "wasn't at school", "missed your  party", "ate all of the cake", "sold your records", "threw away your hat", "yawned during your speech", "interrupted you", "wandered off", "fell asleep", "swore"];
         return excuseBank[makeChoice(excuseBank.count)];
       };
     

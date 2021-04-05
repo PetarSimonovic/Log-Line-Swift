@@ -47,7 +47,12 @@ struct ContentView: View {
     @State var nounButton4 = false
     @State var holdNoun4 = ""
     
+    @State var apologyButton = false
+    @State var holdApology = ""
+    
     @State var intro = true
+    @State var story = false
+    @State var excuse = false
     
     var body: some View {
         VStack {
@@ -72,7 +77,7 @@ struct ContentView: View {
                     .frame(height: 10)
                 
                 Text("High-Concept Stories \n Plausible Excuses")
-                    .font(.custom("Courier", size: 16))
+                    .font(.custom("Courier", size: 14))
                     .multilineTextAlignment(.center)
                     .background(Color .black)
                     .foregroundColor(Color .white)
@@ -87,7 +92,7 @@ struct ContentView: View {
                     .font(.custom("Courier", size: 18))
                     .frame(height: 150)
                 
-            } else {
+            } else if story == true {
                 VStack(alignment: .leading, spacing: 0.0) {
                 HStack {
                     Button(action: {
@@ -252,6 +257,147 @@ struct ContentView: View {
                 .font(.custom("Courier", size: 16))
                 .frame(width: 500, height: 150, alignment: .leading)
                 .offset(x: 100)
+                }
+            else if excuse == true {
+                VStack(alignment: .leading) {HStack {
+                    Text("Sorry I")
+                    Button(action: {
+                            apologyButton = buttonControl(apologyButton)
+                            holdApology = displayText[0]
+                    }) {
+                    if apologyButton == false {
+                    Text(displayText[0])
+                        .background(Color .white)
+                        .foregroundColor(Color .black)
+                    } else {
+                        Text(holdApology)
+                            .background(Color .black)
+                            .foregroundColor(Color .white)
+                }
+                    }
+
+
+                }
+                HStack {
+                    Text("but I had to")
+                    Button(action: {
+                            firstVerbButton = buttonControl(firstVerbButton)
+                            holdFirstVerb = displayText[1]
+                    }) {
+                    if firstVerbButton == false {
+                    Text(displayText[1])
+                        .background(Color .white)
+                        .foregroundColor(Color .black)
+                    } else {
+                        Text(holdFirstVerb)
+                            .background(Color .black)
+                            .foregroundColor(Color .white)
+                }
+                    }
+
+                }
+                HStack {
+                    Button(action: {
+                        posAdjButton = buttonControl(posAdjButton)
+                            holdPosAdj = displayText[2]
+                    }) {
+                    if posAdjButton == false {
+                    Text(displayText[2])
+                        .background(Color .white)
+                        .foregroundColor(Color .black)
+                    } else {
+                        Text(holdPosAdj)
+                            .background(Color .black)
+                            .foregroundColor(Color .white)
+                }
+                    }
+                    Button(action: {
+                        nounButton = buttonControl(nounButton)
+                            holdNoun = displayText[3]
+                    }) {
+                    if nounButton == false {
+                    Text(displayText[3])
+                        .background(Color .white)
+                        .foregroundColor(Color .black)
+                    } else {
+                        Text(holdNoun)
+                            .background(Color .black)
+                            .foregroundColor(Color .white)
+                }
+                    }
+
+                }
+                HStack {
+                    Text("because")
+                    Button(action: {
+                        negAdjButton = buttonControl(negAdjButton)
+                            holdNegAdj = displayText[4]
+                    }) {
+                    if negAdjButton == false {
+                    Text(displayText[4])
+                        .background(Color .white)
+                        .foregroundColor(Color .black)
+                    } else {
+                        Text(holdPosAdj)
+                            .background(Color .black)
+                            .foregroundColor(Color .white)
+                }
+                    }
+                    Button(action: {
+                        nounButton2 = buttonControl(nounButton2)
+                            holdNoun2 = displayText[5]
+                    }) {
+                    if nounButton2 == false {
+                    Text(displayText[5])
+                        .background(Color .white)
+                        .foregroundColor(Color .black)
+                    } else {
+                        Text(holdNoun2)
+                            .background(Color .black)
+                            .foregroundColor(Color .white)
+                }
+                    }
+
+                }
+                HStack {
+                    Button(action: {
+                        thirdVerbButton = buttonControl(thirdVerbButton)
+                            holdThirdVerb = displayText[6]
+                    }) {
+                    if thirdVerbButton == false {
+                    Text(displayText[6])
+                        .background(Color .white)
+                        .foregroundColor(Color .black)
+                    } else {
+                        Text(holdThirdVerb)
+                            .background(Color .black)
+                            .foregroundColor(Color .white)
+                }
+                    }
+                    Button(action: {
+                        nounButton3 = buttonControl(nounButton2)
+                            holdNoun3 = displayText[7]
+                    }) {
+                    if nounButton3 == false {
+                    Text(displayText[7])
+                        .background(Color .white)
+                        .foregroundColor(Color .black)
+                    } else {
+                        Text(holdNoun3)
+                            .background(Color .black)
+                            .foregroundColor(Color .white)
+                }
+                    }
+
+                }
+
+
+
+                }
+                .font(.custom("Courier", size: 16))
+                .frame(width: 500, height: 150, alignment: .leading)
+                .offset(x: 100)
+
             }
         
             Spacer()
@@ -260,19 +406,23 @@ struct ContentView: View {
             HStack {
                 Button(action: {
                         self.displayText = logLine.generateLogLine()
+                        story = true
                         intro = false
+                        excuse = false
                 }) {
                     Text("Story Mode")
                         .background(Color .black)
                         .foregroundColor(Color.white)
-                        .font(.custom("Courier", size: 16))
+                        .font(.custom("Courier", size: 14))
                         .padding(3)
                     
 
                 }
                 Button(action: {
                         self.displayText = logLine.generateExcuse()
-                    intro = false
+                        excuse = true
+                        intro = false
+                        story = false
                     
                 }) {
                     Text("Excuse Mode")
