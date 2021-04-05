@@ -44,6 +44,9 @@ struct ContentView: View {
     @State var thirdVerbButton = false
     @State var holdThirdVerb = ""
     
+    @State var nounButton4 = false
+    @State var holdNoun4 = ""
+    
     @State var intro = true
     
     var body: some View {
@@ -85,7 +88,7 @@ struct ContentView: View {
                     .frame(height: 150)
                 
             } else {
-                VStack {
+                VStack(alignment: .leading, spacing: 0.0) {
                 HStack {
                     Button(action: {
                             posAdjButton = buttonControl(posAdjButton)
@@ -104,7 +107,7 @@ struct ContentView: View {
                     Text("but")
                     Button(action: {
                             negAdjButton = buttonControl(negAdjButton)
-                            holdNegAdj = displayText[0]
+                            holdNegAdj = displayText[1]
                     }) {
                     if negAdjButton == false {
                     Text(displayText[1])
@@ -228,9 +231,26 @@ struct ContentView: View {
                         }
                         }
                     }
+                    HStack {
+                        Button(action: {
+                                nounButton4 = buttonControl(nounButton4)
+                                holdNoun4 = displayText[9]
+                        }) {
+                        if nounButton4 == false {
+                        Text(displayText[9])
+                            .background(Color .white)
+                            .foregroundColor(Color .black)
+                        } else {
+                            Text(holdNoun4)
+                                .background(Color .black)
+                                .foregroundColor(Color .white)
+                    }
+                        }
+                    }
+                    
                 }  .padding()
                 .font(.custom("Courier", size: 18))
-                .frame(height: 150)
+                .frame(width: 500, height: 150)
                 
             }
         
