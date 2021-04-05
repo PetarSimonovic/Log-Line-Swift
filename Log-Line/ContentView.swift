@@ -30,6 +30,9 @@ struct ContentView: View {
     @State var posAdjButton2 = false
     @State var holdPosAdj2 = ""
     
+    @State var nounButton2 = false
+    @State var holdNoun2 = ""
+    
     
     
     @State var intro = true
@@ -149,6 +152,20 @@ struct ContentView: View {
                             .foregroundColor(Color .black)
                         } else {
                             Text(holdPosAdj2)
+                                .background(Color .black)
+                                .foregroundColor(Color .white)
+                        }
+                        }
+                        Button(action: {
+                                nounButton2 = buttonControl(nounButton2)
+                                holdNoun2 = displayText[5]
+                        }) {
+                        if nounButton2 == false {
+                        Text(displayText[5])
+                            .background(Color .white)
+                            .foregroundColor(Color .black)
+                        } else {
+                            Text(holdNoun2)
                                 .background(Color .black)
                                 .foregroundColor(Color .white)
                         }
