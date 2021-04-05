@@ -11,11 +11,15 @@ struct ContentView: View {
     
     let logLine = LogLine()
     
-    @State var displayText = "Press Story Mode to create a work of fiction or use Excuse Mode to justify your actions"
+    @State var displayText: [String] = []
     
     @State var nounOne = ""
     
     @State var nounButton = false
+    
+    @State var holdNoun = ""
+    
+    @State var intro = true
     
     var body: some View {
         VStack {
@@ -49,28 +53,44 @@ struct ContentView: View {
             Spacer()
                 .frame(height: 50)
             
-            Text(displayText)
+            if intro == true {
+                Text("Press Story Mode to create a work of fiction or use Excuse Mode to justify your actions")
+                    .padding()
+                    .font(.custom("Courier", size: 18))
+                    .frame(height: 150)
+                
+            } else {
+                        
+                HStack {
+                    Button(action: {
+                            nounButton = buttonControl(nounButton)
+                            holdNoun = displayText[0]
+                    }) {
+                    if nounButton == false {
+                    Text(displayText[0])
+                        .background(Color .white)
+                        .foregroundColor(Color .black)
+                    } else {
+                        Text(holdNoun)
+                            .background(Color .black)
+                            .foregroundColor(Color .white)
+                    }
+                    }
+                }
                 .padding()
                 .font(.custom("Courier", size: 18))
                 .frame(height: 150)
-            
-            Button(action: {nounButton = buttonControl(nounButton)}) {
-                if nounButton == false {
-                Text("Not pressed")
-                    .background(Color .white)
-                    .foregroundColor(Color .black)
-                } else {
-                    Text("Pressed")
-                        .background(Color .black)
-                        .foregroundColor(Color .white)
-                }
+                
             }
         
             Spacer()
                 .frame(height: 50)
 
             HStack {
-                Button(action: {self.displayText = logLine.generateLogLine()}) {
+                Button(action: {
+                        self.displayText = logLine.generateLogLine()
+                        intro = false
+                }) {
                     Text("Story Mode")
                         .background(Color .black)
                         .foregroundColor(Color.white)
@@ -78,7 +98,11 @@ struct ContentView: View {
                         .padding(3)
 
                 }
-                Button(action: {self.displayText = logLine.generateExcuse()}) {
+                Button(action: {
+                        self.displayText = logLine.generateExcuse()
+                    intro = false
+                    
+                }) {
                     Text("Excuse Mode")
                         .background(Color .black)
                         .foregroundColor(Color.white)

@@ -11,12 +11,14 @@ import SwiftUI
 struct LogLine {
     
     
-    func generateLogLine() -> String {
-        return "\(capUp(setArticle(pickPosAdj()))) but \(pickNegAdj()) \(pickNoun()) must \(pickVerbFirstPerson()) \(setArticle(pickPosAdj())) \(pickNoun()) before \(setArticle(pickNegAdj())) \(pickNoun()) \(pickVerbThirdPerson()) \(setArticle(pickNoun()))"
+    func generateLogLine() -> [String] {
+        
+        return [capUp(setArticle(pickPosAdj())), pickNegAdj(), pickNoun(), pickVerbFirstPerson(), setArticle(pickPosAdj()), pickNoun(), setArticle(pickNegAdj()), pickNoun(), pickVerbThirdPerson(), setArticle(pickNoun())]
     }
     
-    func generateExcuse() -> String {
-     return "Sorry I \(pickExcuse()) but I had to \(pickVerbFirstPerson()) \(setArticle(pickPosAdj())) \(pickNoun()) because \(setArticle(pickNegAdj())) \(pickNoun()) \(pickVerbPastTense()) \(setArticle(pickNoun()))"
+    func generateExcuse() -> [String] {
+        
+     return [pickExcuse(), pickVerbFirstPerson(), setArticle(pickPosAdj()), pickNoun(), setArticle(pickNegAdj()), pickNoun(), pickVerbPastTense(), setArticle(pickNoun())]
         }
     
     func pickPosAdj() -> String {
