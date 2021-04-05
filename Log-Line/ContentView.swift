@@ -89,7 +89,7 @@ struct ContentView: View {
             if intro == true {
                 Text("Press Story Mode to create a work of fiction or use Excuse Mode to justify your actions")
                     .padding()
-                    .font(.custom("Courier", size: 18))
+                    .font(.custom("Courier", size: 16))
                     .frame(height: 150)
                 
             } else if story == true {
@@ -254,7 +254,7 @@ struct ContentView: View {
                     }
                     
                 }  .padding()
-                .font(.custom("Courier", size: 16))
+                .font(.custom("Courier", size: 17))
                 .frame(width: 500, height: 150, alignment: .leading)
                 .offset(x: 100)
                 }
@@ -375,7 +375,7 @@ struct ContentView: View {
                 }
                     }
                     Button(action: {
-                        nounButton3 = buttonControl(nounButton2)
+                        nounButton3 = buttonControl(nounButton3)
                             holdNoun3 = displayText[7]
                     }) {
                     if nounButton3 == false {
@@ -394,7 +394,7 @@ struct ContentView: View {
 
 
                 }
-                .font(.custom("Courier", size: 16))
+                .font(.custom("Courier", size: 17))
                 .frame(width: 500, height: 150, alignment: .leading)
                 .offset(x: 100)
 
@@ -442,7 +442,7 @@ struct ContentView: View {
                     .multilineTextAlignment(.center)
                     .background(Color .white)
                     .foregroundColor(Color .black)
-                    .font(.custom("Courier", size: 16))
+                    .font(.custom("Courier", size: 17))
                     .padding(5)
                     .border(Color .black, width: 2)
             }
