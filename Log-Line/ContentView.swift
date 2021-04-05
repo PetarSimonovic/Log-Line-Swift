@@ -15,9 +15,19 @@ struct ContentView: View {
     
     @State var nounOne = ""
     
-    @State var nounButton = false
+    @State var posAdjButton = false
+    @State var holdPosAdj = ""
     
+    @State var negAdjButton = false
+    @State var holdNegAdj = ""
+    
+    @State var nounButton = false
     @State var holdNoun = ""
+    
+    @State var firstVerbButton = false
+    @State var holdFirstVerb = ""
+    
+    
     
     @State var intro = true
     
@@ -60,14 +70,47 @@ struct ContentView: View {
                     .frame(height: 150)
                 
             } else {
-                        
+                VStack {
+                HStack {
+                    Button(action: {
+                            posAdjButton = buttonControl(posAdjButton)
+                            holdPosAdj = displayText[0]
+                    }) {
+                    if posAdjButton == false {
+                    Text(displayText[0])
+                        .background(Color .white)
+                        .foregroundColor(Color .black)
+                    } else {
+                        Text(holdPosAdj)
+                            .background(Color .black)
+                            .foregroundColor(Color .white)
+                    }
+                    }
+                    Text("but")
+                    Button(action: {
+                            negAdjButton = buttonControl(negAdjButton)
+                            holdNegAdj = displayText[0]
+                    }) {
+                    if negAdjButton == false {
+                    Text(displayText[1])
+                        .background(Color .white)
+                        .foregroundColor(Color .black)
+                    } else {
+                        Text(holdNegAdj)
+                            .background(Color .black)
+                            .foregroundColor(Color .white)
+                    }
+                    }
+
+                    
+                }
                 HStack {
                     Button(action: {
                             nounButton = buttonControl(nounButton)
-                            holdNoun = displayText[0]
+                            holdNoun = displayText[2]
                     }) {
                     if nounButton == false {
-                    Text(displayText[0])
+                    Text(displayText[2])
                         .background(Color .white)
                         .foregroundColor(Color .black)
                     } else {
@@ -76,8 +119,23 @@ struct ContentView: View {
                             .foregroundColor(Color .white)
                     }
                     }
+                    Text("must")
+                    Button(action: {
+                            firstVerbButton = buttonControl(firstVerbButton)
+                            holdFirstVerb = displayText[3]
+                    }) {
+                    if firstVerbButton == false {
+                    Text(displayText[3])
+                        .background(Color .white)
+                        .foregroundColor(Color .black)
+                    } else {
+                        Text(holdFirstVerb)
+                            .background(Color .black)
+                            .foregroundColor(Color .white)
+                    }
+                    }
                 }
-                .padding()
+                }  .padding()
                 .font(.custom("Courier", size: 18))
                 .frame(height: 150)
                 
