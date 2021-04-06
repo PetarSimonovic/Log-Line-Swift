@@ -45,7 +45,7 @@ struct LogLine {
     }
     
     func pickExcuse() -> String {
-      let excuseBank = ["missed your wedding", "didn't come to work", "missed the deadline", "forgot your birthday", "wasn't at school", "ruined your party", "ate all of the cake", "sold your records", "threw away your hat", "yawned during your speech", "interrupted you", "wandered off", "fell asleep", "swore"];
+      let excuseBank = ["missed your wedding", "didn't come to work", "missed the deadline", "forgot your birthday", "wasn't at school", "ruined your party", "ate all of the cake", "sold your records", "yawned at your speech", "interrupted you", "wandered off", "fell asleep", "swore"];
         return excuseBank[makeChoice(excuseBank.count)];
       };
     
@@ -59,7 +59,7 @@ struct LogLine {
     }
     
     func setArticle(_ word: String) -> String {
-        let vowels = ["a", "e", "i", "o", "u"]
+        let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
         let letter = word.prefix(1)
         if vowels.contains(String(letter)) || word == "honest" {
           return "an \(word)"
