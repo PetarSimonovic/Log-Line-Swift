@@ -149,45 +149,55 @@ struct ContentView: View {
                     }
                     HStack {
                         logLineButtonView(button: apologyNounButton)
-                        Text("but I had to")
             
 
                     }
                     HStack {
-                        logLineButtonView(button: excuseVerbButton)
-                        logLineButtonView(button: excuseAdjButton)
+                        Text("but I had to")
+                      
+                       
                        
                         
                     }
                     
                     HStack{
+                        logLineButtonView(button: excuseVerbButton)
+                        logLineButtonView(button: excuseAdjButton)
                         
-                         logLineButtonView(button: excuseNounButton)
-                        Text("because")
-
                        
                     }
                     
                     HStack {
+                        logLineButtonView(button: excuseNounButton)
+
+                        Text("because")
+
                         
-                        logLineButtonView(button: excuseAdjButton2)
                       
-                        logLineButtonView(button: excuseNounButton2)
-                
+                      
+                        
 
                     }
                         HStack {
+                            logLineButtonView(button: excuseAdjButton2)
+                        }
+                        HStack {
+                            logLineButtonView(button: excuseNounButton2)
+                    
                             logLineButtonView(button: excuseVerbButton2)
-                        logLineButtonView(button: excuseNounButton3)
+                      
+                        }
+                        HStack {
+                            logLineButtonView(button: excuseNounButton3)
                         }
 
 
 
 
                     }
-                    .font(.custom("Courier", size: 17))
+                    .font(.custom("Courier", size: 19))
                     .frame(width: 500, height: 150, alignment: .leading)
-                    .offset(x: 100)
+                    .offset(x: 120)
 
                 }
             
