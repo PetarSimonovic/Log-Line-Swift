@@ -18,7 +18,7 @@ struct LogLine {
     
     func generateExcuse() -> [String] {
         
-     return [pickExcuse(), pickVerbFirstPerson(), setArticle(pickPosAdj()), pickNoun(), setArticle(pickNegAdj()), pickNoun(), pickVerbPastTense(), setArticle(pickNoun())]
+     return [pickExcuseVerb(), pickExcuseNoun(), pickVerbFirstPerson(), setArticle(pickPosAdj()), pickNoun(), setArticle(pickNegAdj()), pickNoun(), pickVerbPastTense(), setArticle(pickNoun())]
         }
     
     func pickPosAdj() -> String {
@@ -44,10 +44,16 @@ struct LogLine {
         return verbThirdPersonBank[makeChoice(verbThirdPersonBank.count)]
     }
     
-    func pickExcuse() -> String {
-      let excuseBank = ["missed your wedding", "didn't come to work", "missed the deadline", "forgot your birthday", "wasn't at school", "ruined your party", "ate all of the cake", "sold your records", "yawned at your speech", "interrupted you", "wandered off", "fell asleep", "swore"];
-        return excuseBank[makeChoice(excuseBank.count)];
+    func pickExcuseVerb() -> String {
+      let excuseVerbBank = ["ruined", "didn't come to", "missed", "forgot", "ignored", "ate all of", "sold your", "yawned at", "interrupted", "wandered off during", "fell asleep during", "swore at", "lost", "interrupted", "undermined", "fake snored during", "laughed at", "sneered at" ];
+        return excuseVerbBank[makeChoice(excuseVerbBank.count)];
       };
+    
+    func pickExcuseNoun() -> String {
+        let excuseNounBank = ["your wedding", "work", "the deadline", "your birthday", "your dinner party", "your play", "school", "your party", "your cake", "your pizza", "your cat", "your vinyl", "your speech"];
+        return excuseNounBank[makeChoice(excuseNounBank.count)];
+      };
+    
     
     func pickVerbPastTense() -> String {
       let verbBankPast = ["destroyed", "ate", "ruined", "broke", "threatened", "insulted", "cajoled", "attacked", "ignored", "fought", "hurt", "upset", "drained", "vandalised", "truncated", "annoyed", "swore at", "slapped", "glared at", "intimidated", "slandered", "snubbed", "upset", "patronised", "offended"];

@@ -101,6 +101,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		0DC4CC04261DEFF00049A366 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D6C9CFB261A178B0098ED84 /* AboutView.swift */,
+				0DD9CFC32618956500E465AB /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0DD9CFB52618956500E465AB = {
 			isa = PBXGroup;
 			children = (
@@ -124,14 +133,13 @@
 		0DD9CFC02618956500E465AB /* Log-Line */ = {
 			isa = PBXGroup;
 			children = (
+				0DC4CC04261DEFF00049A366 /* Views */,
 				0D6C9D0D261B49E90098ED84 /* Resources */,
 				0DD9CFC12618956500E465AB /* Log_LineApp.swift */,
-				0DD9CFC32618956500E465AB /* ContentView.swift */,
 				0DD9CFC52618956600E465AB /* Assets.xcassets */,
 				0DD9CFCA2618956600E465AB /* Info.plist */,
 				0DD9CFC72618956600E465AB /* Preview Content */,
 				0DD9CFEF2618B04C00E465AB /* LogLine.swift */,
-				0D6C9CFB261A178B0098ED84 /* AboutView.swift */,
 				0D6C9D08261B0A520098ED84 /* buttonControl.swift */,
 			);
 			path = "Log-Line";

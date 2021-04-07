@@ -27,9 +27,7 @@ struct ContentView: View {
     
     @StateObject var nounButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    
     @StateObject var negAdjButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
-    
     
     @StateObject var nounButton3 = logLineButton(buttonState: false, holdText: "", newText: "")
     
@@ -37,35 +35,28 @@ struct ContentView: View {
     
     @StateObject var nounButton4 = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var apologyButton = false
-    @State var holdApology = ""
+    @StateObject var apologyVerbButton = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var excuseVerbButton = false
-    @State var holdExcuseVerb = ""
+    @StateObject var apologyNounButton = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var excuseAdjButton = false
-    @State var holdExcuseAdj = ""
+    @StateObject var excuseVerbButton = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var excuseNounButton = false
-    @State var holdExcuseNoun = ""
+    @StateObject var excuseAdjButton = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var excuseAdjButton2 = false
-    @State var holdExcuseAdj2 = ""
+    @StateObject var excuseNounButton = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var excuseVerbButton2 = false
-    @State var holdExcuseVerb2 = ""
+    @StateObject var excuseAdjButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var excuseNounButton2 = false
-    @State var holdExcuseNoun2 = ""
+    @StateObject var excuseVerbButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var excuseVerbButton3 = false
-    @State var holdExcuseVerb3 = ""
+    @StateObject var excuseNounButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var excuseNounButton3 = false
-    @State var holdExcuseNoun3 = ""
+    @StateObject var excuseVerbButton3 = logLineButton(buttonState: false, holdText: "", newText: "")
+    
+    
+    @StateObject var excuseNounButton3 = logLineButton(buttonState: false, holdText: "", newText: "")
 
-    @StateObject var testButton = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+   
     @State var intro = true
     @State var story = false
     @State var excuse = false
@@ -150,143 +141,46 @@ struct ContentView: View {
                     .offset(x: 100)
                     }
                 else if excuse == true {
-                    VStack(alignment: .leading) {HStack {
+                    VStack(alignment: .leading) {
+                        HStack {
                         Text("Sorry I")
-                        Button(action: {
-                                apologyButton = buttonControl(apologyButton)
-                                holdApology = displayText[0]
-                        }) {
-                        if apologyButton == false {
-                        Text(displayText[0])
-                            .background(Color .white)
-                            .foregroundColor(Color .black)
-                        } else {
-                            Text(holdApology)
-                                .background(Color .black)
-                                .foregroundColor(Color .white)
-                    }
-                        }
-
+                        logLineButtonView(button: apologyVerbButton)
 
                     }
                     HStack {
+                        logLineButtonView(button: apologyNounButton)
                         Text("but I had to")
-                        Button(action: {
-                                excuseVerbButton = buttonControl(excuseVerbButton)
-                                holdExcuseVerb = displayText[1]
-                        }) {
-                        if excuseVerbButton == false {
-                        Text(displayText[1])
-                            .background(Color .white)
-                            .foregroundColor(Color .black)
-                        } else {
-                            Text(holdExcuseVerb)
-                                .background(Color .black)
-                                .foregroundColor(Color .white)
-                    }
-                        }
+            
 
                     }
                     HStack {
-                        Button(action: {
-                            excuseAdjButton = buttonControl(excuseAdjButton)
-                                holdExcuseAdj = displayText[2]
-                        }) {
-                        if excuseAdjButton == false {
-                        Text(displayText[2])
-                            .background(Color .white)
-                            .foregroundColor(Color .black)
-                        } else {
-                            Text(holdExcuseAdj)
-                                .background(Color .black)
-                                .foregroundColor(Color .white)
-                    }
-                        }
-                        Button(action: {
-                            excuseNounButton = buttonControl(excuseNounButton)
-                                holdExcuseNoun = displayText[3]
-                        }) {
-                        if excuseNounButton == false {
-                        Text(displayText[3])
-                            .background(Color .white)
-                            .foregroundColor(Color .black)
-                        } else {
-                            Text(holdExcuseNoun)
-                                .background(Color .black)
-                                .foregroundColor(Color .white)
-                    }
-                        }
-
-                    }
-                    HStack {
-                        Text("because")
-                        Button(action: {
-                            excuseAdjButton2 = buttonControl(excuseAdjButton2)
-                                holdExcuseAdj2 = displayText[4]
-                        }) {
-                        if excuseAdjButton2 == false {
-                        Text(displayText[4])
-                            .background(Color .white)
-                            .foregroundColor(Color .black)
-                        } else {
-                            Text(holdExcuseAdj2)
-                                .background(Color .black)
-                                .foregroundColor(Color .white)
-                    }
-                        }
+                        logLineButtonView(button: excuseVerbButton)
+                        logLineButtonView(button: excuseAdjButton)
+                       
                         
                     }
                     
                     HStack{
-                        Button(action: {
-                            excuseNounButton2 = buttonControl(excuseNounButton2)
-                                holdExcuseNoun2 = displayText[5]
-                        }) {
-                        if excuseNounButton2 == false {
-                        Text(displayText[5])
-                            .background(Color .white)
-                            .foregroundColor(Color .black)
-                        } else {
-                            Text(holdExcuseNoun2)
-                                .background(Color .black)
-                                .foregroundColor(Color .white)
-                    }
-                        }
-                        Button(action: {
-                            excuseVerbButton3 = buttonControl(excuseVerbButton3)
-                                holdExcuseVerb3 = displayText[6]
-                        }) {
-                        if excuseVerbButton3 == false {
-                        Text(displayText[6])
-                            .background(Color .white)
-                            .foregroundColor(Color .black)
-                        } else {
-                            Text(holdExcuseVerb3)
-                                .background(Color .black)
-                                .foregroundColor(Color .white)
-                    }
-                        }
+                        
+                         logLineButtonView(button: excuseNounButton)
+                        Text("because")
 
+                       
                     }
                     
                     HStack {
                         
-                        Button(action: {
-                            excuseNounButton3 = buttonControl(excuseNounButton3)
-                                holdExcuseNoun3 = displayText[7]
-                        }) {
-                        if excuseNounButton3 == false {
-                        Text(displayText[7])
-                            .background(Color .white)
-                            .foregroundColor(Color .black)
-                        } else {
-                            Text(holdExcuseNoun3)
-                                .background(Color .black)
-                                .foregroundColor(Color .white)
-                    }
-                        }
+                        logLineButtonView(button: excuseAdjButton2)
+                      
+                        logLineButtonView(button: excuseNounButton2)
+                
 
                     }
+                        HStack {
+                            logLineButtonView(button: excuseVerbButton2)
+                        logLineButtonView(button: excuseNounButton3)
+                        }
+
 
 
 
@@ -332,6 +226,15 @@ struct ContentView: View {
                             excuse = true
                             intro = false
                             story = false
+                        apologyVerbButton.newText = self.displayText[0]
+                        apologyNounButton.newText = self.displayText[1]
+                        excuseVerbButton.newText = self.displayText[2]
+                        excuseAdjButton.newText = self.displayText[3]
+                        excuseNounButton.newText = self.displayText[4]
+                        excuseAdjButton2.newText = self.displayText[5]
+                        excuseNounButton2.newText = self.displayText[6]
+                        excuseVerbButton2.newText = self.displayText[7]
+                        excuseNounButton3.newText = self.displayText[8]
                         
                     }) {
                         Text("Excuse Mode")
