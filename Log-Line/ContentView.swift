@@ -14,38 +14,28 @@ struct ContentView: View {
     @State var displayText: [String] = []
     
     @State var nounOne = ""
+        
+    @StateObject var posAdjButton = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var posAdjButton = false
-    @State var holdPosAdj = ""
+    @StateObject var negAdjButton = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var negAdjButton = false
-    @State var holdNegAdj = ""
+    @StateObject var nounButton = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var nounButton = false
-    @State var holdNoun = ""
+    @StateObject var firstVerbButton = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var firstVerbButton = false
-    @State var holdFirstVerb = ""
+    @StateObject var posAdjButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var posAdjButton2 = false
-    @State var holdPosAdj2 = ""
-    
-    @State var nounButton2 = false
-    @State var holdNoun2 = ""
+    @StateObject var nounButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
     
     
-    @State var negAdjButton2 = false
-    @State var holdNegAdj2 = ""
+    @StateObject var negAdjButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
     
     
-    @State var nounButton3 = false
-    @State var holdNoun3 = ""
+    @StateObject var nounButton3 = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var thirdVerbButton = false
-    @State var holdThirdVerb = ""
+    @StateObject var thirdVerbButton = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var nounButton4 = false
-    @State var holdNoun4 = ""
+    @StateObject var nounButton4 = logLineButton(buttonState: false, holdText: "", newText: "")
     
     @State var apologyButton = false
     @State var holdApology = ""
@@ -73,7 +63,8 @@ struct ContentView: View {
     
     @State var excuseNounButton3 = false
     @State var holdExcuseNoun3 = ""
-    
+
+    @StateObject var testButton = logLineButton(buttonState: false, holdText: "", newText: "")
     
     @State var intro = true
     @State var story = false
@@ -103,7 +94,7 @@ struct ContentView: View {
                         .frame(height: 10)
                     
                     Text("High-Concept Stories \n Plausible Excuses")
-                        .font(.custom("Courier", size: 14))
+                        .font(.custom("Courier", size: 20))
                         .multilineTextAlignment(.center)
                         .background(Color .black)
                         .foregroundColor(Color .white)
@@ -121,166 +112,36 @@ struct ContentView: View {
                 } else if story == true {
                     VStack(alignment: .leading, spacing: 0.0) {
                     HStack {
-                        Button(action: {
-                                posAdjButton = buttonControl(posAdjButton)
-                                holdPosAdj = displayText[0]
-                        }) {
-                        if posAdjButton == false {
-                        Text(displayText[0])
-                            .background(Color .white)
-                            .foregroundColor(Color .black)
-                        } else {
-                            Text(holdPosAdj)
-                                .background(Color .black)
-                                .foregroundColor(Color .white)
-                        }
-                        }
+                    logLineButtonView(button: posAdjButton)
+                      
                         Text("but")
 
-                        
+
                     }
                     HStack {
-                        Button(action: {
-                                negAdjButton = buttonControl(negAdjButton)
-                                holdNegAdj = displayText[1]
-                        }) {
-                        if negAdjButton == false {
-                        Text(displayText[1])
-                            .background(Color .white)
-                            .foregroundColor(Color .black)
-                        } else {
-                            Text(holdNegAdj)
-                                .background(Color .black)
-                                .foregroundColor(Color .white)
-                        }
-                        }
-                        Button(action: {
-                                nounButton = buttonControl(nounButton)
-                                holdNoun = displayText[2]
-                        }) {
-                        if nounButton == false {
-                        Text(displayText[2])
-                            .background(Color .white)
-                            .foregroundColor(Color .black)
-                        } else {
-                            Text(holdNoun)
-                                .background(Color .black)
-                                .foregroundColor(Color .white)
-                        }
-                        }
+                        logLineButtonView(button: negAdjButton)
+                        logLineButtonView(button: nounButton)
                     }
                         HStack {
                         Text("must")
-                        Button(action: {
-                                firstVerbButton = buttonControl(firstVerbButton)
-                                holdFirstVerb = displayText[3]
-                        }) {
-                        if firstVerbButton == false {
-                        Text(displayText[3])
-                            .background(Color .white)
-                            .foregroundColor(Color .black)
-                        } else {
-                            Text(holdFirstVerb)
-                                .background(Color .black)
-                                .foregroundColor(Color .white)
-                        }
-                        }
-                            Button(action: {
-                                    posAdjButton2 = buttonControl(posAdjButton2)
-                                    holdPosAdj2 = displayText[4]
-                            }) {
-                            if posAdjButton2 == false {
-                            Text(displayText[4])
-                                .background(Color .white)
-                                .foregroundColor(Color .black)
-                            } else {
-                                Text(holdPosAdj2)
-                                    .background(Color .black)
-                                    .foregroundColor(Color .white)
-                            }
-                            }
+                        logLineButtonView(button: firstVerbButton)
+                            logLineButtonView(button: posAdjButton2)
                         }
                         
                         HStack {
                             
-                            Button(action: {
-                                    nounButton2 = buttonControl(nounButton2)
-                                    holdNoun2 = displayText[5]
-                            }) {
-                            if nounButton2 == false {
-                            Text(displayText[5])
-                                .background(Color .white)
-                                .foregroundColor(Color .black)
-                            } else {
-                                Text(holdNoun2)
-                                    .background(Color .black)
-                                    .foregroundColor(Color .white)
-                            }
-                            }
+                            logLineButtonView(button: nounButton2)
                             Text("before")
                         }
                         HStack {
                             
-                            Button(action: {
-                                    negAdjButton2 = buttonControl(negAdjButton2)
-                                    holdNegAdj2 = displayText[6]
-                            }) {
-                            if negAdjButton2 == false {
-                            Text(displayText[6])
-                                .background(Color .white)
-                                .foregroundColor(Color .black)
-                            } else {
-                                Text(holdNegAdj2)
-                                    .background(Color .black)
-                                    .foregroundColor(Color .white)
-                            }
-                            }
-                            Button(action: {
-                                    nounButton3 = buttonControl(nounButton3)
-                                    holdNoun3 = displayText[7]
-                            }) {
-                            if nounButton3 == false {
-                            Text(displayText[7])
-                                .background(Color .white)
-                                .foregroundColor(Color .black)
-                            } else {
-                                Text(holdNoun3)
-                                    .background(Color .black)
-                                    .foregroundColor(Color .white)
-                            }
-                            }
-                            
+                            logLineButtonView(button: negAdjButton2)
+                            logLineButtonView(button: nounButton3)
                         }
                         HStack {
                            
-                            Button(action: {
-                                    thirdVerbButton = buttonControl(thirdVerbButton)
-                                    holdThirdVerb = displayText[8]
-                            }) {
-                            if thirdVerbButton == false {
-                            Text(displayText[8])
-                                .background(Color .white)
-                                .foregroundColor(Color .black)
-                            } else {
-                                Text(holdThirdVerb)
-                                    .background(Color .black)
-                                    .foregroundColor(Color .white)
-                            }
-                            }
-                            Button(action: {
-                                    nounButton4 = buttonControl(nounButton4)
-                                    holdNoun4 = displayText[9]
-                            }) {
-                            if nounButton4 == false {
-                            Text(displayText[9])
-                                .background(Color .white)
-                                .foregroundColor(Color .black)
-                            } else {
-                                Text(holdNoun4)
-                                    .background(Color .black)
-                                    .foregroundColor(Color .white)
-                        }
-                            }
+                            logLineButtonView(button: thirdVerbButton)
+                            logLineButtonView(button: nounButton4)
                         }
                     
                         
@@ -445,11 +306,23 @@ struct ContentView: View {
                             story = true
                             intro = false
                             excuse = false
+                        posAdjButton.newText = self.displayText[0]
+                        negAdjButton.newText = self.displayText[1]
+                        nounButton.newText = self.displayText[2]
+                        firstVerbButton.newText = self.displayText[3]
+                        posAdjButton2.newText = self.displayText[4]
+                        nounButton2.newText = self.displayText[5]
+                        negAdjButton2.newText = self.displayText[6]
+                        nounButton3.newText = self.displayText[7]
+                        thirdVerbButton.newText = self.displayText[8]
+                        nounButton4.newText = self.displayText[9]
+
+
                     }) {
                         Text("Story Mode")
                             .background(Color .black)
                             .foregroundColor(Color.white)
-                            .font(.custom("Courier", size: 14))
+                            .font(.custom("Courier", size: 20))
                             .padding(3)
                         
 
@@ -464,7 +337,7 @@ struct ContentView: View {
                         Text("Excuse Mode")
                             .background(Color .black)
                             .foregroundColor(Color.white)
-                            .font(.custom("Courier", size: 14))
+                            .font(.custom("Courier", size: 20))
                             .padding(3)
                         
                     
@@ -493,8 +366,45 @@ struct ContentView: View {
 }
 
 
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
+
+class logLineButton: ObservableObject {
+    
+    @Published var buttonState: Bool
+    @Published var holdText: String
+    @Published var newText: String
+    
+    init(buttonState: Bool, holdText: String, newText: String) {
+        self.buttonState = buttonState
+        self.holdText = holdText
+        self.newText = newText
+        }
+}
+
+struct logLineButtonView: View {
+    @ObservedObject var button: logLineButton
+
+    var body: some View {
+        Button(action: {
+            button.buttonState = buttonControl(button.buttonState)
+            button.holdText = button.newText
+        }) {
+            if button.buttonState == false {
+                Text(button.newText)
+            .background(Color .white)
+            .foregroundColor(Color .black)
+        } else {
+            Text(button.holdText)
+                .background(Color .black)
+                .foregroundColor(Color .white)
+    }
+        }
+    }
+}
+
