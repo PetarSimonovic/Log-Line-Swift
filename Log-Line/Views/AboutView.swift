@@ -29,18 +29,18 @@ struct AboutView: View {
             HStack (spacing: 0) {
                 Text("Tap on ")
                 Text("nouns")
-                    .background(Color .black)
-                    .foregroundColor(Color .white)
+                    .foregroundColor(Color(UIColor.systemBackground))
+                    .background(Color(UIColor.label))
                 Text(", ")
                 Text("verbs")
-                    .background(Color .black)
-                    .foregroundColor(Color .white)
+                    .foregroundColor(Color(UIColor.systemBackground))
+                    .background(Color(UIColor.label))
                 Text(" and ")
             }
             HStack {
                 Text("adjectives")
-                    .background(Color .black)
-                    .foregroundColor(Color .white)
+                    .foregroundColor(Color(UIColor.systemBackground))
+                    .background(Color(UIColor.label))
                 Text("to lock words.")
             }
         }
