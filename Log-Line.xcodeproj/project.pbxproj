@@ -14,6 +14,9 @@
 		0D6C9D1C261B4F340098ED84 /* posAdjBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D1B261B4F340098ED84 /* posAdjBank.swift */; };
 		0D6C9D21261B4F750098ED84 /* verbFirstPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D20261B4F750098ED84 /* verbFirstPerson.swift */; };
 		0D6C9D26261B52590098ED84 /* verbThirdPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */; };
+		0DC94BBF261F2B7F00C47A74 /* verBankPast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC94BBE261F2B7F00C47A74 /* verBankPast.swift */; };
+		0DC94BC4261F2E7500C47A74 /* excuseNounBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC94BC3261F2E7500C47A74 /* excuseNounBank.swift */; };
+		0DC94BC9261F307F00C47A74 /* excuseVerbBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC94BC8261F307F00C47A74 /* excuseVerbBank.swift */; };
 		0DD9CFC22618956500E465AB /* Log_LineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9CFC12618956500E465AB /* Log_LineApp.swift */; };
 		0DD9CFC42618956500E465AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9CFC32618956500E465AB /* ContentView.swift */; };
 		0DD9CFC62618956600E465AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9CFC52618956600E465AB /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 		0D6C9D1B261B4F340098ED84 /* posAdjBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = posAdjBank.swift; sourceTree = "<group>"; };
 		0D6C9D20261B4F750098ED84 /* verbFirstPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verbFirstPerson.swift; sourceTree = "<group>"; };
 		0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verbThirdPerson.swift; sourceTree = "<group>"; };
+		0DC94BBE261F2B7F00C47A74 /* verBankPast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verBankPast.swift; sourceTree = "<group>"; };
+		0DC94BC3261F2E7500C47A74 /* excuseNounBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = excuseNounBank.swift; sourceTree = "<group>"; };
+		0DC94BC8261F307F00C47A74 /* excuseVerbBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = excuseVerbBank.swift; sourceTree = "<group>"; };
 		0DD9CFBE2618956500E465AB /* Log-Line.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Log-Line.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD9CFC12618956500E465AB /* Log_LineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_LineApp.swift; sourceTree = "<group>"; };
 		0DD9CFC32618956500E465AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +103,9 @@
 				0D6C9D1B261B4F340098ED84 /* posAdjBank.swift */,
 				0D6C9D20261B4F750098ED84 /* verbFirstPerson.swift */,
 				0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */,
+				0DC94BBE261F2B7F00C47A74 /* verBankPast.swift */,
+				0DC94BC3261F2E7500C47A74 /* excuseNounBank.swift */,
+				0DC94BC8261F307F00C47A74 /* excuseVerbBank.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -303,9 +312,12 @@
 			files = (
 				0D6C9D1C261B4F340098ED84 /* posAdjBank.swift in Sources */,
 				0D6C9CFC261A178B0098ED84 /* AboutView.swift in Sources */,
+				0DC94BBF261F2B7F00C47A74 /* verBankPast.swift in Sources */,
 				0DD9CFC42618956500E465AB /* ContentView.swift in Sources */,
+				0DC94BC4261F2E7500C47A74 /* excuseNounBank.swift in Sources */,
 				0D6C9D09261B0A520098ED84 /* buttonControl.swift in Sources */,
 				0DD9CFF02618B04C00E465AB /* LogLine.swift in Sources */,
+				0DC94BC9261F307F00C47A74 /* excuseVerbBank.swift in Sources */,
 				0D6C9D21261B4F750098ED84 /* verbFirstPerson.swift in Sources */,
 				0D6C9D17261B4DFD0098ED84 /* negAdjBank.swift in Sources */,
 				0D6C9D26261B52590098ED84 /* verbThirdPerson.swift in Sources */,
@@ -468,7 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_ASSET_PATHS = "\"Log-Line/Preview Content\"";
 				DEVELOPMENT_TEAM = 6TPWY3BLL8;
 				ENABLE_PREVIEWS = YES;
@@ -478,7 +490,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Log-Line.Petar-Simonovic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -492,7 +504,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_ASSET_PATHS = "\"Log-Line/Preview Content\"";
 				DEVELOPMENT_TEAM = 6TPWY3BLL8;
 				ENABLE_PREVIEWS = YES;
@@ -502,7 +514,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Log-Line.Petar-Simonovic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -244,5 +244,6 @@ let posAdjBank = [
       "witty",
       "youthful",
       "magic",
+      "sentient",
     
 ]
