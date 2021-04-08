@@ -16,6 +16,10 @@ let negAdjBank = [
     "ascetic",
     "authoritarian",
     "big-thinking",
+    "haunted",
+    "decaying",
+    "spooky",
+    "cursed",
     "boyish",
     "breezy",
     "businesslike",
@@ -410,5 +414,8 @@ let negAdjBank = [
     "well-meaning",
     "willful",
     "wishful",
-    "zany"
+    "zany",
+    "abandoned",
+    "derelict",
+    "sunken"
   ]

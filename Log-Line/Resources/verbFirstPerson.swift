@@ -315,6 +315,7 @@ let verbFirstPersonBank = [
     "look",
     "love",
     "man",
+    "map",
     "manage",
     "march",
     "mark",
@@ -626,7 +627,7 @@ let verbFirstPersonBank = [
     "wrap",
     "wreck",
     "wrestle",
-    "wriggle"
+    "traverse"
     ]
 
 

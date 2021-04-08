@@ -70,12 +70,12 @@ struct ContentView: View {
                             .multilineTextAlignment(.center)
                             .background(Color .black)
                             .foregroundColor(Color .white)
-                            .font(.custom("Courier", size: 60))
+                            .font(.custom("Courier", size: 80))
                         Text("Line")
                             .multilineTextAlignment(.center)
                         .background(Color .white)
                         .foregroundColor(Color .black)
-                        .font(.custom("Courier", size: 60))
+                        .font(.custom("Courier", size: 80))
                         
                        
                     }.padding(4)
@@ -85,7 +85,7 @@ struct ContentView: View {
                         .frame(height: 10)
                     
                     Text("High-Concept Stories \n Plausible Excuses")
-                        .font(.custom("Courier", size: 20))
+                        .font(.custom("Courier", size: 16.5))
                         .multilineTextAlignment(.center)
                         .background(Color .black)
                         .foregroundColor(Color .white)
@@ -97,7 +97,7 @@ struct ContentView: View {
                 if intro == true {
                     Text("Press Story Mode to create a work of fiction or use Excuse Mode to justify your actions")
                         .padding()
-                        .font(.custom("Courier", size: 17))
+                        .font(.custom("Courier", size: 16.5))
                         .frame(height: 150)
                     
                 } else if story == true {
@@ -106,39 +106,45 @@ struct ContentView: View {
                     logLineButtonView(button: posAdjButton)
                       
                         Text("but")
+                        logLineButtonView(button: negAdjButton)
 
 
                     }
                     HStack {
-                        logLineButtonView(button: negAdjButton)
+                       
                         logLineButtonView(button: nounButton)
-                    }
-                        HStack {
                         Text("must")
                         logLineButtonView(button: firstVerbButton)
+
+                    }
+                        HStack {
+                        
                             logLineButtonView(button: posAdjButton2)
+                            logLineButtonView(button: nounButton2)
+
                         }
                         
-                        HStack {
-                            
-                            logLineButtonView(button: nounButton2)
-                            Text("before")
-                        }
-                        HStack {
-                            
+                    HStack {
+                        Text("before")
+
                             logLineButtonView(button: negAdjButton2)
-                            logLineButtonView(button: nounButton3)
+                       
+                           
                         }
                         HStack {
+                            logLineButtonView(button: nounButton3)
                            
                             logLineButtonView(button: thirdVerbButton)
+                        
+                        }
+                        HStack {
                             logLineButtonView(button: nounButton4)
                         }
+                        
                     
                         
-                    } .font(.custom("Courier", size: 17))
-                    .frame(width: 500, height: 150, alignment: .leading)
-                    .offset(x: 100)
+                    } .font(.custom("Courier", size: 16.5))
+                    .frame(height: 150, alignment: .leading)
                     }
                 else if excuse == true {
                     VStack(alignment: .leading) {
@@ -149,17 +155,12 @@ struct ContentView: View {
                     }
                     HStack {
                         logLineButtonView(button: apologyNounButton)
+                        Text("but I had to")
+
             
 
                     }
-                    HStack {
-                        Text("but I had to")
-                      
-                       
-                       
-                        
-                    }
-                    
+                
                     HStack{
                         logLineButtonView(button: excuseVerbButton)
                         logLineButtonView(button: excuseAdjButton)
@@ -180,24 +181,22 @@ struct ContentView: View {
                     }
                         HStack {
                             logLineButtonView(button: excuseAdjButton2)
+                            logLineButtonView(button: excuseNounButton2)
                         }
                         HStack {
-                            logLineButtonView(button: excuseNounButton2)
+                           
                     
                             logLineButtonView(button: excuseVerbButton2)
+                            logLineButtonView(button: excuseNounButton3)
                       
                         }
-                        HStack {
-                            logLineButtonView(button: excuseNounButton3)
-                        }
-
+                    
 
 
 
                     }
-                    .font(.custom("Courier", size: 19))
-                    .frame(width: 500, height: 150, alignment: .leading)
-                    .offset(x: 120)
+                    .font(.custom("Courier", size: 16.5))
+                    .frame(height: 150, alignment: .leading)
 
                 }
             
@@ -226,7 +225,7 @@ struct ContentView: View {
                         Text("Story Mode")
                             .background(Color .black)
                             .foregroundColor(Color.white)
-                            .font(.custom("Courier", size: 20))
+                            .font(.custom("Courier", size: 16.5))
                             .padding(3)
                         
 
@@ -250,7 +249,7 @@ struct ContentView: View {
                         Text("Excuse Mode")
                             .background(Color .black)
                             .foregroundColor(Color.white)
-                            .font(.custom("Courier", size: 20))
+                            .font(.custom("Courier", size: 16.5))
                             .padding(3)
                         
                     
@@ -264,14 +263,15 @@ struct ContentView: View {
                             .multilineTextAlignment(.center)
                             .background(Color .white)
                             .foregroundColor(Color .black)
-                            .font(.custom("Courier", size: 14))
+                            .font(.custom("Courier", size: 16.5))
                             .padding(5)
                             .border(Color .black, width: 2)
                     }
                 
             
             }
-        }
+        }.accentColor( .black)
+        .font(.custom("Courier", size: 16.5))
         
     }
 

@@ -12,18 +12,18 @@ struct AboutView: View {
     var body: some View {
      
         VStack(alignment: .leading) {
-            Text("A log line is a summary of a story. It is used to pitch screenplays and novels to producers or publishers.")
+            Text("A log line is a summary of a story. It needs to be concise - no more than one or two sentences - yet cover the narrative's central characters, story arc and conflicts.")
             Spacer()
                 .frame(height: 10)
             
-            Text("It needs to be concise - no more than one or two sentences - yet cover the narrative's central characters and conflicts. Most importantly, it needs to hook the reader in.")
+            Text("Most importantly, it must hook the reader in.")
             Spacer()
                 .frame(height: 10)
 
             Text("Story Mode generates short, compelling fictional scenarios designed to serve as a framework for narrative development.")
             Spacer()
                 .frame(height: 10)
-            Text("Excuse Mode creates tenable explanations that can be used to justify offensive, abberrant or inconsiderate behaviour")
+            Text("Excuse Mode creates tenable explanations that can be used to justify offensive, abberrant or inconsiderate behaviour.")
             Spacer()
                 .frame(height: 10)
             HStack (spacing: 0) {
@@ -42,12 +42,10 @@ struct AboutView: View {
                     .background(Color .black)
                     .foregroundColor(Color .white)
                 Text("to lock words.")
-                
             }
         }
-            
         .padding(50)
-        .font(.custom("Courier", size: 14))
+        .font(.custom("Courier", size: 16.5))
 
     }
     
