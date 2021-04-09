@@ -38,11 +38,15 @@ struct AboutView: View {
                     Text("into your scenario and direct your narrative.")
                 }
             }
-            .padding(50)
+            .frame(width: 290)
             .font(.custom("Courier", size: 14.5))
+            Spacer()
+                .frame(height: 20)
             
             Text("Version 1.0")
                 .font(.custom("Courier", size: 10.5))
+                .foregroundColor(Color(UIColor.systemBackground))
+                .background(Color(UIColor.label))
         }
         
 

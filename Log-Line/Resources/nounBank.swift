@@ -328,8 +328,13 @@ let nounBank = ["computer",
                 "pavement",
                 "egg",
                 "rock band",
+                "metal band",
                 "pop band",
-                "stone circle"
+                "stone circle",
+                "concert",
+                "party",
+                "club",
+                "record label"
                 
                 
 ]
