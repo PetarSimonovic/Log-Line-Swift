@@ -138,7 +138,6 @@ let verbThirdPersonBank = [
     "lights",
     "loses",
     "makes",
-    "means",
     "meets",
     "melts",
     "miscasts",
@@ -298,13 +297,17 @@ let verbThirdPersonBank = [
     "wets",
     "winds",
     "wins",
-    "withstands",
     "wreaks",
     "wrings",
     "writes",
     "sacrifices",
     "pacifies",
-    "casts"
+    "casts",
+    "captures",
+    "arrests",
+    "imprisons",
+    "abducts"
+    
 ]
 
 

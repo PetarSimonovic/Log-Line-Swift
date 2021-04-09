@@ -104,7 +104,7 @@ let verbFirstPersonBank = [
     "communicate",
     "compare",
     "compete",
-    "complain",
+    "complain about",
     "complete",
     "concentrate",
     "concern",
@@ -151,6 +151,8 @@ let verbFirstPersonBank = [
     "disapprove of",
     "disarm",
     "discover",
+    "locate",
+    "find",
     "dislike",
     "divide",
     "double",
@@ -174,6 +176,7 @@ let verbFirstPersonBank = [
     "end",
     "enjoy",
     "enter",
+    "conceal",
     "entertain",
     "escape",
     "examine",
@@ -624,8 +627,14 @@ let verbFirstPersonBank = [
     "traverse",
     "cast",
     "pacify",
-    "sacrifices"
-    
+    "sacrifice",
+    "survive in",
+    "escape from",
+    "hide within",
+    "journey into",
+    "escape to",
+    "live with",
+    "compose"
     ]
 
 
