@@ -8,6 +8,10 @@
 import Foundation
 
 let posAdjBank = [
+    "forgotten",
+    "lost",
+    "ancient",
+    "haunted",
     "accessible",
       "active",
       "adaptable",
@@ -37,7 +41,7 @@ let posAdjBank = [
       "clean",
       "clear-headed",
       "clever",
-      "colorful",
+      "colourful",
       "companionly",
       "compassionate",
       "conciliatory",
@@ -103,7 +107,7 @@ let posAdjBank = [
       "herioc",
       "high-minded",
       "honest",
-      "honorable",
+      "honourable",
       "humble",
       "humorous",
       "idealistic",
@@ -244,5 +248,4 @@ let posAdjBank = [
       "youthful",
       "magic",
       "sentient",
-    
 ]

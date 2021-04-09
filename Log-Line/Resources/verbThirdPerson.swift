@@ -8,6 +8,13 @@
 import Foundation
 
 let verbThirdPersonBank = [
+    "destroys",
+    "executes",
+    "fires",
+    "kidnaps",
+    "boils",
+    "angers",
+    "demolishes",
     "abides",
     "arises",
     "kills",
@@ -291,12 +298,13 @@ let verbThirdPersonBank = [
     "wets",
     "winds",
     "wins",
-    "withdraws",
-    "witholds",
     "withstands",
     "wreaks",
     "wrings",
-    "writes"
+    "writes",
+    "sacrifices",
+    "pacifies",
+    "casts"
 ]
 
 

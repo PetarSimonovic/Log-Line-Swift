@@ -419,5 +419,8 @@ let negAdjBank = [
     "derelict",
     "sunken",
     "passive aggressive",
-    "uptight"
+    "uptight",
+    "ancient",
+    "forgotten",
+    "lost",
   ]

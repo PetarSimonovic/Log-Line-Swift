@@ -622,7 +622,11 @@ let verbFirstPersonBank = [
     "wrap",
     "wreck",
     "wrestle",
-    "traverse"
+    "traverse",
+    "cast",
+    "pacify",
+    "sacrifices"
+    
     ]
 
 
