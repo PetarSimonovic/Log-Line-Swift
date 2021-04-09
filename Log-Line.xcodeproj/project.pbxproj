@@ -21,7 +21,6 @@
 		0DD9CFC42618956500E465AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9CFC32618956500E465AB /* ContentView.swift */; };
 		0DD9CFC62618956600E465AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9CFC52618956600E465AB /* Assets.xcassets */; };
 		0DD9CFC92618956600E465AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9CFC82618956600E465AB /* Preview Assets.xcassets */; };
-		0DD9CFD42618956600E465AB /* Log_LineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9CFD32618956600E465AB /* Log_LineTests.swift */; };
 		0DD9CFDF2618956600E465AB /* Log_LineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9CFDE2618956600E465AB /* Log_LineUITests.swift */; };
 		0DD9CFF02618B04C00E465AB /* LogLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9CFEF2618B04C00E465AB /* LogLine.swift */; };
 /* End PBXBuildFile section */
@@ -61,13 +60,10 @@
 		0DD9CFC82618956600E465AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0DD9CFCA2618956600E465AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DD9CFCF2618956600E465AB /* Log-LineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Log-LineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DD9CFD32618956600E465AB /* Log_LineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_LineTests.swift; sourceTree = "<group>"; };
-		0DD9CFD52618956600E465AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DD9CFDA2618956600E465AB /* Log-LineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Log-LineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD9CFDE2618956600E465AB /* Log_LineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_LineUITests.swift; sourceTree = "<group>"; };
 		0DD9CFE02618956600E465AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DD9CFEF2618B04C00E465AB /* LogLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLine.swift; sourceTree = "<group>"; };
-		0DD9D0192619BF6600E465AB /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				0DD9CFC02618956500E465AB /* Log-Line */,
-				0DD9CFD22618956600E465AB /* Log-LineTests */,
-				0DD9CFDD2618956600E465AB /* Log-LineUITests */,
 				0DD9CFBF2618956500E465AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,6 +145,7 @@
 		0DD9CFC02618956500E465AB /* Log-Line */ = {
 			isa = PBXGroup;
 			children = (
+				0DD9CFDD2618956600E465AB /* Log-LineUITests */,
 				0DC94BCD261F313300C47A74 /* Model */,
 				0DC4CC04261DEFF00049A366 /* Views */,
 				0D6C9D0D261B49E90098ED84 /* Resources */,
@@ -168,16 +163,6 @@
 				0DD9CFC82618956600E465AB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		0DD9CFD22618956600E465AB /* Log-LineTests */ = {
-			isa = PBXGroup;
-			children = (
-				0DD9CFD32618956600E465AB /* Log_LineTests.swift */,
-				0DD9D0192619BF6600E465AB /* TestPlan.xctestplan */,
-				0DD9CFD52618956600E465AB /* Info.plist */,
-			);
-			path = "Log-LineTests";
 			sourceTree = "<group>";
 		};
 		0DD9CFDD2618956600E465AB /* Log-LineUITests */ = {
@@ -338,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DD9CFD42618956600E465AB /* Log_LineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,12 +472,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_ASSET_PATHS = "\"Log-Line/Preview Content\"";
 				DEVELOPMENT_TEAM = 6TPWY3BLL8;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "Log-Line/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -512,12 +497,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_ASSET_PATHS = "\"Log-Line/Preview Content\"";
 				DEVELOPMENT_TEAM = 6TPWY3BLL8;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "Log-Line/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

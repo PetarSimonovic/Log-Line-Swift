@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Log_Line
+@testable import Log_LineApp
 
 class Log_LineTests: XCTestCase {
 

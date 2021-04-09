@@ -31,6 +31,7 @@ let excuseNounBank = ["your wedding",
                       "your appraisal",
                       "our relationship",
                       "our future together",
+                      "our house",
                       "your handwriting",
                       "your cooking",
                       "your hopes",
@@ -54,6 +55,13 @@ let excuseNounBank = ["your wedding",
                       "the big game",
                       "ninja training",
                       "your feelings",
-                      "your credibility"
+                      "your credibility",
+                      "your problems",
+                      "your mobile app",
+                      "your story generator",
+                      "your coding",
+                      "your ghost story",
+                      "your friends",
+                      
                 
 ];

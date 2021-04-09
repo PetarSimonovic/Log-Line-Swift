@@ -198,7 +198,6 @@ let posAdjBank = [
       "sentimental",
       "seraphic",
       "serious",
-      "sexy",
       "sharing",
       "shrewd",
       "simple",

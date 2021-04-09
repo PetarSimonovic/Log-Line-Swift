@@ -155,11 +155,17 @@ struct ContentView: View {
                     }
                     HStack {
                         logLineButtonView(button: apologyNounButton)
-                        Text("but I had to")
 
             
 
                     }
+                        
+                    HStack {
+                        Text("but I had to")
+
+                        }
+                        
+                        
                 
                     HStack{
                         logLineButtonView(button: excuseVerbButton)

@@ -44,4 +44,5 @@ let excuseVerbBank = ["ruined",
                       "honked at",
                       "questioned",
                       "doubted",
+                      "criticised",
 ];
