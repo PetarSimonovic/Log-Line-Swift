@@ -43,7 +43,7 @@ struct AboutView: View {
             Spacer()
                 .frame(height: 20)
             
-            Text("Version 1.0")
+            Text("Version 1.2")
                 .font(.custom("Courier", size: 10.5))
                 .foregroundColor(Color(UIColor.systemBackground))
                 .background(Color(UIColor.label))
