@@ -8,6 +8,7 @@
 import Foundation
 
 let negAdjBank = [
+    "evil",
     "absentminded",
     "aggressive",
     "ambitious",
@@ -28,6 +29,7 @@ let negAdjBank = [
     "crebral",
     "chummy",
     "circumspect",
+    "happy",
     "competitive",
     "complex",
     "confidential",
@@ -368,6 +370,7 @@ let negAdjBank = [
     "stupid",
     "submissive",
     "superficial",
+    "magic",
     "superstitious",
     "suspicious",
     "tactless",

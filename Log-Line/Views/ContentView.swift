@@ -14,6 +14,8 @@ struct ContentView: View {
     @State var displayText: [String] = []
     
     @State var nounOne = ""
+    
+    @State var classicLogLine = "Test text"
         
     @StateObject var posAdjButton = logLineButton(buttonState: false, holdText: "", newText: "")
     
@@ -140,11 +142,19 @@ struct ContentView: View {
                         HStack {
                             logLineButtonView(button: nounButton4)
                         }
-                        
+                                            
                     
                         
                     } .font(.custom("Courier", size: 16.5))
                     .frame(height: 150, alignment: .leading)
+                   
+                    Text(classicLogLine)
+                        .font(.custom("Courier", size: 16.5))
+                        .foregroundColor(Color(UIColor.systemBackground))
+                        .background(Color(UIColor.label))
+                        .font(.custom("Courier", size: 16.5))
+                        .padding(3)
+
                     }
                 else if excuse == true {
                     VStack(alignment: .leading) {
@@ -225,6 +235,7 @@ struct ContentView: View {
                         nounButton3.newText = self.displayText[7]
                         thirdVerbButton.newText = self.displayText[8]
                         nounButton4.newText = self.displayText[9]
+                        self.classicLogLine = checkFilm(self.displayText)
 
 
                     }) {
@@ -250,6 +261,7 @@ struct ContentView: View {
                         excuseNounButton2.newText = self.displayText[6]
                         excuseVerbButton2.newText = self.displayText[7]
                         excuseNounButton3.newText = self.displayText[8]
+                        self.classicLogLine = checkFilm(self.displayText)
                         
                     }) {
                         Text("Excuse Mode")

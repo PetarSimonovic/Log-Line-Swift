@@ -306,7 +306,8 @@ let verbThirdPersonBank = [
     "captures",
     "arrests",
     "imprisons",
-    "abducts"
+    "abducts",
+    "takes over"
     
 ]
 
