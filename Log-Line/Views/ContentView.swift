@@ -189,10 +189,6 @@ struct ContentView: View {
                         Text("because")
 
                         
-                      
-                      
-                        
-
                     }
                         HStack {
                             logLineButtonView(button: excuseAdjButton2)
@@ -205,7 +201,6 @@ struct ContentView: View {
                             logLineButtonView(button: excuseNounButton3)
                       
                         }
-                    
 
 
 
