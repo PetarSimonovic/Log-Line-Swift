@@ -10,8 +10,10 @@ import SwiftUI
 struct ContentView: View {
     
     let logLine = LogLine()
+        
     
     @State var displayText: [String] = []
+
     
     @State var nounOne = ""
     
@@ -57,8 +59,9 @@ struct ContentView: View {
     
     
     @StateObject var excuseNounButton3 = logLineButton(buttonState: false, holdText: "", newText: "")
-
-   
+    
+    @State var title: String = ""
+    @State var classic = false
     @State var intro = true
     @State var story = false
     @State var excuse = false
@@ -103,6 +106,7 @@ struct ContentView: View {
                         .frame(height: 150)
                     
                 } else if story == true {
+                    VStack {
                     VStack(alignment: .leading, spacing: 0.0) {
                     HStack {
                     logLineButtonView(button: posAdjButton)
@@ -143,18 +147,13 @@ struct ContentView: View {
                             logLineButtonView(button: nounButton4)
                         }
                                             
-                    
+                      
+                    }
                         
                     } .font(.custom("Courier", size: 16.5))
                     .frame(height: 150, alignment: .leading)
-                   
-                    Text(classicLogLine)
-                        .font(.custom("Courier", size: 16.5))
-                        .foregroundColor(Color(UIColor.systemBackground))
-                        .background(Color(UIColor.label))
-                        .font(.custom("Courier", size: 16.5))
-                        .padding(3)
-
+                    
+                //
                     }
                 else if excuse == true {
                     VStack(alignment: .leading) {
@@ -215,9 +214,32 @@ struct ContentView: View {
                     .frame(height: 150, alignment: .leading)
 
                 }
+                
+                
             
                 Spacer()
+                    .frame(height: 30)
+                
+                VStack {
+                if classic == true {
+                    VStack {
+                        TextField("Enter title", text: $title)
+                            .multilineTextAlignment(.center)
+                        if title.lowercased() == classicLogLine.lowercased() {
+                            //updateClassics(classicLogLine)
+                            Text(classicLogLine)
+                              .foregroundColor(Color(UIColor.systemBackground))
+                                    .background(Color(UIColor.label))
+                        }
+                    }
+                            
+                    
+                }
+                } .font(.custom("Courier", size: 16.5))
+                .frame(height: 10, alignment: .leading)
+                Spacer()
                     .frame(height: 50)
+                
 
                 HStack {
                     Button(action: {
@@ -235,7 +257,14 @@ struct ContentView: View {
                         nounButton3.newText = self.displayText[7]
                         thirdVerbButton.newText = self.displayText[8]
                         nounButton4.newText = self.displayText[9]
-                        self.classicLogLine = checkFilm(self.displayText)
+                        if self.displayText.count == 11 {
+                            classic = true
+                        classicLogLine = self.displayText[10]
+                        } else {
+                            classicLogLine = ""
+                            classic = false
+
+                        }
 
 
                     }) {
@@ -247,11 +276,16 @@ struct ContentView: View {
                         
 
                     }
+                    
+
+
+                    
                     Button(action: {
                             self.displayText = logLine.generateExcuse()
                             excuse = true
                             intro = false
                             story = false
+                            classic = false
                         apologyVerbButton.newText = self.displayText[0]
                         apologyNounButton.newText = self.displayText[1]
                         excuseVerbButton.newText = self.displayText[2]
@@ -261,8 +295,7 @@ struct ContentView: View {
                         excuseNounButton2.newText = self.displayText[6]
                         excuseVerbButton2.newText = self.displayText[7]
                         excuseNounButton3.newText = self.displayText[8]
-                        self.classicLogLine = checkFilm(self.displayText)
-                        
+                                            
                     }) {
                         Text("Excuse Mode")
                             .foregroundColor(Color(UIColor.systemBackground))
@@ -288,6 +321,7 @@ struct ContentView: View {
                 
             
             }
+            Spacer()
         }.accentColor(Color(UIColor.label))
         
     }

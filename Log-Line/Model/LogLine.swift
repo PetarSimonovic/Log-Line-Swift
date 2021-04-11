@@ -10,13 +10,22 @@ import SwiftUI
 
 struct LogLine {
     
+    var classicStory = ClassicStory()
     
     func generateLogLine() -> [String] {
         
+        if makeChoice(5) == 1 {
+            print("classic")
+            return classicStory.chooseStory()
+        } else {
+        
         return [capUp(setArticle(pickPosAdj())), pickNegAdj(), pickNoun(), pickVerbFirstPerson(), setArticle(pickPosAdj()), pickNoun(), setArticle(pickNegAdj()), pickNoun(), pickVerbThirdPerson(), setArticle(pickNoun())]
+    }
     }
     
     func generateExcuse() -> [String] {
+        
+        print("Excuse")
         
      return [pickExcuseVerb(), pickExcuseNoun(), pickVerbFirstPerson(), setArticle(pickPosAdj()), pickNoun(), setArticle(pickNegAdj()), pickNoun(), pickVerbPastTense(), setArticle(pickNoun())]
         }
@@ -55,10 +64,6 @@ struct LogLine {
     
     func pickVerbPastTense() -> String {
         return verbBankPast[makeChoice(verbBankPast.count)];
-    }
-    
-    func makeChoice (_ bank: Int) -> Int {
-        return Int.random(in: 0...bank - 1)
     }
     
     func setArticle(_ word: String) -> String {

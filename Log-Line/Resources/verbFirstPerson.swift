@@ -633,8 +633,10 @@ let verbFirstPersonBank = [
     "hide within",
     "journey into",
     "escape to",
+    "escape from",
     "live with",
-    "compose"
+    "compose",
+    "avenge"
     ]
 
 

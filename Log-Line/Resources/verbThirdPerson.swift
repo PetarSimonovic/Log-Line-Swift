@@ -240,6 +240,7 @@ let verbThirdPersonBank = [
     "speeds",
     "spells",
     "spends",
+    "eats",
     "spills",
     "spins",
     "spits",

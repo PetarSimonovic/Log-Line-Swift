@@ -14,8 +14,10 @@
 		0D6C9D1C261B4F340098ED84 /* posAdjBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D1B261B4F340098ED84 /* posAdjBank.swift */; };
 		0D6C9D21261B4F750098ED84 /* verbFirstPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D20261B4F750098ED84 /* verbFirstPerson.swift */; };
 		0D6C9D26261B52590098ED84 /* verbThirdPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */; };
-		0DA5A2B82621A7250001BACD /* checkFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5A2B72621A7250001BACD /* checkFilm.swift */; };
+		0DA5A2B82621A7250001BACD /* ClassicStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5A2B72621A7250001BACD /* ClassicStory.swift */; };
 		0DA5A3382621C2F70001BACD /* Log_LineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5A2C42621B5200001BACD /* Log_LineTests.swift */; };
+		0DA5A35C2621E2D20001BACD /* makeChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5A35B2621E2D20001BACD /* makeChoice.swift */; };
+		0DA5A3602621E3360001BACD /* storyBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5A35F2621E3360001BACD /* storyBank.swift */; };
 		0DC94BBF261F2B7F00C47A74 /* verbBankPast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC94BBE261F2B7F00C47A74 /* verbBankPast.swift */; };
 		0DC94BC4261F2E7500C47A74 /* excuseNounBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC94BC3261F2E7500C47A74 /* excuseNounBank.swift */; };
 		0DC94BC9261F307F00C47A74 /* excuseVerbBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC94BC8261F307F00C47A74 /* excuseVerbBank.swift */; };
@@ -44,10 +46,12 @@
 		0D6C9D1B261B4F340098ED84 /* posAdjBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = posAdjBank.swift; sourceTree = "<group>"; };
 		0D6C9D20261B4F750098ED84 /* verbFirstPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verbFirstPerson.swift; sourceTree = "<group>"; };
 		0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verbThirdPerson.swift; sourceTree = "<group>"; };
-		0DA5A2B72621A7250001BACD /* checkFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkFilm.swift; sourceTree = "<group>"; };
+		0DA5A2B72621A7250001BACD /* ClassicStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicStory.swift; sourceTree = "<group>"; };
 		0DA5A2C22621B5200001BACD /* Log-LineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Log-LineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA5A2C42621B5200001BACD /* Log_LineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_LineTests.swift; sourceTree = "<group>"; };
 		0DA5A2C62621B5200001BACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Log-LineTests/Info.plist"; sourceTree = SOURCE_ROOT; };
+		0DA5A35B2621E2D20001BACD /* makeChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeChoice.swift; sourceTree = "<group>"; };
+		0DA5A35F2621E3360001BACD /* storyBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyBank.swift; sourceTree = "<group>"; };
 		0DC94BBE261F2B7F00C47A74 /* verbBankPast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verbBankPast.swift; sourceTree = "<group>"; };
 		0DC94BC3261F2E7500C47A74 /* excuseNounBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = excuseNounBank.swift; sourceTree = "<group>"; };
 		0DC94BC8261F307F00C47A74 /* excuseVerbBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = excuseVerbBank.swift; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 				0DC94BBE261F2B7F00C47A74 /* verbBankPast.swift */,
 				0DC94BC3261F2E7500C47A74 /* excuseNounBank.swift */,
 				0DC94BC8261F307F00C47A74 /* excuseVerbBank.swift */,
+				0DA5A35F2621E3360001BACD /* storyBank.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -116,7 +121,8 @@
 			children = (
 				0D6C9D08261B0A520098ED84 /* buttonControl.swift */,
 				0DD9CFEF2618B04C00E465AB /* LogLine.swift */,
-				0DA5A2B72621A7250001BACD /* checkFilm.swift */,
+				0DA5A2B72621A7250001BACD /* ClassicStory.swift */,
+				0DA5A35B2621E2D20001BACD /* makeChoice.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,10 +277,12 @@
 				0D6C9D1C261B4F340098ED84 /* posAdjBank.swift in Sources */,
 				0D6C9CFC261A178B0098ED84 /* AboutView.swift in Sources */,
 				0DC94BBF261F2B7F00C47A74 /* verbBankPast.swift in Sources */,
+				0DA5A35C2621E2D20001BACD /* makeChoice.swift in Sources */,
 				0DD9CFC42618956500E465AB /* ContentView.swift in Sources */,
 				0DC94BC4261F2E7500C47A74 /* excuseNounBank.swift in Sources */,
 				0D6C9D09261B0A520098ED84 /* buttonControl.swift in Sources */,
-				0DA5A2B82621A7250001BACD /* checkFilm.swift in Sources */,
+				0DA5A3602621E3360001BACD /* storyBank.swift in Sources */,
+				0DA5A2B82621A7250001BACD /* ClassicStory.swift in Sources */,
 				0DD9CFF02618B04C00E465AB /* LogLine.swift in Sources */,
 				0DC94BC9261F307F00C47A74 /* excuseVerbBank.swift in Sources */,
 				0D6C9D21261B4F750098ED84 /* verbFirstPerson.swift in Sources */,
