@@ -263,6 +263,7 @@ struct ContentView: View {
                         } else {
                             classicLogLine = ""
                             classic = false
+                            title = ""
 
                         }
 
