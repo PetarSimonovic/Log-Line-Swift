@@ -18,6 +18,9 @@ struct ContentView: View {
     @State var nounOne = ""
     
     @State var classicLogLine = "Test text"
+    
+    var undiscoveredStories = storyBank
+    var discoveredStories: [String] = []
         
     @StateObject var posAdjButton = logLineButton(buttonState: false, holdText: "", newText: "")
     
@@ -218,7 +221,7 @@ struct ContentView: View {
                 VStack {
                 if classic == true {
                     VStack {
-                        TextField("Enter title", text: $title)
+                        TextField("What's the story?", text: $title)
                             .multilineTextAlignment(.center)
                         if title.lowercased() == classicLogLine.lowercased() {
                             //updateClassics(classicLogLine)
@@ -314,6 +317,15 @@ struct ContentView: View {
                             .padding(5)
                             .border(Color .black, width: 2)
                     }
+                NavigationLink(destination: ClassicsView()) {
+                    Text("Classics")
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color(UIColor.label))
+                        .background(Color(UIColor.systemBackground))
+                        .font(.custom("Courier", size: 16.5))
+                        .padding(5)
+                        .border(Color .black, width: 2)
+                }
                 
             
             }

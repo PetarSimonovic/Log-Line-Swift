@@ -11,6 +11,7 @@ let verbThirdPersonBank = [
     "destroys",
     "executes",
     "fires",
+    "exiles",
     "kidnaps",
     "boils",
     "angers",
@@ -308,8 +309,9 @@ let verbThirdPersonBank = [
     "arrests",
     "imprisons",
     "abducts",
-    "takes over"
-    
+    "takes over",
+    "devours",
+    "crushes"
 ]
 
 

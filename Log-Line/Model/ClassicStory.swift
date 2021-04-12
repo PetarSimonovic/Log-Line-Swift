@@ -7,13 +7,9 @@
 
 import Foundation
 import SwiftUI
-
-struct ClassicStory {
+    
 
     func chooseStory() -> [String] {
     
         return storyBank[makeChoice(storyBank.count)]
     }
-    
-}
-

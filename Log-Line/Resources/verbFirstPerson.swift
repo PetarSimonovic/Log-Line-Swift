@@ -579,6 +579,8 @@ let verbFirstPersonBank = [
     "travel to",
     "treat",
     "tremble before",
+    "exile",
+    "take over",
     "trick",
     "trip",
     "trouble",
