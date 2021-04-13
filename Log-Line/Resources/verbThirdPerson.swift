@@ -17,6 +17,7 @@ let verbThirdPersonBank = [
     "angers",
     "demolishes",
     "abides",
+    "dispenses",
     "arises",
     "kills",
     "murders",

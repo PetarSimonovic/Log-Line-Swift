@@ -18,8 +18,13 @@ let storyBank = [
     ["A dedicated", "insecure", "outsider", "overcome", "a severe", "phobia", "a massive", "fish", "devours", "a town", "Jaws"],
     ["A powerful", "doubtful", "hacker", "comprehend", "an incredible", "truth", "a ruthless", "computer", "crushes", "a revolution", "The Matrix"],
     ["A kind", "introverted", "babysitter", "survive", "a harrowing", "night", "an insane", "serial killer", "murders", "a suburban estate", "Halloween"],
-    ["A humurous", "moronic", "rock band", "embark", "an excellent", "adventure", "an authoritarian", "parent", "exiles", "a son", "Bill and Ted's Excellent Adventure"],
-    ["A capable", "reckless", "policeman", "rescue", "a kidnapped", "wife", "am unpredictable", "terrorist", "ruins", "Christmas", "Die Hard"]
+    ["A humurous", "moronic", "rock band", "embark on", "an excellent", "adventure", "an authoritarian", "parent", "exiles", "a son", "Bill & Ted\u{2019}s Excellent Adventure"],
+    ["A fornmidable", "reckless", "policeman", "rescue", "a kidnapped", "wife", "an unpredictable", "terrorist", "ruins", "Christmas", "Die Hard"],
+    ["A capable", "feckless", "team", "eradicate", "a supernatural", "plague", "a malignant", "god", "destroys", "a city", "Ghostbusters"],
+    ["An easy going", "tardy", "teenager", "rekindle", "a vital", "relationship", "a new", "past", "replaces", "a future", "Back To The Future"],
+    ["A thoughtful", "melancholy", "prince", "avenge", "a noble", "king", "a manipulative", "usurper", "dispenses", "a poison", "Hamlet"]
+
+
 
 
 ]

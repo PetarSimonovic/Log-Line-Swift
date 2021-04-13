@@ -170,6 +170,7 @@ let verbFirstPersonBank = [
     "earn",
     "educate",
     "embarrass",
+    "embark on",
     "employ",
     "empty",
     "encourage",
@@ -638,7 +639,8 @@ let verbFirstPersonBank = [
     "escape from",
     "live with",
     "compose",
-    "avenge"
+    "avenge",
+    "dispense"
     ]
 
 
