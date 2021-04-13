@@ -6,63 +6,63 @@
 //
 
 import SwiftUI
+import Foundation
+
+let logLine = LogLine()
+    
+
+
 
 struct ContentView: View {
     
-    let logLine = LogLine()
-        
-    
     @State var displayText: [String] = []
+    var library: [String] = []
 
-    
     @State var nounOne = ""
-    
+
     @State var classicLogLine = "Test text"
-    
-    var undiscoveredStories = storyBank
-    var discoveredStories: [String] = []
-        
+            
     @StateObject var posAdjButton = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var negAdjButton = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var nounButton = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var firstVerbButton = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var posAdjButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var nounButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var negAdjButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var nounButton3 = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var thirdVerbButton = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var nounButton4 = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var apologyVerbButton = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var apologyNounButton = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var excuseVerbButton = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var excuseAdjButton = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var excuseNounButton = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var excuseAdjButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var excuseVerbButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var excuseNounButton2 = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @StateObject var excuseVerbButton3 = logLineButton(buttonState: false, holdText: "", newText: "")
-    
-    
+
+
     @StateObject var excuseNounButton3 = logLineButton(buttonState: false, holdText: "", newText: "")
-    
+
     @State var title: String = ""
     @State var classic = false
     @State var intro = true
@@ -74,30 +74,14 @@ struct ContentView: View {
             VStack {
                 VStack {
                     HStack (spacing: 0) {
-                        Text("Log")
-                            .multilineTextAlignment(.center)
-                            .background(Color(UIColor.label))
-                            .foregroundColor(Color(UIColor.systemBackground))
-                            .font(.custom("Courier", size: 80))
-                        Text("Line")
-                            .multilineTextAlignment(.center)
-                        .background(Color(UIColor.systemBackground))
-                        .foregroundColor(Color(UIColor.label))
-                        .font(.custom("Courier", size: 80))
-                        
+                        Logo()
                        
                     }.padding(4)
                     .border(Color(UIColor.label), width: 4)
                     
                     Spacer()
                         .frame(height: 10)
-                    
-                    Text("High-Concept Stories \n Plausible Excuses")
-                        .font(.custom("Courier", size: 16.5))
-                        .multilineTextAlignment(.center)
-                        .background(Color(UIColor.label))
-                        .foregroundColor(Color(UIColor.systemBackground))
-                        .allowsTightening(true)
+                    LogoText()
                 }
                 Spacer()
                     .frame(height: 50)
@@ -113,51 +97,40 @@ struct ContentView: View {
                     VStack(alignment: .leading, spacing: 0.0) {
                     HStack {
                     logLineButtonView(button: posAdjButton)
-                      
                         Text("but")
                         logLineButtonView(button: negAdjButton)
 
-
                     }
                     HStack {
-                       
                         logLineButtonView(button: nounButton)
                         Text("must")
                         logLineButtonView(button: firstVerbButton)
-
                     }
                         HStack {
-                        
                             logLineButtonView(button: posAdjButton2)
                             logLineButtonView(button: nounButton2)
-
                         }
                         
                     HStack {
                         Text("before")
-
                             logLineButtonView(button: negAdjButton2)
-                       
                            
                         }
                         HStack {
                             logLineButtonView(button: nounButton3)
                            
                             logLineButtonView(button: thirdVerbButton)
-                        
                         }
                         HStack {
                             logLineButtonView(button: nounButton4)
                         }
-                                            
-                      
+
                     }
                         
                     } .font(.custom("Courier", size: 16.5))
                     .frame(height: 150, alignment: .leading)
                     
-                //
-                    }
+                }
                 else if excuse == true {
                     VStack(alignment: .leading) {
                         HStack {
@@ -232,7 +205,7 @@ struct ContentView: View {
 
                     }
                             
-                    
+
                 }
                 } .font(.custom("Courier", size: 16.5))
                 .frame(height: 10, alignment: .leading)
@@ -277,8 +250,6 @@ struct ContentView: View {
 
                     }
                     
-
-
                     
                     Button(action: {
                             self.displayText = logLine.generateExcuse()
@@ -309,24 +280,8 @@ struct ContentView: View {
                 }
                 Spacer()
                     .frame(height: 10)
-                    NavigationLink(destination: AboutView()) {
-                        Text("About")
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color(UIColor.label))
-                            .background(Color(UIColor.systemBackground))
-                            .font(.custom("Courier", size: 16.5))
-                            .padding(5)
-                            .border(Color .black, width: 2)
-                    }
-                NavigationLink(destination: ClassicsView()) {
-                    Text("Classics")
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color(UIColor.label))
-                        .background(Color(UIColor.systemBackground))
-                        .font(.custom("Courier", size: 16.5))
-                        .padding(5)
-                        .border(Color .black, width: 2)
-                }
+                About()
+                Library()
                 
             
             }
@@ -341,40 +296,6 @@ struct ContentView: View {
 
 
 
-class logLineButton: ObservableObject {
-    
-    @Published var buttonState: Bool
-    @Published var holdText: String
-    @Published var newText: String
-    
-    init(buttonState: Bool, holdText: String, newText: String) {
-        self.buttonState = buttonState
-        self.holdText = holdText
-        self.newText = newText
-        }
-}
-
-struct logLineButtonView: View {
-    @ObservedObject var button: logLineButton
-
-    var body: some View {
-        Button(action: {
-            button.buttonState = buttonControl(button.buttonState)
-            button.holdText = button.newText
-        }) {
-            if button.buttonState == false {
-                Text(button.newText)
-                    .foregroundColor(Color(UIColor.label))
-                    .background(Color(UIColor.systemBackground))
-        } else {
-            Text(button.holdText)
-                .foregroundColor(Color(UIColor.systemBackground))
-                .background(Color(UIColor.label))
-    }
-        }
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
@@ -382,3 +303,31 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+
+struct About: View {
+    var body: some View {
+        NavigationLink(destination: AboutView()) {
+            Text("About")
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color(UIColor.label))
+                .background(Color(UIColor.systemBackground))
+                .font(.custom("Courier", size: 16.5))
+                .padding(5)
+                .border(Color .black, width: 2)
+        }
+    }
+}
+
+struct Library: View {
+    var body: some View {
+        NavigationLink(destination: LibraryView()) {
+            Text("Library")
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color(UIColor.label))
+                .background(Color(UIColor.systemBackground))
+                .font(.custom("Courier", size: 16.5))
+                .padding(5)
+                .border(Color .black, width: 2)
+        }
+    }
+}

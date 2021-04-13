@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D0C02372622FC44007D2121 /* ClassicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0C02362622FC44007D2121 /* ClassicsView.swift */; };
+		0D0C02372622FC44007D2121 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0C02362622FC44007D2121 /* LibraryView.swift */; };
+		0D15B79F2625F9530087C2F0 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B79E2625F9530087C2F0 /* Library.swift */; };
+		0D15B7A3262603EF0087C2F0 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B7A2262603EF0087C2F0 /* Logo.swift */; };
+		0D15B7A72626047E0087C2F0 /* LogoText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B7A62626047E0087C2F0 /* LogoText.swift */; };
+		0D15B7B12626107E0087C2F0 /* logLineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B7B02626107E0087C2F0 /* logLineButton.swift */; };
+		0D15B7B5262611D20087C2F0 /* StoryMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B7B4262611D20087C2F0 /* StoryMode.swift */; };
 		0D6C9CFC261A178B0098ED84 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9CFB261A178B0098ED84 /* AboutView.swift */; };
 		0D6C9D09261B0A520098ED84 /* buttonControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D08261B0A520098ED84 /* buttonControl.swift */; };
 		0D6C9D0F261B49FD0098ED84 /* nounBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D0E261B49FD0098ED84 /* nounBank.swift */; };
@@ -40,7 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D0C02362622FC44007D2121 /* ClassicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicsView.swift; sourceTree = "<group>"; };
+		0D0C02362622FC44007D2121 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		0D15B79E2625F9530087C2F0 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		0D15B7A2262603EF0087C2F0 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		0D15B7A62626047E0087C2F0 /* LogoText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoText.swift; sourceTree = "<group>"; };
+		0D15B7B02626107E0087C2F0 /* logLineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logLineButton.swift; sourceTree = "<group>"; };
+		0D15B7B4262611D20087C2F0 /* StoryMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryMode.swift; sourceTree = "<group>"; };
 		0D6C9CFB261A178B0098ED84 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		0D6C9D08261B0A520098ED84 /* buttonControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonControl.swift; sourceTree = "<group>"; };
 		0D6C9D0E261B49FD0098ED84 /* nounBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nounBank.swift; sourceTree = "<group>"; };
@@ -114,7 +124,11 @@
 			children = (
 				0D6C9CFB261A178B0098ED84 /* AboutView.swift */,
 				0DD9CFC32618956500E465AB /* ContentView.swift */,
-				0D0C02362622FC44007D2121 /* ClassicsView.swift */,
+				0D0C02362622FC44007D2121 /* LibraryView.swift */,
+				0D15B7A2262603EF0087C2F0 /* Logo.swift */,
+				0D15B7A62626047E0087C2F0 /* LogoText.swift */,
+				0D15B7B02626107E0087C2F0 /* logLineButton.swift */,
+				0D15B7B4262611D20087C2F0 /* StoryMode.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,6 +140,7 @@
 				0DD9CFEF2618B04C00E465AB /* LogLine.swift */,
 				0DA5A2B72621A7250001BACD /* ClassicStory.swift */,
 				0DA5A35B2621E2D20001BACD /* makeChoice.swift */,
+				0D15B79E2625F9530087C2F0 /* Library.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,16 +292,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D0C02372622FC44007D2121 /* ClassicsView.swift in Sources */,
+				0D0C02372622FC44007D2121 /* LibraryView.swift in Sources */,
 				0D6C9D1C261B4F340098ED84 /* posAdjBank.swift in Sources */,
+				0D15B7A3262603EF0087C2F0 /* Logo.swift in Sources */,
 				0D6C9CFC261A178B0098ED84 /* AboutView.swift in Sources */,
 				0DC94BBF261F2B7F00C47A74 /* verbBankPast.swift in Sources */,
 				0DA5A35C2621E2D20001BACD /* makeChoice.swift in Sources */,
 				0DD9CFC42618956500E465AB /* ContentView.swift in Sources */,
+				0D15B7A72626047E0087C2F0 /* LogoText.swift in Sources */,
 				0DC94BC4261F2E7500C47A74 /* excuseNounBank.swift in Sources */,
 				0D6C9D09261B0A520098ED84 /* buttonControl.swift in Sources */,
+				0D15B7B5262611D20087C2F0 /* StoryMode.swift in Sources */,
 				0DA5A3602621E3360001BACD /* storyBank.swift in Sources */,
 				0DA5A2B82621A7250001BACD /* ClassicStory.swift in Sources */,
+				0D15B7B12626107E0087C2F0 /* logLineButton.swift in Sources */,
 				0DD9CFF02618B04C00E465AB /* LogLine.swift in Sources */,
 				0DC94BC9261F307F00C47A74 /* excuseVerbBank.swift in Sources */,
 				0D6C9D21261B4F750098ED84 /* verbFirstPerson.swift in Sources */,
@@ -294,6 +313,7 @@
 				0D6C9D26261B52590098ED84 /* verbThirdPerson.swift in Sources */,
 				0DD9CFC22618956500E465AB /* Log_LineApp.swift in Sources */,
 				0D6C9D0F261B49FD0098ED84 /* nounBank.swift in Sources */,
+				0D15B79F2625F9530087C2F0 /* Library.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
