@@ -37,9 +37,19 @@ struct AboutView: View {
                 HStack {
                     Text("into your scenario and direct your narrative.")
                 }
+                Spacer()
+                    .frame(height: 10)
+                VStack {
+                    Text("Collect classic works and add them to your library.")
+                }
+
             }
             .frame(width: 290)
             .font(.custom("Courier", size: 14.5))
+            Spacer()
+                .frame(height: 20)
+            Spacer()
+                .frame(height: 20)
             Spacer()
                 .frame(height: 20)
             

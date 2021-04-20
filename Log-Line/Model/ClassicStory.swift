@@ -8,8 +8,11 @@
 import Foundation
 import SwiftUI
     
+var stories: [Story] = []
 
-    func chooseStory() -> [String] {
-    
-        return storyBank[makeChoice(storyBank.count)]
-    }
+
+func chooseStory() -> Story {
+    return storyBank[makeChoice(storyBank.count)]
+}
+
+

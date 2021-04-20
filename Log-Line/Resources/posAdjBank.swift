@@ -29,6 +29,7 @@ let posAdjBank = [
     "prince",
     "noble",
     "new",
+    "timeless",
       "appreciative",
       "articulate",
       "aspiring",

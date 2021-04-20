@@ -9,21 +9,20 @@ import Foundation
 import SwiftUI
 
 let storyBank =  [
-    ["A brave", "timid", "gentleman", "destroy", "a magic", "ring", "an evil", "necromancer", "takes over", "a world", "The Lord Of The Rings"],
-    ["A loyal", "stubborn", "cowboy", "rescue", "a brave", "astronaut", "an upset", "boy", "leaves", "a home", "Toy Story"],
-    ["A wise", "bumbling", "professor", "destroy", "an undead", "count", "a virtuous", "schoolteacher", "becomes", "a vampire", "Dracula"],
-    ["A tough", "mistrustful", "warrant officer", "escape", "an exploding", "spaceship", "a ferocious", "alien", "eats", "a cat", "Alien"],
-    ["An honourable", "brooding", "general", "avenge", "a murdered", "family", "a vain", "emperor", "wins", "a battle", "Gladiator"],
-    ["A courageous", "naive", "farmer", "trust", "a mysterious", "force", "a sinister", "lord", "destroys", "a rebellion", "Star Wars"],
-    ["A tactical", "reluctant", "son", "take over", "a clandestine", "dynasty", "a rival", "family", "wins", "a war", "The Godfather"],
-    ["A dedicated", "insecure", "outsider", "overcome", "a severe", "phobia", "a massive", "fish", "devours", "a town", "Jaws"],
-    ["A powerful", "doubtful", "hacker", "comprehend", "an incredible", "truth", "a ruthless", "computer", "crushes", "a revolution", "The Matrix"],
-    ["A kind", "introverted", "babysitter", "survive", "a harrowing", "night", "an insane", "serial killer", "murders", "a suburban estate", "Halloween"],
-    ["A humurous", "moronic", "rock band", "embark on", "an excellent", "adventure", "an authoritarian", "parent", "exiles", "a son", "Bill & Ted\u{2019}s Excellent Adventure"],
-    ["A fornmidable", "reckless", "policeman", "rescue", "a kidnapped", "wife", "an unpredictable", "terrorist", "ruins", "Christmas", "Die Hard"],
-    ["A capable", "feckless", "team", "eradicate", "a supernatural", "plague", "a malignant", "god", "destroys", "a city", "Ghostbusters"],
-    ["An easy going", "tardy", "teenager", "rekindle", "a vital", "relationship", "a new", "past", "replaces", "a future", "Back To The Future"],
-    ["A thoughtful", "melancholy", "prince", "avenge", "a noble", "king", "a manipulative", "usurper", "dispenses", "a poison", "Hamlet"]
-
+    Story(title: "Dracula", logline: "A wise but bumbling professor mus destroy an undead count before a virtuous  schoolteacher becomes a vampire Dracula"),
+    Story(title: "The Lord Of The Rings", logline: "A brave but timid gentleman must destroy a magic ring before an evil necromancer takes over a world"),
+    Story(title: "Toy Story", logline: "A loyal but stubborn cowboy must rescue a brave astronaut before an upset boy leaves a home"),
+    Story(title: "Alien", logline: "A tough but mistrustful warrant officer must escape an exploding spaceship before a ferocious alien eats a cat"),
+    Story(title: "Gladiator", logline: "An honourable but brooding general must avenge a murdered family before a vain emperor wins a contest"),
+    Story(title: "Star Wars", logline: "A courageous but naive farmer must trust a mysterious force before a sinister lord destroys a rebellion"),
+    Story(title: "The Godfather", logline: "A tactical but reluctant son must take over a clandestine dynasty before a rival family wins a war"),
+    Story(title: "Jaws", logline: "A dedicated but insecure outsider must overcome a severe phobia before a massive fish devours a town"),
+    Story(title: "The Matrix", logline: "A powerful but doubtful hacker must comprehend an incredible truth before a ruthless computer crushes a revolution"),
+    Story(title: "Halloween", logline: "A kind but terrified babysitter must survive a harrowing night before an insane serial killer murders a suburban estate"),
+    Story(title: "Bill & Ted\u{2019}s Excellent Adventure", logline: "A humurous but moronic rock band must embark on a timeless adventure before an authoritarian parent exiles a son"),
+    Story(title: "Die Hard", logline: "A fornmidable but reckless policeman must rescue a kidnapped wife before an unpredictable terrorist ruins Christmas"),
+    Story(title: "Ghostbusters", logline: "A capable but feckless team must eradicate a supernatural plague before a malignant god destroys a city"),
+    Story(title: "Back To The Future", logline: "An easy going but tardy teenager must rekindle a vital relationship before a new past replaces a future"),
+    Story(title: "Hamlet", logline: "A thoughtful but melancholy prince must avenge a noble king before a manipulative usurper dispenses a poison")
 ]
 

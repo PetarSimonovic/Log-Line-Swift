@@ -16,6 +16,7 @@ struct StoryRow: View
             Text(story.title)
                 .foregroundColor(Color(UIColor.systemBackground))
                       .background(Color(UIColor.label))
+            Spacer()
             Text(story.logline)
                 .foregroundColor(Color(UIColor.label))
                       .background(Color(UIColor.systemBackground))

@@ -12,13 +12,7 @@ struct LogLine {
         
     func generateLogLine() -> [String] {
         
-        if makeChoice(5) == 1 {
-            print("classic")
-            return chooseStory()
-        } else {
-        
         return [capUp(setArticle(pickPosAdj())), pickNegAdj(), pickNoun(), pickVerbFirstPerson(), setArticle(pickPosAdj()), pickNoun(), setArticle(pickNegAdj()), pickNoun(), pickVerbThirdPerson(), setArticle(pickNoun())]
-    }
     }
     
     func generateExcuse() -> [String] {
@@ -81,6 +75,11 @@ struct LogLine {
       return String(word.prefix(1)).uppercased() + String(word.dropFirst())
         
     }
+    
+    func updateStories(_ story: Story) {
+        stories.append(story)
+    }
+
 
 
 

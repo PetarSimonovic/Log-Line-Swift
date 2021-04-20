@@ -63,7 +63,6 @@ struct ContentView: View {
 
     @StateObject var excuseNounButton3 = logLineButton(buttonState: false, holdText: "", newText: "")
 
-    @State var title: String = ""
     @State var classic = false
     @State var intro = true
     @State var story = false
@@ -123,6 +122,7 @@ struct ContentView: View {
                         }
 
                     }
+                        Spacer()
                         
                     } .font(.custom("Courier", size: 16.5))
                     .frame(height: 150, alignment: .leading)
@@ -174,6 +174,7 @@ struct ContentView: View {
                             logLineButtonView(button: excuseNounButton3)
                       
                         }
+                        Spacer()
 
 
 
@@ -181,6 +182,13 @@ struct ContentView: View {
                     .font(.custom("Courier", size: 16.5))
                     .frame(height: 150, alignment: .leading)
 
+                } else if classic == true {
+                    VStack {
+                    if classic == true {
+                       Classic()
+                    }
+                    }  .font(.custom("Courier", size: 16.5))
+                    .frame(width: 250, height: 150, alignment: .leading)
                 }
                 
                 
@@ -188,35 +196,22 @@ struct ContentView: View {
                 Spacer()
                     .frame(height: 30)
                 
-                VStack {
-                if classic == true {
-                    VStack {
-                        TextField("What's the story?", text: $title)
-                            .multilineTextAlignment(.center)
-                        if title.lowercased() == classicLogLine.lowercased() {
-                            
-                            Text(classicLogLine)
-                              .foregroundColor(Color(UIColor.systemBackground))
-                                    .background(Color(UIColor.label))
-                            //updateStories(classicLogLine)
-                        }
-
-                    }
-                            
-
-                }
-                } .font(.custom("Courier", size: 16.5))
-                .frame(height: 10, alignment: .leading)
-                Spacer()
-                    .frame(height: 50)
+               
                 
 
                 HStack {
                     Button(action: {
+                        if makeChoice(5) == 1 {
+                            classic = true
+                            story = false
+                            intro = false
+                            excuse = false
+                        } else {
                             self.displayText = logLine.generateLogLine()
                             story = true
                             intro = false
                             excuse = false
+                            classic = false
                         posAdjButton.newText = self.displayText[0]
                         negAdjButton.newText = self.displayText[1]
                         nounButton.newText = self.displayText[2]
@@ -227,25 +222,13 @@ struct ContentView: View {
                         nounButton3.newText = self.displayText[7]
                         thirdVerbButton.newText = self.displayText[8]
                         nounButton4.newText = self.displayText[9]
-                        if self.displayText.count == 11 {
-                            classic = true
-                        classicLogLine = self.displayText[10]
-                        } else {
-                            classicLogLine = ""
-                            classic = false
-                            title = ""
-
                         }
-
-
                     }) {
                         Text("Story Mode")
                             .foregroundColor(Color(UIColor.systemBackground))
                             .background(Color(UIColor.label))
                             .font(.custom("Courier", size: 16.5))
                             .padding(3)
-                        
-
                     }
                     
                     
@@ -331,4 +314,27 @@ struct IntroText: View {
             .font(.custom("Courier", size: 16.5))
             .frame(height: 150)
     }
+}
+
+struct Classic: View {
+    @State var title: String = ""
+    @State var story = chooseStory()
+    @State var status = "Check"
+
+    var body: some View {
+            Text(story.logline)
+            TextField("What's the story?", text: $title)
+                .multilineTextAlignment(.center)
+            Button(action: {
+                if title.lowercased() == story.title.lowercased() {
+                stories.append(story)
+                self.status = "Added to Library"
+               }
+            }){
+            Text(status)
+                .foregroundColor(Color(UIColor.systemBackground))
+                .background(Color(UIColor.label))
+        }
+
+}
 }

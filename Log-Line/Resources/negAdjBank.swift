@@ -48,6 +48,7 @@ let negAdjBank = [
     "droll",
     "dry",
     "earthy",
+    "terrified",
     "effeminate",
     "emotional",
     "enigmatic",

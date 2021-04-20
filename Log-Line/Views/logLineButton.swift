@@ -9,8 +9,6 @@ import SwiftUI
 
 
 
-
-
 struct logLineButtonView: View {
     @ObservedObject var button: logLineButton
 
