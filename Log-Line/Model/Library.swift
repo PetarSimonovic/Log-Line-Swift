@@ -1,20 +1,20 @@
-//
+
 //  Library.swift
 //  Log-Line
 //
-//  Created by Petar Simonovic on 13/04/2021.
-//
+//  Created by Petar Simonovic on 15/04/2021.
+
 
 import Foundation
+import SwiftUI
+
 
 struct Library {
     
-//var storyCollection: [[String]] = []
+    var collection: [String] = []
     
-    func update(_ story: String) -> String {
-       // storyCollection.append(contentsOf: story)
-        print("hello")
-        return story
+    mutating func update(_ title: String) {
+        collection.append(title)
     }
-
-}
+    
+    }

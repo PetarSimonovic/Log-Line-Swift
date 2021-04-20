@@ -9,14 +9,14 @@ import SwiftUI
 import Foundation
 
 let logLine = LogLine()
-    
+
 
 
 
 struct ContentView: View {
     
     @State var displayText: [String] = []
-    var library: [String] = []
+    @State var library: [String] = []
 
     @State var nounOne = ""
 
@@ -201,6 +201,7 @@ struct ContentView: View {
                             Text(classicLogLine)
                               .foregroundColor(Color(UIColor.systemBackground))
                                     .background(Color(UIColor.label))
+                            //self.library.append(classicLogLine)
                         }
 
                     }
@@ -281,7 +282,15 @@ struct ContentView: View {
                 Spacer()
                     .frame(height: 10)
                 About()
-                Library()
+                NavigationLink(destination: LibraryView()) {
+                    Text("Library")
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color(UIColor.label))
+                        .background(Color(UIColor.systemBackground))
+                        .font(.custom("Courier", size: 16.5))
+                        .padding(5)
+                        .border(Color .black, width: 2)
+                }
                 
             
             }
@@ -308,20 +317,6 @@ struct About: View {
     var body: some View {
         NavigationLink(destination: AboutView()) {
             Text("About")
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color(UIColor.label))
-                .background(Color(UIColor.systemBackground))
-                .font(.custom("Courier", size: 16.5))
-                .padding(5)
-                .border(Color .black, width: 2)
-        }
-    }
-}
-
-struct Library: View {
-    var body: some View {
-        NavigationLink(destination: LibraryView()) {
-            Text("Library")
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color(UIColor.label))
                 .background(Color(UIColor.systemBackground))

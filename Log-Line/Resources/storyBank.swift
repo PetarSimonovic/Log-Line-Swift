@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
 
-let storyBank = [
+let storyBank =  [
     ["A brave", "timid", "gentleman", "destroy", "a magic", "ring", "an evil", "necromancer", "takes over", "a world", "The Lord Of The Rings"],
     ["A loyal", "stubborn", "cowboy", "rescue", "a brave", "astronaut", "an upset", "boy", "leaves", "a home", "Toy Story"],
     ["A wise", "bumbling", "professor", "destroy", "an undead", "count", "a virtuous", "schoolteacher", "becomes", "a vampire", "Dracula"],
@@ -23,9 +24,6 @@ let storyBank = [
     ["A capable", "feckless", "team", "eradicate", "a supernatural", "plague", "a malignant", "god", "destroys", "a city", "Ghostbusters"],
     ["An easy going", "tardy", "teenager", "rekindle", "a vital", "relationship", "a new", "past", "replaces", "a future", "Back To The Future"],
     ["A thoughtful", "melancholy", "prince", "avenge", "a noble", "king", "a manipulative", "usurper", "dispenses", "a poison", "Hamlet"]
-
-
-
 
 ]
 
