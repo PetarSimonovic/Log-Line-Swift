@@ -188,13 +188,13 @@ struct ContentView: View {
                        Classic()
                     }
                     }  .font(.custom("Courier", size: 16.5))
-                    .frame(width: 250, height: 150, alignment: .leading)
+                    .frame(width: 280, height: 150, alignment: .leading)
                 }
                 
                 
             
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 60)
                 
                
                 
