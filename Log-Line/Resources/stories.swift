@@ -7,7 +7,7 @@
 
 import Foundation
 
-let stories = [
+var stories = [
     Story(title: "Dracula", logline: "test text"),
     Story(title: "Gravity's Rainbow", logline: "test text"),
     Story(title: "Mason & Dixon", logline: "test text"),

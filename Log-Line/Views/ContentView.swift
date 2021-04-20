@@ -87,10 +87,7 @@ struct ContentView: View {
                     .frame(height: 50)
                 
                 if intro == true {
-                    Text("Press Story Mode to create a work of fiction or use Excuse Mode to justify your actions")
-                        .padding()
-                        .font(.custom("Courier", size: 16.5))
-                        .frame(height: 150)
+                    IntroText()
                     
                 } else if story == true {
                     VStack {
@@ -197,11 +194,11 @@ struct ContentView: View {
                         TextField("What's the story?", text: $title)
                             .multilineTextAlignment(.center)
                         if title.lowercased() == classicLogLine.lowercased() {
-                            //updateClassics(classicLogLine)
+                            
                             Text(classicLogLine)
                               .foregroundColor(Color(UIColor.systemBackground))
                                     .background(Color(UIColor.label))
-                            //self.library.append(classicLogLine)
+                            //updateStories(classicLogLine)
                         }
 
                     }
@@ -324,5 +321,14 @@ struct About: View {
                 .padding(5)
                 .border(Color .black, width: 2)
         }
+    }
+}
+
+struct IntroText: View {
+    var body: some View {
+        Text("Press Story Mode to create a work of fiction or use Excuse Mode to justify your actions")
+            .padding()
+            .font(.custom("Courier", size: 16.5))
+            .frame(height: 150)
     }
 }
