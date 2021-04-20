@@ -11,10 +11,14 @@ struct LibraryView: View {
     
     
     var body: some View {
-        VStack {
+        VStack (alignment: .center) {
             Text("Collected Works")
         }
-        .font(.custom("Courier", size: 16.5))
+        .font(.custom("Courier", size: 18.5))
+        .foregroundColor(Color(UIColor.systemBackground))
+              .background(Color(UIColor.label))
+        Spacer()
+            .frame(height: 10)
 
         List(stories) { currentStory in
             VStack(alignment: .leading) {

@@ -199,7 +199,7 @@ struct ContentView: View {
                
                 
 
-                HStack {
+                HStack (alignment: .center){
                     Button(action: {
                         if makeChoice(5) == 1 {
                             classic = true
@@ -261,15 +261,10 @@ struct ContentView: View {
                 }
                 Spacer()
                     .frame(height: 10)
-                About()
-                NavigationLink(destination: LibraryView()) {
-                    Text("Library")
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color(UIColor.label))
-                        .background(Color(UIColor.systemBackground))
-                        .font(.custom("Courier", size: 16.5))
-                        .padding(5)
-                        .border(Color .black, width: 2)
+                HStack (alignment: .center) {
+                    About()
+                    Library()
+
                 }
                 
             
@@ -285,12 +280,6 @@ struct ContentView: View {
 
 
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            
-    }
-}
 
 
 struct About: View {
@@ -302,7 +291,7 @@ struct About: View {
                 .background(Color(UIColor.systemBackground))
                 .font(.custom("Courier", size: 16.5))
                 .padding(5)
-                .border(Color .black, width: 2)
+                .border(Color .black, width: 0)
         }
     }
 }
@@ -316,25 +305,23 @@ struct IntroText: View {
     }
 }
 
-struct Classic: View {
-    @State var title: String = ""
-    @State var story = chooseStory()
-    @State var status = "Check"
-
+struct Library: View {
     var body: some View {
-            Text(story.logline)
-            TextField("What's the story?", text: $title)
+        NavigationLink(destination: LibraryView()) {
+            Text("Library")
                 .multilineTextAlignment(.center)
-            Button(action: {
-                if title.lowercased() == story.title.lowercased() {
-                stories.append(story)
-                self.status = "Added to Library"
-               }
-            }){
-            Text(status)
-                .foregroundColor(Color(UIColor.systemBackground))
-                .background(Color(UIColor.label))
+                .foregroundColor(Color(UIColor.label))
+                .background(Color(UIColor.systemBackground))
+                .font(.custom("Courier", size: 16.5))
+                .padding(5)
+                .border(Color .black, width: 0)
         }
-
+    }
 }
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            
+    }
 }

@@ -12,6 +12,15 @@ struct AboutView: View {
     var body: some View {
      
         VStack {
+            VStack (alignment: .center){
+                Text("About")
+            }
+            .font(.custom("Courier", size: 18.5))
+            .foregroundColor(Color(UIColor.systemBackground))
+                  .background(Color(UIColor.label))
+            Spacer()
+                .frame(height: 10)
+
             VStack(alignment: .leading) {
                 Text("A log line is a summary of a story. Writers use log lines to help them focus on the story beats, and to pitch ideas to producers or publishers.\n\nA log line must be concise - no more than one or two sentences - yet cover the narrative's central characters, story arc and conflicts. Most importantly, it must hook the reader in.\n\nStory Mode generates short, compelling fictional scenarios designed to serve as a framework for narrative development.\n\nExcuse Mode creates tenable explanations that will justify offensive, abberrant or inconsiderate behaviour.")
                 Spacer()

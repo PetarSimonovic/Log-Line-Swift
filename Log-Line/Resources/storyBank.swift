@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 let storyBank =  [
-    Story(title: "Dracula", logline: "A wise but bumbling professor mus destroy an undead count before a virtuous  schoolteacher becomes a vampire Dracula"),
+    Story(title: "Dracula", logline: "A wise but bumbling professor must destroy an undead count before a virtuous  schoolteacher becomes a vampire Dracula"),
     Story(title: "The Lord Of The Rings", logline: "A brave but timid gentleman must destroy a magic ring before an evil necromancer takes over a world"),
     Story(title: "Toy Story", logline: "A loyal but stubborn cowboy must rescue a brave astronaut before an upset boy leaves a home"),
     Story(title: "Alien", logline: "A tough but mistrustful warrant officer must escape an exploding spaceship before a ferocious alien eats a cat"),
