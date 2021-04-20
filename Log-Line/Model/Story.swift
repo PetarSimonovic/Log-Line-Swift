@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-struct Story: Identifiable, Hashable {
+struct Story: Identifiable, Codable, Hashable {
     var id = UUID()
-    var title:String
-    var logline:String
+    var title: String
+    var logline: String
 }

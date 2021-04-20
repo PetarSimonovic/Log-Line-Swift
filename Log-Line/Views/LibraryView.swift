@@ -12,7 +12,7 @@ struct LibraryView: View {
     
     var body: some View {
         List(stories) { currentStory in
-            VStack {
+            VStack(alignment: .leading) {
                 StoryRow(story: currentStory)
             }
         }

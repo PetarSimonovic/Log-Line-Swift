@@ -12,9 +12,13 @@ struct StoryRow: View
     var story: Story
 
     var body: some View {
-        VStack {
+        VStack (alignment: .leading) {
             Text(story.title)
+                .foregroundColor(Color(UIColor.systemBackground))
+                      .background(Color(UIColor.label))
             Text(story.logline)
+                .foregroundColor(Color(UIColor.label))
+                      .background(Color(UIColor.systemBackground))
         }
     }
 }
