@@ -8,35 +8,51 @@
 import SwiftUI
 
 struct Classic: View {
-    @State var title: String = ""
-    @State var story = chooseStory()
-    @State var status = "Check"
     
-
+    @State var title: String = ""
+    @State var status = "Check"
+    @State var story = chooseStory()
+    @State var symbol = ""
+    @State var question = "What's the Story"
+    
+        
     var body: some View {
-            Text(story.logline)
-                .frame(width: 280, height: 150, alignment: .leading)
-            TextField("What's the story?", text: $title)
+        
+
+        VStack(spacing: 0.0) {
+        VStack(alignment: .leading) {
+            Text(self.story.logline)
+        }
+            Spacer()
+        VStack (alignment: .center) {
+            TextField(self.question, text: $title)
                 .multilineTextAlignment(.center)
-                .frame(width: 500)
+            Text(symbol)
+                .foregroundColor(Color(UIColor.systemBackground))
+                .background(Color(UIColor.label))
+                .frame(alignment: .center)
             Button(action: {
                 if title.lowercased() == story.title.lowercased() {
                     if story.collected(story) == false {
                 stories.append(story)
                     }
+                self.title = ""
+                self.question = self.story.title
+                self.symbol = self.story.symbol
                 self.status = "Added to Library"
                }
             }){
             Text(status)
                 .foregroundColor(Color(UIColor.systemBackground))
                 .background(Color(UIColor.label))
+                .frame(alignment: .center)
         }
+        }
+        }
+            .frame(width: 280, height: 150)
+            .font(.custom("Courier", size: 16.5))
+
 
 }
 }
 
-struct Classic_Previews: PreviewProvider {
-    static var previews: some View {
-        Classic()
-    }
-}

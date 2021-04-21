@@ -83,7 +83,7 @@ struct ContentView: View {
                     LogoText()
                 }
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 100)
                 
                 if intro == true {
                     IntroText()
@@ -183,17 +183,13 @@ struct ContentView: View {
                     .frame(height: 150, alignment: .leading)
 
                 } else if classic == true {
-                    VStack {
-                    if classic == true {
                        Classic()
-                    }
-                    }  .font(.custom("Courier", size: 16.5))
                 }
                 
                 
             
                 Spacer()
-                    .frame(height: 60)
+                    .frame(height: 100)
                 
                
                 
@@ -297,10 +293,12 @@ struct About: View {
 
 struct IntroText: View {
     var body: some View {
-        Text("Press Story Mode to create a work of fiction or use Excuse Mode to justify your actions")
-            .padding()
-            .font(.custom("Courier", size: 16.5))
-            .frame(height: 150)
+        VStack(alignment: .leading, spacing: 0.0) {
+            Text("Press Story Mode to create a work of fiction or use Excuse Mode to justify your actions")
+                .padding()
+                .font(.custom("Courier", size: 16.5))
+                .frame(height: 150)
+        }
     }
 }
 

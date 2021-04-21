@@ -26,11 +26,12 @@ struct StoryRow: View {
             VStack{
             HStack {
                 Text(story.logline)
-                    .frame(alignment: .trailing)
+                    .frame(alignment: .leading)
+                    .frame(width: 150)
                 Spacer()
                     .frame(width: 40)
                 Text(story.symbol).font(.custom("FontAwesome5Free-Solid", size: 50))
-                    .frame(alignment: .trailing)
+                    .frame(width: 150, alignment: .trailing)
 
               
             }
