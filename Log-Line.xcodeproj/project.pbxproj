@@ -14,6 +14,10 @@
 		0D15B7CD262EBC540087C2F0 /* StoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B7CC262EBC540087C2F0 /* StoryRow.swift */; };
 		0D15B7D1262EBCAB0087C2F0 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B7D0262EBCAB0087C2F0 /* Story.swift */; };
 		0D15B82F262F122A0087C2F0 /* Classic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B82E262F122A0087C2F0 /* Classic.swift */; };
+		0D1734102630396E00DEE8F2 /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D17340E2630396E00DEE8F2 /* Font Awesome 5 Free-Regular-400.otf */; };
+		0D1734112630396E00DEE8F2 /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D17340E2630396E00DEE8F2 /* Font Awesome 5 Free-Regular-400.otf */; };
+		0D1734122630396E00DEE8F2 /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D17340F2630396E00DEE8F2 /* Font Awesome 5 Free-Solid-900.otf */; };
+		0D1734132630396E00DEE8F2 /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D17340F2630396E00DEE8F2 /* Font Awesome 5 Free-Solid-900.otf */; };
 		0D6C9CFC261A178B0098ED84 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9CFB261A178B0098ED84 /* AboutView.swift */; };
 		0D6C9D09261B0A520098ED84 /* buttonControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D08261B0A520098ED84 /* buttonControl.swift */; };
 		0D6C9D0F261B49FD0098ED84 /* nounBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D0E261B49FD0098ED84 /* nounBank.swift */; };
@@ -53,6 +57,8 @@
 		0D15B7CC262EBC540087C2F0 /* StoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryRow.swift; sourceTree = "<group>"; };
 		0D15B7D0262EBCAB0087C2F0 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		0D15B82E262F122A0087C2F0 /* Classic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classic.swift; sourceTree = "<group>"; };
+		0D17340E2630396E00DEE8F2 /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
+		0D17340F2630396E00DEE8F2 /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
 		0D6C9CFB261A178B0098ED84 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		0D6C9D08261B0A520098ED84 /* buttonControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonControl.swift; sourceTree = "<group>"; };
 		0D6C9D0E261B49FD0098ED84 /* nounBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nounBank.swift; sourceTree = "<group>"; };
@@ -96,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D17340D2630395800DEE8F2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0D17340E2630396E00DEE8F2 /* Font Awesome 5 Free-Regular-400.otf */,
+				0D17340F2630396E00DEE8F2 /* Font Awesome 5 Free-Solid-900.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		0D6C9D0D261B49E90098ED84 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +166,7 @@
 		0DD9CFB52618956500E465AB = {
 			isa = PBXGroup;
 			children = (
+				0D17340D2630395800DEE8F2 /* Fonts */,
 				0DD9CFC02618956500E465AB /* Log-Line */,
 				0DA5A2C32621B5200001BACD /* Log-LineTests */,
 				0DD9CFBF2618956500E465AB /* Products */,
@@ -268,6 +284,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1734112630396E00DEE8F2 /* Font Awesome 5 Free-Regular-400.otf in Resources */,
+				0D1734132630396E00DEE8F2 /* Font Awesome 5 Free-Solid-900.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DD9CFC92618956600E465AB /* Preview Assets.xcassets in Resources */,
+				0D1734102630396E00DEE8F2 /* Font Awesome 5 Free-Regular-400.otf in Resources */,
 				0DD9CFC62618956600E465AB /* Assets.xcassets in Resources */,
+				0D1734122630396E00DEE8F2 /* Font Awesome 5 Free-Solid-900.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +517,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.9;
+				CURRENT_PROJECT_VERSION = 2.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Log-Line/Preview Content\"";
 				DEVELOPMENT_TEAM = 6TPWY3BLL8;
 				ENABLE_PREVIEWS = YES;
@@ -522,7 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.9;
+				CURRENT_PROJECT_VERSION = 2.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Log-Line/Preview Content\"";
 				DEVELOPMENT_TEAM = 6TPWY3BLL8;
 				ENABLE_PREVIEWS = YES;

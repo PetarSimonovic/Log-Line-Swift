@@ -19,12 +19,12 @@ struct AboutView: View {
             .foregroundColor(Color(UIColor.systemBackground))
                   .background(Color(UIColor.label))
             Spacer()
-                .frame(height: 80)
+                .frame(height: 30)
 
             VStack(alignment: .leading) {
-                Text("A log line is a summary of a story. Writers use log lines to help them focus on the story beats, and to pitch ideas to producers or publishers.\n\n\nA log line must be concise - no more than one or two sentences - yet cover the narrative's central characters, story arc and conflicts. Most importantly, it must hook the reader in.\n\n\nStory Mode generates short, compelling fictional scenarios designed to serve as a framework for narrative development.\n\n\nExcuse Mode creates tenable explanations that will justify offensive, abberrant or inconsiderate behaviour.")
+                Text("A log line is a summary of a story. Writers use log lines to help them focus on the story beats, and to pitch ideas to producers or publishers.\n\nA log line must be concise - no more than one or two sentences - yet cover the narrative's central characters, story arc and conflicts. Most importantly, it must hook the reader in.\n\nStory Mode generates short, compelling fictional scenarios designed to serve as a framework for narrative development.\n\nExcuse Mode creates tenable explanations that will justify offensive, abberrant or inconsiderate behaviour.")
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 10)
                 HStack (spacing: 0) {
                     Text("")
                     Text("Tap on ")
@@ -47,7 +47,7 @@ struct AboutView: View {
                     Text("into your scenario and direct your narrative.")
                 }
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 10)
                 VStack {
                     Text("Collect classic works and add them to your library.")
                 }
@@ -57,10 +57,7 @@ struct AboutView: View {
             .font(.custom("Courier", size: 14.5))
             Spacer()
                 .frame(height: 30)
-            Spacer()
-                .frame(height: 30)
-            Spacer()
-                .frame(height: 30)
+
             
             Text("Version 1.2")
                 .font(.custom("Courier", size: 10.5))

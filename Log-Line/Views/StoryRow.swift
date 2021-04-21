@@ -7,8 +7,14 @@
 
 import SwiftUI
 
-struct StoryRow: View
-{
+struct StoryRow: View {
+    
+    
+//    let fontawesomeReg = UIFont(name: "FontAwesome5Free-Regular", size: UIFont.labelFontSize)
+//
+//    let fontawesomeSol = UIFont(name: "FontAwesome5Free-Solid", size: UIFont.labelFontSize)
+
+    
     var story: Story
 
     var body: some View {
@@ -17,9 +23,17 @@ struct StoryRow: View
                 .foregroundColor(Color(UIColor.systemBackground))
                       .background(Color(UIColor.label))
             Spacer()
-            Text(story.logline)
-                .foregroundColor(Color(UIColor.label))
-                      .background(Color(UIColor.systemBackground))
+            VStack{
+            HStack {
+                Text(story.logline)
+                    .foregroundColor(Color(UIColor.label))
+                    .background(Color(UIColor.systemBackground))
+                Text("\u{f6e2}").font(.custom("FontAwesome5Free-Solid", size: 16.5))
+
+              
+            }
+               //            }
+            }
         }
     }
 }
