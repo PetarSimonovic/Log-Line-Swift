@@ -10,3 +10,4 @@ import Foundation
 func makeChoice (_ bank: Int) -> Int {
     return Int.random(in: 0...bank - 1)
 }
+

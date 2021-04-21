@@ -13,4 +13,9 @@ struct Story: Identifiable, Codable, Hashable {
     var title: String
     var logline: String
     var symbol: String
+    
+    func collected(_ story: Story) -> Bool {
+        return stories.contains(story)
+    }
+
 }

@@ -188,7 +188,6 @@ struct ContentView: View {
                        Classic()
                     }
                     }  .font(.custom("Courier", size: 16.5))
-                    .frame(width: 280, height: 150, alignment: .leading)
                 }
                 
                 

@@ -26,14 +26,16 @@ struct StoryRow: View {
             VStack{
             HStack {
                 Text(story.logline)
-                    .foregroundColor(Color(UIColor.label))
-                    .background(Color(UIColor.systemBackground))
+                    .frame(alignment: .trailing)
                 Spacer()
                     .frame(width: 40)
                 Text(story.symbol).font(.custom("FontAwesome5Free-Solid", size: 50))
+                    .frame(alignment: .trailing)
 
               
             }
+            .foregroundColor(Color(UIColor.label))
+            .background(Color(UIColor.systemBackground))
                //            }
             }
         }
