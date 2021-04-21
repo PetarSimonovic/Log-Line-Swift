@@ -28,7 +28,9 @@ struct StoryRow: View {
                 Text(story.logline)
                     .foregroundColor(Color(UIColor.label))
                     .background(Color(UIColor.systemBackground))
-                Text("\u{f6e2}").font(.custom("FontAwesome5Free-Solid", size: 16.5))
+                Spacer()
+                    .frame(width: 40)
+                Text(story.symbol).font(.custom("FontAwesome5Free-Solid", size: 50))
 
               
             }
