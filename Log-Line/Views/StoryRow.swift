@@ -31,7 +31,7 @@ struct StoryRow: View {
                 Spacer()
                     .frame(width: 40)
                 Text(story.symbol).font(.custom("FontAwesome5Free-Solid", size: 50))
-                    .frame(width: 150, alignment: .trailing)
+                    .frame(width: 150, alignment: .center)
 
               
             }

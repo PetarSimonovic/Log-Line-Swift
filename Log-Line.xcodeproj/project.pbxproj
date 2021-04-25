@@ -25,6 +25,7 @@
 		0D6C9D1C261B4F340098ED84 /* posAdjBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D1B261B4F340098ED84 /* posAdjBank.swift */; };
 		0D6C9D21261B4F750098ED84 /* verbFirstPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D20261B4F750098ED84 /* verbFirstPerson.swift */; };
 		0D6C9D26261B52590098ED84 /* verbThirdPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */; };
+		0D9070532634761100855895 /* properNouns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9070522634761100855895 /* properNouns.swift */; };
 		0DA5A2B82621A7250001BACD /* ClassicStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5A2B72621A7250001BACD /* ClassicStory.swift */; };
 		0DA5A3382621C2F70001BACD /* Log_LineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5A2C42621B5200001BACD /* Log_LineTests.swift */; };
 		0DA5A35C2621E2D20001BACD /* makeChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5A35B2621E2D20001BACD /* makeChoice.swift */; };
@@ -66,6 +67,7 @@
 		0D6C9D1B261B4F340098ED84 /* posAdjBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = posAdjBank.swift; sourceTree = "<group>"; };
 		0D6C9D20261B4F750098ED84 /* verbFirstPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verbFirstPerson.swift; sourceTree = "<group>"; };
 		0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verbThirdPerson.swift; sourceTree = "<group>"; };
+		0D9070522634761100855895 /* properNouns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = properNouns.swift; sourceTree = "<group>"; };
 		0DA5A2B72621A7250001BACD /* ClassicStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicStory.swift; sourceTree = "<group>"; };
 		0DA5A2C22621B5200001BACD /* Log-LineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Log-LineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA5A2C42621B5200001BACD /* Log_LineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_LineTests.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				0DC94BC3261F2E7500C47A74 /* excuseNounBank.swift */,
 				0DC94BC8261F307F00C47A74 /* excuseVerbBank.swift */,
 				0DA5A35F2621E3360001BACD /* storyBank.swift */,
+				0D9070522634761100855895 /* properNouns.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				0D15B7CD262EBC540087C2F0 /* StoryRow.swift in Sources */,
 				0DC94BBF261F2B7F00C47A74 /* verbBankPast.swift in Sources */,
 				0DA5A35C2621E2D20001BACD /* makeChoice.swift in Sources */,
+				0D9070532634761100855895 /* properNouns.swift in Sources */,
 				0DD9CFC42618956500E465AB /* ContentView.swift in Sources */,
 				0D15B7A72626047E0087C2F0 /* LogoText.swift in Sources */,
 				0DC94BC4261F2E7500C47A74 /* excuseNounBank.swift in Sources */,
@@ -517,7 +521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.1;
+				CURRENT_PROJECT_VERSION = 2.2;
 				DEVELOPMENT_ASSET_PATHS = "\"Log-Line/Preview Content\"";
 				DEVELOPMENT_TEAM = 6TPWY3BLL8;
 				ENABLE_PREVIEWS = YES;
@@ -542,7 +546,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.1;
+				CURRENT_PROJECT_VERSION = 2.2;
 				DEVELOPMENT_ASSET_PATHS = "\"Log-Line/Preview Content\"";
 				DEVELOPMENT_TEAM = 6TPWY3BLL8;
 				ENABLE_PREVIEWS = YES;

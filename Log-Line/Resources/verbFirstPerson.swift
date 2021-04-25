@@ -282,6 +282,8 @@ let verbFirstPersonBank = [
     "jam",
     "jog",
     "join",
+    "join forces with",
+    "ponder",
     "joke",
     "judge",
     "juggle",

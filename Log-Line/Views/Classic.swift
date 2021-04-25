@@ -27,11 +27,7 @@ struct Classic: View {
         VStack (alignment: .center) {
             TextField(self.question, text: $title)
                 .multilineTextAlignment(.center)
-            Text(symbol)
-                .foregroundColor(Color(UIColor.systemBackground))
-                .background(Color(UIColor.label))
-                .frame(alignment: .center)
-            Button(action: {
+                Button(action: {
                 if title.lowercased() == story.title.lowercased() {
                     if story.collected(story) == false {
                 stories.append(story)

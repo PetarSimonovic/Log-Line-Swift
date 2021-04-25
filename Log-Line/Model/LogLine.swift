@@ -63,7 +63,10 @@ struct LogLine {
         let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
         let words = ["honest", "honourable"]
         let letter = word.prefix(1)
-        if vowels.contains(String(letter)) || words.contains(String(word)) {
+        if properNouns.contains(word) {
+          return word
+        }
+        else if vowels.contains(String(letter)) || words.contains(String(word)) {
           return "an \(word)"
         }
         else {
