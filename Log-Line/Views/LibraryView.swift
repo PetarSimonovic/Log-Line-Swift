@@ -18,6 +18,14 @@ struct LibraryView: View {
         .foregroundColor(Color(UIColor.systemBackground))
               .background(Color(UIColor.label))
         Spacer()
+        
+        VStack (alignment: .center) {
+            Text("\(stories.count) / \(storyBank.count)")
+        }
+        .font(.custom("Courier", size: 18.5))
+        .foregroundColor(Color(UIColor.label))
+              .background(Color(UIColor.systemBackground))        
+        Spacer()
             .frame(height: 10)
 
         List(stories) { currentStory in

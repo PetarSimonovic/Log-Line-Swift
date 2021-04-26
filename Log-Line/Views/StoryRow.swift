@@ -22,11 +22,13 @@ struct StoryRow: View {
             Text(story.title)
                 .foregroundColor(Color(UIColor.systemBackground))
                       .background(Color(UIColor.label))
+            Spacer()
             VStack (alignment: .leading) {
                 Text(story.year)
                     .foregroundColor(Color(UIColor.label))
                           .background(Color(UIColor.systemBackground))
             }
+            Spacer()
             VStack (alignment: .leading) {
                 Text(story.writer)
                     .foregroundColor(Color(UIColor.label))
