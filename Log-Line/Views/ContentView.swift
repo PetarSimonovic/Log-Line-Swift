@@ -14,7 +14,7 @@ let logLine = LogLine()
 
 
 struct ContentView: View {
-    
+        
     @State var displayText: [String] = []
     @State var library: [String] = []
 
@@ -62,7 +62,7 @@ struct ContentView: View {
 
 
     @StateObject var excuseNounButton3 = logLineButton(buttonState: false, holdText: "", newText: "")
-
+    
     @State var classic = false
     @State var intro = true
     @State var story = false

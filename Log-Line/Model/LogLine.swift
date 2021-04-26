@@ -9,7 +9,12 @@ import Foundation
 import SwiftUI
 
 struct LogLine {
-        
+    
+    init() {
+        loadStories()
+    }
+    
+    
     func generateLogLine() -> [String] {
 
         
