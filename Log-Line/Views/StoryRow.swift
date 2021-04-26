@@ -39,7 +39,6 @@ struct StoryRow: View {
             HStack {
                 Text(story.logline)
                     .frame(width: 270, height: 130, alignment: .leading)
-                Spacer()
                 Text(story.symbol).font(.custom("FontAwesome6Pro-Solid", size: 50))
                     .frame(width: 150, alignment: .center)
 

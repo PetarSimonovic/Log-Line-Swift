@@ -36,6 +36,7 @@ struct Classic: View {
                 .border(Color(UIColor.label), width: 1)
                 .frame(height: 50)
                 Button(action: {
+                hideKeyboard()
                 if title.lowercased() == story.title.lowercased() {
                     if story.collected(story) == false {
                 stories.append(story)
@@ -60,3 +61,10 @@ struct Classic: View {
 }
 }
 
+#if canImport(UIKit)
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+#endif
