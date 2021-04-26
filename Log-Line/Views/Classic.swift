@@ -15,6 +15,7 @@ struct Classic: View {
     @State var symbol = ""
     @State var question = "What's the Story"
     
+    // Create and Write Array of Strings
         
     var body: some View {
         
@@ -36,6 +37,7 @@ struct Classic: View {
                 self.question = self.story.title
                 self.symbol = self.story.symbol
                 self.status = "Added to Library"
+                saveStories()
                }
             }){
             Text(status)

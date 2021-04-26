@@ -27,6 +27,7 @@
 		0D6C9D26261B52590098ED84 /* verbThirdPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */; };
 		0D9070532634761100855895 /* properNouns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9070522634761100855895 /* properNouns.swift */; };
 		0D9070572636CBA600855895 /* Font Awesome 6 Pro-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D9070562636CBA600855895 /* Font Awesome 6 Pro-Solid-900.otf */; };
+		0D90705B2636EBD800855895 /* saveStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90705A2636EBD800855895 /* saveStories.swift */; };
 		0DA5A2B82621A7250001BACD /* ClassicStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5A2B72621A7250001BACD /* ClassicStory.swift */; };
 		0DA5A3382621C2F70001BACD /* Log_LineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5A2C42621B5200001BACD /* Log_LineTests.swift */; };
 		0DA5A35C2621E2D20001BACD /* makeChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5A35B2621E2D20001BACD /* makeChoice.swift */; };
@@ -70,6 +71,7 @@
 		0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verbThirdPerson.swift; sourceTree = "<group>"; };
 		0D9070522634761100855895 /* properNouns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = properNouns.swift; sourceTree = "<group>"; };
 		0D9070562636CBA600855895 /* Font Awesome 6 Pro-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 6 Pro-Solid-900.otf"; sourceTree = "<group>"; };
+		0D90705A2636EBD800855895 /* saveStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveStories.swift; sourceTree = "<group>"; };
 		0DA5A2B72621A7250001BACD /* ClassicStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicStory.swift; sourceTree = "<group>"; };
 		0DA5A2C22621B5200001BACD /* Log-LineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Log-LineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA5A2C42621B5200001BACD /* Log_LineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_LineTests.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				0D6C9D08261B0A520098ED84 /* buttonControl.swift */,
+				0D90705A2636EBD800855895 /* saveStories.swift */,
 				0DD9CFEF2618B04C00E465AB /* LogLine.swift */,
 				0DA5A2B72621A7250001BACD /* ClassicStory.swift */,
 				0DA5A35B2621E2D20001BACD /* makeChoice.swift */,
@@ -324,6 +327,7 @@
 			files = (
 				0D0C02372622FC44007D2121 /* LibraryView.swift in Sources */,
 				0D6C9D1C261B4F340098ED84 /* posAdjBank.swift in Sources */,
+				0D90705B2636EBD800855895 /* saveStories.swift in Sources */,
 				0D15B7A3262603EF0087C2F0 /* Logo.swift in Sources */,
 				0D6C9CFC261A178B0098ED84 /* AboutView.swift in Sources */,
 				0D15B7CD262EBC540087C2F0 /* StoryRow.swift in Sources */,

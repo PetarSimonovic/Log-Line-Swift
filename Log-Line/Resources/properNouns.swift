@@ -23,5 +23,6 @@ let properNouns = ["Christmas",
                    "the Sun",
                    "Mercury",
                    "Neptune",
+                   "Santa"
                    
 ]

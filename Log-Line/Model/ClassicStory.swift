@@ -8,8 +8,6 @@
 import Foundation
 import SwiftUI
     
-var stories: [Story] = []
-
 
 func chooseStory() -> Story {
     let story = storyBank[makeChoice(storyBank.count)]
