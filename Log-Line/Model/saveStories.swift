@@ -19,6 +19,7 @@ func loadStories() {
 
             // Decode Note
             stories = try decoder.decode([Story].self, from: data)
+            print("Loaded!")
 
         } catch {
             print("Unable to Decode Stories (\(error))")
@@ -37,6 +38,7 @@ func loadStories() {
 
         // Write/Set Data
         UserDefaults.standard.set(data, forKey: "stories")
+        print("Saved!")
 
     } catch {
         print("Unable to Encode Array of Stories (\(error))")

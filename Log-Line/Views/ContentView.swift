@@ -125,7 +125,7 @@ struct ContentView: View {
                         Spacer()
                         
                     } .font(.custom("Courier", size: 16.5))
-                    .frame(height: 150, alignment: .leading)
+                    .frame(height: 155, alignment: .leading)
                     
                 }
                 else if excuse == true {
@@ -266,6 +266,7 @@ struct ContentView: View {
             }
             Spacer()
         }.accentColor(Color(UIColor.label))
+        .onAppear{loadStories()}
         
     }
 

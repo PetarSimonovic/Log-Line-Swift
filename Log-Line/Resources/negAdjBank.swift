@@ -52,6 +52,7 @@ let negAdjBank = [
     "armed",
     "droll",
     "ruthless",
+    "strinct",
     "dry",
     "earthy",
     "terrified",

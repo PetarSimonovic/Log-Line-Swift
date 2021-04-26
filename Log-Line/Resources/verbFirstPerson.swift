@@ -287,6 +287,7 @@ let verbFirstPersonBank = [
     "ponder",
     "joke",
     "judge",
+    "exile",
     "juggle",
     "jump",
     "kick",

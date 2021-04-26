@@ -24,20 +24,26 @@ struct Classic: View {
         VStack(alignment: .leading) {
             Text(self.story.logline)
         }
+        .frame(height: 140, alignment: .center)
+
             Spacer()
         VStack (alignment: .center) {
-            TextField(self.question, text: $title)
+            Text("What's The Story?")
+                .foregroundColor(Color(UIColor.systemBackground))
+                .background(Color(UIColor.label))
+            TextEditor(text: $title)
                 .multilineTextAlignment(.center)
+                .border(Color(UIColor.label), width: 1)
+                .frame(height: 50)
                 Button(action: {
                 if title.lowercased() == story.title.lowercased() {
                     if story.collected(story) == false {
                 stories.append(story)
+                saveStories()
                     }
-                self.title = ""
-                self.question = self.story.title
+                self.title = story.title
                 self.symbol = self.story.symbol
                 self.status = "Added to Library"
-                saveStories()
                }
             }){
             Text(status)
@@ -47,7 +53,7 @@ struct Classic: View {
         }
         }
         }
-            .frame(width: 280, height: 150)
+            .frame(width: 280, height: 155)
             .font(.custom("Courier", size: 16.5))
 
 

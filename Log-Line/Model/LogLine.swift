@@ -10,24 +10,9 @@ import SwiftUI
 
 struct LogLine {
     
-    init() {
-        loadStories()
-    }
-    
     
     func generateLogLine() -> [String] {
 
-        
-        for family in UIFont.familyNames {
-
-            let sName: String = family as String
-            print("family: \(sName)")
-                    
-            for name in UIFont.fontNames(forFamilyName: sName) {
-                print("name: \(name as String)")
-            }
-        }
-        
         return [capUp(setArticle(pickPosAdj())), pickNegAdj(), pickNoun(), pickVerbFirstPerson(), setArticle(pickPosAdj()), pickNoun(), setArticle(pickNegAdj()), pickNoun(), pickVerbThirdPerson(), setArticle(pickProperNoun())]
     }
     

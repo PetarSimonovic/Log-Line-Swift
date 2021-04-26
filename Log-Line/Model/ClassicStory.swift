@@ -12,9 +12,9 @@ import SwiftUI
 func chooseStory() -> Story {
     let story = storyBank[makeChoice(storyBank.count)]
     if stories.contains(story) {
-       return chooseStory()
-    }
-    else {
+        print("repeat")
+      return chooseStory()
+    } else {
         return story
     }
 }

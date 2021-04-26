@@ -26,6 +26,7 @@ let verbThirdPersonBank = [
     "inseminates",
     "vandalises",
     "burns",
+    "exiles",
     "insults",
     "demeans",
     "conjures",
