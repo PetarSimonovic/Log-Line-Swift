@@ -13,7 +13,17 @@ struct LogLine {
     func generateLogLine() -> [String] {
 
         
-        return [capUp(setArticle(pickPosAdj())), pickNegAdj(), pickNoun(), pickVerbFirstPerson(), setArticle(pickPosAdj()), pickNoun(), setArticle(pickNegAdj()), pickNoun(), pickVerbThirdPerson(), setArticle(pickNoun())]
+        for family in UIFont.familyNames {
+
+            let sName: String = family as String
+            print("family: \(sName)")
+                    
+            for name in UIFont.fontNames(forFamilyName: sName) {
+                print("name: \(name as String)")
+            }
+        }
+        
+        return [capUp(setArticle(pickPosAdj())), pickNegAdj(), pickNoun(), pickVerbFirstPerson(), setArticle(pickPosAdj()), pickNoun(), setArticle(pickNegAdj()), pickNoun(), pickVerbThirdPerson(), setArticle(pickProperNoun())]
     }
     
     func generateExcuse() -> [String] {
@@ -31,6 +41,18 @@ struct LogLine {
         return negAdjBank[makeChoice(negAdjBank.count)]
 
     }
+    
+    func pickProperNoun() -> String {
+        let nouns = properNouns.count + nounBank.count
+        if Int.random(in: 0...nouns) < properNouns.count {
+            return properNouns[makeChoice(properNouns.count)]
+        } else
+        {
+            return pickNoun()
+        }
+    }
+    
+
     
     func pickNoun() -> String {
         return nounBank[makeChoice(nounBank.count)]

@@ -22,15 +22,23 @@ struct StoryRow: View {
             Text(story.title)
                 .foregroundColor(Color(UIColor.systemBackground))
                       .background(Color(UIColor.label))
+            VStack (alignment: .leading) {
+                Text(story.year)
+                    .foregroundColor(Color(UIColor.label))
+                          .background(Color(UIColor.systemBackground))
+            }
+            VStack (alignment: .leading) {
+                Text(story.writer)
+                    .foregroundColor(Color(UIColor.label))
+                          .background(Color(UIColor.systemBackground))
+            }
             Spacer()
             VStack{
             HStack {
                 Text(story.logline)
                     .frame(alignment: .leading)
-                    .frame(width: 150)
                 Spacer()
-                    .frame(width: 40)
-                Text(story.symbol).font(.custom("FontAwesome5Free-Solid", size: 50))
+                Text(story.symbol).font(.custom("FontAwesome6Pro-Solid", size: 50))
                     .frame(width: 150, alignment: .center)
 
               
@@ -38,6 +46,10 @@ struct StoryRow: View {
             .foregroundColor(Color(UIColor.label))
             .background(Color(UIColor.systemBackground))
                //            }
+            }
+            Spacer()
+            VStack {
+                Text(story.fact)
             }
         }
     }

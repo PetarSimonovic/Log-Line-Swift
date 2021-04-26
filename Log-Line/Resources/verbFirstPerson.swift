@@ -283,6 +283,7 @@ let verbFirstPersonBank = [
     "jog",
     "join",
     "join forces with",
+    "diffuse",
     "ponder",
     "joke",
     "judge",

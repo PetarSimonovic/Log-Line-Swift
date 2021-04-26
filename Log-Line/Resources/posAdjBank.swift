@@ -232,6 +232,7 @@ let posAdjBank = [
       "stable",
       "steadfast",
     "accomplished",
+    "suspended",
     "strange",
       "steady",
       "stoic",

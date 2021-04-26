@@ -12,7 +12,13 @@ var stories: [Story] = []
 
 
 func chooseStory() -> Story {
-    return storyBank[makeChoice(storyBank.count)]
+    let story = storyBank[makeChoice(storyBank.count)]
+    if stories.contains(story) {
+       return chooseStory()
+    }
+    else {
+        return story
+    }
 }
 
 

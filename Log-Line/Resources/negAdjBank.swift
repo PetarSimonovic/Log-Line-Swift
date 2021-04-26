@@ -49,6 +49,7 @@ let negAdjBank = [
     "dominating",
     "dreamy",
     "driving",
+    "armed",
     "droll",
     "ruthless",
     "dry",
@@ -473,5 +474,5 @@ let negAdjBank = [
     "ancient",
     "forgotten",
     "lost",
-    "emotionally closed-off”
+    "emotionally closed-off"
   ]

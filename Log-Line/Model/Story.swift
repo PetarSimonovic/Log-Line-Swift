@@ -13,6 +13,9 @@ struct Story: Identifiable, Codable, Hashable {
     var id = UUID()
     var title: String
     var logline: String
+    var writer: String
+    var year: String
+    var fact: String
     var symbol: String
     
     func collected(_ story: Story) -> Bool {
