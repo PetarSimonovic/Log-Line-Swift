@@ -75,3 +75,9 @@ struct AboutView_Previews: PreviewProvider {
         AboutView()
     }
 }
+
+struct AboutView_Previews_2: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}
