@@ -58,9 +58,12 @@ struct StoryRow: View {
 
 struct StoryRow_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-        StoryRow(story: stories[0] )
-        StoryRow(story: stories[1] )
-        }
+        List(storyBank) {
+            currentStory in
+            VStack(alignment: .leading) {
+                StoryRow(story: currentStory)
+            }
+            .font(.custom("Courier", size: 16.5))
     }
+}
 }
