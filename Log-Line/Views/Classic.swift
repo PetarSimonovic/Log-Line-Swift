@@ -38,7 +38,7 @@ struct Classic: View {
                 Button(action: {
                 hideKeyboard()
                 if title.lowercased() == story.title.lowercased() {
-                    if story.collected(story) == false {
+                    if collected(story) == false {
                 stories.append(story)
                 saveStories()
                     }

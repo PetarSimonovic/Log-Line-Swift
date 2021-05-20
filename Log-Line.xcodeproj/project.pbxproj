@@ -18,6 +18,7 @@
 		0D1734112630396E00DEE8F2 /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D17340E2630396E00DEE8F2 /* Font Awesome 5 Free-Regular-400.otf */; };
 		0D1734122630396E00DEE8F2 /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D17340F2630396E00DEE8F2 /* Font Awesome 5 Free-Solid-900.otf */; };
 		0D1734132630396E00DEE8F2 /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D17340F2630396E00DEE8F2 /* Font Awesome 5 Free-Solid-900.otf */; };
+		0D45B5F3264D6ABC00B4F033 /* BadgeBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D45B5F2264D6ABC00B4F033 /* BadgeBank.swift */; };
 		0D6C9CFC261A178B0098ED84 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9CFB261A178B0098ED84 /* AboutView.swift */; };
 		0D6C9D09261B0A520098ED84 /* buttonControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D08261B0A520098ED84 /* buttonControl.swift */; };
 		0D6C9D0F261B49FD0098ED84 /* nounBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D0E261B49FD0098ED84 /* nounBank.swift */; };
@@ -25,6 +26,9 @@
 		0D6C9D1C261B4F340098ED84 /* posAdjBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D1B261B4F340098ED84 /* posAdjBank.swift */; };
 		0D6C9D21261B4F750098ED84 /* verbFirstPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D20261B4F750098ED84 /* verbFirstPerson.swift */; };
 		0D6C9D26261B52590098ED84 /* verbThirdPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */; };
+		0D6FE4C5265517330096943D /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FE4C4265517330096943D /* Achievements.swift */; };
+		0D6FE4C726551F960096943D /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FE4C626551F960096943D /* Badge.swift */; };
+		0D6FE4C9265527450096943D /* countAchivements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FE4C8265527450096943D /* countAchivements.swift */; };
 		0D9070532634761100855895 /* properNouns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9070522634761100855895 /* properNouns.swift */; };
 		0D9070572636CBA600855895 /* Font Awesome 6 Pro-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D9070562636CBA600855895 /* Font Awesome 6 Pro-Solid-900.otf */; };
 		0D90705B2636EBD800855895 /* saveStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90705A2636EBD800855895 /* saveStories.swift */; };
@@ -41,6 +45,8 @@
 		0DD9CFC62618956600E465AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9CFC52618956600E465AB /* Assets.xcassets */; };
 		0DD9CFC92618956600E465AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9CFC82618956600E465AB /* Preview Assets.xcassets */; };
 		0DD9CFF02618B04C00E465AB /* LogLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9CFEF2618B04C00E465AB /* LogLine.swift */; };
+		0DE3822026564BF0006F353F /* StoryMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3821F26564BF0006F353F /* StoryMode.swift */; };
+		0DE3822226564E28006F353F /* ExcuseMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3822126564E28006F353F /* ExcuseMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,7 @@
 		0D15B82E262F122A0087C2F0 /* Classic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classic.swift; sourceTree = "<group>"; };
 		0D17340E2630396E00DEE8F2 /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
 		0D17340F2630396E00DEE8F2 /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
+		0D45B5F2264D6ABC00B4F033 /* BadgeBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBank.swift; sourceTree = "<group>"; };
 		0D6C9CFB261A178B0098ED84 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		0D6C9D08261B0A520098ED84 /* buttonControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonControl.swift; sourceTree = "<group>"; };
 		0D6C9D0E261B49FD0098ED84 /* nounBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nounBank.swift; sourceTree = "<group>"; };
@@ -70,6 +77,9 @@
 		0D6C9D1B261B4F340098ED84 /* posAdjBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = posAdjBank.swift; sourceTree = "<group>"; };
 		0D6C9D20261B4F750098ED84 /* verbFirstPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verbFirstPerson.swift; sourceTree = "<group>"; };
 		0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verbThirdPerson.swift; sourceTree = "<group>"; };
+		0D6FE4C4265517330096943D /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
+		0D6FE4C626551F960096943D /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		0D6FE4C8265527450096943D /* countAchivements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countAchivements.swift; sourceTree = "<group>"; };
 		0D9070522634761100855895 /* properNouns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = properNouns.swift; sourceTree = "<group>"; };
 		0D9070562636CBA600855895 /* Font Awesome 6 Pro-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 6 Pro-Solid-900.otf"; sourceTree = "<group>"; };
 		0D90705A2636EBD800855895 /* saveStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveStories.swift; sourceTree = "<group>"; };
@@ -90,6 +100,8 @@
 		0DD9CFC82618956600E465AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0DD9CFCA2618956600E465AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DD9CFEF2618B04C00E465AB /* LogLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLine.swift; sourceTree = "<group>"; };
+		0DE3821F26564BF0006F353F /* StoryMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryMode.swift; sourceTree = "<group>"; };
+		0DE3822126564E28006F353F /* ExcuseMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcuseMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +132,7 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		0D6C9D0D261B49E90098ED84 /* Resources */ = {
+		0D6C9D0D261B49E90098ED84 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				0D6C9D0E261B49FD0098ED84 /* nounBank.swift */,
@@ -133,8 +145,9 @@
 				0DC94BC8261F307F00C47A74 /* excuseVerbBank.swift */,
 				0DA5A35F2621E3360001BACD /* storyBank.swift */,
 				0D9070522634761100855895 /* properNouns.swift */,
+				0D45B5F2264D6ABC00B4F033 /* BadgeBank.swift */,
 			);
-			path = Resources;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		0DA5A2C32621B5200001BACD /* Log-LineTests */ = {
@@ -158,11 +171,14 @@
 				0D15B7CC262EBC540087C2F0 /* StoryRow.swift */,
 				0D15B82E262F122A0087C2F0 /* Classic.swift */,
 				0D90706426372AC900855895 /* hideKeyboard.swift */,
+				0D6FE4C4265517330096943D /* Achievements.swift */,
+				0DE3821F26564BF0006F353F /* StoryMode.swift */,
+				0DE3822126564E28006F353F /* ExcuseMode.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0DC94BCD261F313300C47A74 /* Model */ = {
+		0DC94BCD261F313300C47A74 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				0D6C9D08261B0A520098ED84 /* buttonControl.swift */,
@@ -171,8 +187,10 @@
 				0DA5A2B72621A7250001BACD /* ClassicStory.swift */,
 				0DA5A35B2621E2D20001BACD /* makeChoice.swift */,
 				0D15B7D0262EBCAB0087C2F0 /* Story.swift */,
+				0D6FE4C626551F960096943D /* Badge.swift */,
+				0D6FE4C8265527450096943D /* countAchivements.swift */,
 			);
-			path = Model;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		0DD9CFB52618956500E465AB = {
@@ -197,9 +215,9 @@
 		0DD9CFC02618956500E465AB /* Log-Line */ = {
 			isa = PBXGroup;
 			children = (
-				0DC94BCD261F313300C47A74 /* Model */,
+				0DC94BCD261F313300C47A74 /* Controllers */,
 				0DC4CC04261DEFF00049A366 /* Views */,
-				0D6C9D0D261B49E90098ED84 /* Resources */,
+				0D6C9D0D261B49E90098ED84 /* Models */,
 				0DD9CFC12618956500E465AB /* Log_LineApp.swift */,
 				0DD9CFC52618956600E465AB /* Assets.xcassets */,
 				0DD9CFCA2618956600E465AB /* Info.plist */,
@@ -329,13 +347,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D0C02372622FC44007D2121 /* LibraryView.swift in Sources */,
+				0D6FE4C5265517330096943D /* Achievements.swift in Sources */,
 				0D6C9D1C261B4F340098ED84 /* posAdjBank.swift in Sources */,
 				0D90705B2636EBD800855895 /* saveStories.swift in Sources */,
 				0D15B7A3262603EF0087C2F0 /* Logo.swift in Sources */,
+				0D45B5F3264D6ABC00B4F033 /* BadgeBank.swift in Sources */,
 				0D6C9CFC261A178B0098ED84 /* AboutView.swift in Sources */,
 				0D15B7CD262EBC540087C2F0 /* StoryRow.swift in Sources */,
 				0DC94BBF261F2B7F00C47A74 /* verbBankPast.swift in Sources */,
+				0D6FE4C9265527450096943D /* countAchivements.swift in Sources */,
+				0D6FE4C726551F960096943D /* Badge.swift in Sources */,
 				0DA5A35C2621E2D20001BACD /* makeChoice.swift in Sources */,
+				0DE3822026564BF0006F353F /* StoryMode.swift in Sources */,
 				0D9070532634761100855895 /* properNouns.swift in Sources */,
 				0DD9CFC42618956500E465AB /* ContentView.swift in Sources */,
 				0D15B7A72626047E0087C2F0 /* LogoText.swift in Sources */,
@@ -352,6 +375,7 @@
 				0D6C9D26261B52590098ED84 /* verbThirdPerson.swift in Sources */,
 				0D15B82F262F122A0087C2F0 /* Classic.swift in Sources */,
 				0DD9CFC22618956500E465AB /* Log_LineApp.swift in Sources */,
+				0DE3822226564E28006F353F /* ExcuseMode.swift in Sources */,
 				0D6C9D0F261B49FD0098ED84 /* nounBank.swift in Sources */,
 				0D15B7D1262EBCAB0087C2F0 /* Story.swift in Sources */,
 			);
@@ -532,6 +556,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2.6;
 				DEVELOPMENT_ASSET_PATHS = "\"Log-Line/Preview Content\"";
@@ -557,6 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2.6;
 				DEVELOPMENT_ASSET_PATHS = "\"Log-Line/Preview Content\"";

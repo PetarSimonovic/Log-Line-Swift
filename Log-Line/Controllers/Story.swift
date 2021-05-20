@@ -17,9 +17,10 @@ struct Story: Identifiable, Codable, Hashable {
     var year: String
     var fact: String
     var symbol: String
-    
-    func collected(_ story: Story) -> Bool {
-        return stories.contains(story)
-    }
+    var genre: String
 
+}
+
+func collected(_ story: Story) -> Bool {
+    return stories.contains(story)
 }

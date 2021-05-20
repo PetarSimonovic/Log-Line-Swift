@@ -11,6 +11,9 @@ import Foundation
 var stories: [Story] = []
 
 func loadStories() {
+    
+    count.countAchievements()
+
       
     if let data = UserDefaults.standard.data(forKey: "stories") {
         do {

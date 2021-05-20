@@ -23,6 +23,12 @@ let properNouns = ["Christmas",
                    "the Sun",
                    "Mercury",
                    "Neptune",
-                   "Santa"
+                   "Santa",
+                   "murder",
+                   "Lower East Side Manhattan",
+                   "the truth",
+                   "the beginning",
+                   "despair"
+                   
                    
 ]

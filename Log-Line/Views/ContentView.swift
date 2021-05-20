@@ -10,6 +10,7 @@ import Foundation
 
 let logLine = LogLine()
 
+let count = AchievementCounter()
 
 
 
@@ -63,8 +64,8 @@ struct ContentView: View {
 
     @StateObject var excuseNounButton3 = logLineButton(buttonState: false, holdText: "", newText: "")
     
-    @State var classic = false
     @State var intro = true
+    @State var classic = false
     @State var story = false
     @State var excuse = false
     
@@ -86,172 +87,25 @@ struct ContentView: View {
                     .frame(height: 100)
                 
                 if intro == true {
-                    IntroText()
+                   IntroText()
                     
                 } else if story == true {
-                    VStack {
-                    VStack(alignment: .leading, spacing: 0.0) {
-                    HStack {
-                    logLineButtonView(button: posAdjButton)
-                        Text("but")
-                        logLineButtonView(button: negAdjButton)
-
-                    }
-                    HStack {
-                        logLineButtonView(button: nounButton)
-                        Text("must")
-                        logLineButtonView(button: firstVerbButton)
-                    }
-                        HStack {
-                            logLineButtonView(button: posAdjButton2)
-                            logLineButtonView(button: nounButton2)
-                        }
-                        
-                    HStack {
-                        Text("before")
-                            logLineButtonView(button: negAdjButton2)
-                           
-                        }
-                        HStack {
-                            logLineButtonView(button: nounButton3)
-                           
-                            logLineButtonView(button: thirdVerbButton)
-                        }
-                        HStack {
-                            logLineButtonView(button: nounButton4)
-                        }
-
-                    }
-                        Spacer()
-                        
-                    } .font(.custom("Courier", size: 16.5))
-                    .frame(height: 155, alignment: .leading)
-                    
+                  storyMode
                 }
                 else if excuse == true {
-                    VStack(alignment: .leading) {
-                        HStack {
-                        Text("Sorry I")
-                        logLineButtonView(button: apologyVerbButton)
-
-                    }
-                    HStack {
-                        logLineButtonView(button: apologyNounButton)
-
-            
-
-                    }
-                        
-                    HStack {
-                        Text("but I had to")
-
-                        }
-                        
-                        
-                
-                    HStack{
-                        logLineButtonView(button: excuseVerbButton)
-                        logLineButtonView(button: excuseAdjButton)
-                        
-                       
-                    }
-                    
-                    HStack {
-                        logLineButtonView(button: excuseNounButton)
-
-                        Text("because")
-
-                        
-                    }
-                        HStack {
-                            logLineButtonView(button: excuseAdjButton2)
-                            logLineButtonView(button: excuseNounButton2)
-                        }
-                        HStack {
-                           
-                    
-                            logLineButtonView(button: excuseVerbButton2)
-                            logLineButtonView(button: excuseNounButton3)
-                      
-                        }
-                        Spacer()
-
-
-
-                    }
-                    .font(.custom("Courier", size: 16.5))
-                    .frame(height: 150, alignment: .leading)
-
+                  excuseMode
                 } else if classic == true {
-                       Classic()
+                  Classic()
                 }
                 
-                
-            
                 Spacer()
                     .frame(height: 100)
-                
-               
-                
+
 
                 HStack (alignment: .center){
-                    Button(action: {
-                        if makeChoice(5) == 1 {
-                            classic = true
-                            story = false
-                            intro = false
-                            excuse = false
-                        } else {
-                            self.displayText = logLine.generateLogLine()
-                            story = true
-                            intro = false
-                            excuse = false
-                            classic = false
-                        posAdjButton.newText = self.displayText[0]
-                        negAdjButton.newText = self.displayText[1]
-                        nounButton.newText = self.displayText[2]
-                        firstVerbButton.newText = self.displayText[3]
-                        posAdjButton2.newText = self.displayText[4]
-                        nounButton2.newText = self.displayText[5]
-                        negAdjButton2.newText = self.displayText[6]
-                        nounButton3.newText = self.displayText[7]
-                        thirdVerbButton.newText = self.displayText[8]
-                        nounButton4.newText = self.displayText[9]
-                        }
-                    }) {
-                        Text("Story Mode")
-                            .foregroundColor(Color(UIColor.systemBackground))
-                            .background(Color(UIColor.label))
-                            .font(.custom("Courier", size: 16.5))
-                            .padding(3)
-                    }
                     
-                    
-                    Button(action: {
-                            self.displayText = logLine.generateExcuse()
-                            excuse = true
-                            intro = false
-                            story = false
-                            classic = false
-                        apologyVerbButton.newText = self.displayText[0]
-                        apologyNounButton.newText = self.displayText[1]
-                        excuseVerbButton.newText = self.displayText[2]
-                        excuseAdjButton.newText = self.displayText[3]
-                        excuseNounButton.newText = self.displayText[4]
-                        excuseAdjButton2.newText = self.displayText[5]
-                        excuseNounButton2.newText = self.displayText[6]
-                        excuseVerbButton2.newText = self.displayText[7]
-                        excuseNounButton3.newText = self.displayText[8]
-                                            
-                    }) {
-                        Text("Excuse Mode")
-                            .foregroundColor(Color(UIColor.systemBackground))
-                            .background(Color(UIColor.label))
-                            .font(.custom("Courier", size: 16.5))
-                            .padding(3)
-                        
-                    
-                    }
+                    storyModeButton
+                    excuseModeButton
                     
                 }
                 Spacer()
@@ -261,19 +115,16 @@ struct ContentView: View {
                     Library()
 
                 }
-                
             
             }
             Spacer()
         }.accentColor(Color(UIColor.label))
-        .onAppear{loadStories()}
+         .onAppear{loadStories()}
         
     }
 
 
 }
-
-
 
 
 

@@ -11,12 +11,14 @@ import SwiftUI
 
 func chooseStory() -> Story {
     let story = storyBank[makeChoice(storyBank.count)]
-    if stories.contains(story) {
-        print("repeat")
-      return chooseStory()
-    } else {
-        return story
-    }
+//    if ((stories?.contains(story)) != nil) {
+//        print("repeat")
+//      return chooseStory()
+//    } else {
+//        return story
+//    }
+    return story
+//}
 }
 
 
