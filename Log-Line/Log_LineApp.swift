@@ -12,6 +12,8 @@ struct Log_LineApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear{loadStories()}
+
         }
     }
 }

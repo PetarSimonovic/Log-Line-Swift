@@ -111,15 +111,14 @@ struct ContentView: View {
                 Spacer()
                     .frame(height: 10)
                 HStack (alignment: .center) {
-                    About()
-                    Library()
+                    TypeWriter()
+                  
 
                 }
             
             }
             Spacer()
         }.accentColor(Color(UIColor.label))
-         .onAppear{loadStories()}
         
     }
 
@@ -129,10 +128,12 @@ struct ContentView: View {
 
 
 
-struct About: View {
+
+struct TypeWriter: View {
     var body: some View {
-        NavigationLink(destination: AboutView()) {
-            Text("About")
+        NavigationLink(destination: SettingsView()) {
+            Text("\u{f8e7}")
+                .font(.custom("FontAwesome6Pro-Solid", size: 40))
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color(UIColor.label))
                 .background(Color(UIColor.systemBackground))
@@ -142,6 +143,7 @@ struct About: View {
         }
     }
 }
+
 
 struct IntroText: View {
     var body: some View {
@@ -154,19 +156,7 @@ struct IntroText: View {
     }
 }
 
-struct Library: View {
-    var body: some View {
-        NavigationLink(destination: LibraryView()) {
-            Text("Library")
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color(UIColor.label))
-                .background(Color(UIColor.systemBackground))
-                .font(.custom("Courier", size: 16.5))
-                .padding(5)
-                .border(Color .black, width: 0)
-        }
-    }
-}
+
 
 
 
