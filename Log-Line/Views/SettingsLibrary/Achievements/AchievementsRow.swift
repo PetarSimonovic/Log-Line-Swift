@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct Achievements: View {
+struct AchievementsRow: View {
     
     var badge: Badge
     
@@ -31,21 +31,15 @@ struct Achievements: View {
 }
 
 }
-struct Achievements_Previews: PreviewProvider {
+struct AchievementsRow_Previews: PreviewProvider {
     static var previews: some View {
         List(badgeBank) {
             currentBadge in
             VStack(alignment: .leading) {
-                Achievements(badge: currentBadge)
+                AchievementsRow(badge: currentBadge)
             }
-            .font(.custom("Courier", size: 16.5))
     }
         
     }
 }
 
-struct Achievements_Previews_2: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
-}

@@ -26,7 +26,7 @@
 		0D6C9D1C261B4F340098ED84 /* posAdjBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D1B261B4F340098ED84 /* posAdjBank.swift */; };
 		0D6C9D21261B4F750098ED84 /* verbFirstPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D20261B4F750098ED84 /* verbFirstPerson.swift */; };
 		0D6C9D26261B52590098ED84 /* verbThirdPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */; };
-		0D6FE4C5265517330096943D /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FE4C4265517330096943D /* Achievements.swift */; };
+		0D6FE4C5265517330096943D /* AchievementsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FE4C4265517330096943D /* AchievementsRow.swift */; };
 		0D6FE4C726551F960096943D /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FE4C626551F960096943D /* Badge.swift */; };
 		0D6FE4C9265527450096943D /* countAchivements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FE4C8265527450096943D /* countAchivements.swift */; };
 		0D9070532634761100855895 /* properNouns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9070522634761100855895 /* properNouns.swift */; };
@@ -46,8 +46,9 @@
 		0DD9CFF02618B04C00E465AB /* LogLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9CFEF2618B04C00E465AB /* LogLine.swift */; };
 		0DE3822026564BF0006F353F /* StoryMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3821F26564BF0006F353F /* StoryMode.swift */; };
 		0DE3822226564E28006F353F /* ExcuseMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3822126564E28006F353F /* ExcuseMode.swift */; };
-		0DE3822726565519006F353F /* LibraryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3822626565519006F353F /* LibraryButtons.swift */; };
+		0DE3822726565519006F353F /* SettingsButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3822626565519006F353F /* SettingsButtons.swift */; };
 		0DE3822926565B24006F353F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3822826565B24006F353F /* SettingsView.swift */; };
+		0DE3822D26566183006F353F /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3822C26566183006F353F /* AchievementsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +79,7 @@
 		0D6C9D1B261B4F340098ED84 /* posAdjBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = posAdjBank.swift; sourceTree = "<group>"; };
 		0D6C9D20261B4F750098ED84 /* verbFirstPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verbFirstPerson.swift; sourceTree = "<group>"; };
 		0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verbThirdPerson.swift; sourceTree = "<group>"; };
-		0D6FE4C4265517330096943D /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
+		0D6FE4C4265517330096943D /* AchievementsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRow.swift; sourceTree = "<group>"; };
 		0D6FE4C626551F960096943D /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		0D6FE4C8265527450096943D /* countAchivements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countAchivements.swift; sourceTree = "<group>"; };
 		0D9070522634761100855895 /* properNouns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = properNouns.swift; sourceTree = "<group>"; };
@@ -102,8 +103,9 @@
 		0DD9CFEF2618B04C00E465AB /* LogLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLine.swift; sourceTree = "<group>"; };
 		0DE3821F26564BF0006F353F /* StoryMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryMode.swift; sourceTree = "<group>"; };
 		0DE3822126564E28006F353F /* ExcuseMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcuseMode.swift; sourceTree = "<group>"; };
-		0DE3822626565519006F353F /* LibraryButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryButtons.swift; sourceTree = "<group>"; };
+		0DE3822626565519006F353F /* SettingsButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtons.swift; sourceTree = "<group>"; };
 		0DE3822826565B24006F353F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0DE3822C26566183006F353F /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +168,7 @@
 			children = (
 				0DD9CFC32618956500E465AB /* ContentView.swift */,
 				0DE3822426565474006F353F /* Modes */,
-				0DE3822326565445006F353F /* Library */,
+				0DE3822326565445006F353F /* SettingsLibrary */,
 				0DE382252656549B006F353F /* Logos */,
 			);
 			path = Views;
@@ -228,17 +230,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0DE3822326565445006F353F /* Library */ = {
+		0DE3822326565445006F353F /* SettingsLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				0D6FE4C4265517330096943D /* Achievements.swift */,
+				0DE3822B2656615F006F353F /* Achievements */,
+				0DE3822A26565E5D006F353F /* Library */,
 				0D6C9CFB261A178B0098ED84 /* AboutView.swift */,
-				0D0C02362622FC44007D2121 /* LibraryView.swift */,
-				0D15B7CC262EBC540087C2F0 /* StoryRow.swift */,
-				0DE3822626565519006F353F /* LibraryButtons.swift */,
+				0DE3822626565519006F353F /* SettingsButtons.swift */,
 				0DE3822826565B24006F353F /* SettingsView.swift */,
 			);
-			path = Library;
+			path = SettingsLibrary;
 			sourceTree = "<group>";
 		};
 		0DE3822426565474006F353F /* Modes */ = {
@@ -259,6 +260,24 @@
 				0D15B7A2262603EF0087C2F0 /* Logo.swift */,
 			);
 			path = Logos;
+			sourceTree = "<group>";
+		};
+		0DE3822A26565E5D006F353F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0D0C02362622FC44007D2121 /* LibraryView.swift */,
+				0D15B7CC262EBC540087C2F0 /* StoryRow.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		0DE3822B2656615F006F353F /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				0D6FE4C4265517330096943D /* AchievementsRow.swift */,
+				0DE3822C26566183006F353F /* AchievementsView.swift */,
+			);
+			path = Achievements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,7 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D0C02372622FC44007D2121 /* LibraryView.swift in Sources */,
-				0D6FE4C5265517330096943D /* Achievements.swift in Sources */,
+				0D6FE4C5265517330096943D /* AchievementsRow.swift in Sources */,
 				0D6C9D1C261B4F340098ED84 /* posAdjBank.swift in Sources */,
 				0D90705B2636EBD800855895 /* saveStories.swift in Sources */,
 				0D15B7A3262603EF0087C2F0 /* Logo.swift in Sources */,
@@ -383,6 +402,7 @@
 				0D15B7CD262EBC540087C2F0 /* StoryRow.swift in Sources */,
 				0DC94BBF261F2B7F00C47A74 /* verbBankPast.swift in Sources */,
 				0D6FE4C9265527450096943D /* countAchivements.swift in Sources */,
+				0DE3822D26566183006F353F /* AchievementsView.swift in Sources */,
 				0D6FE4C726551F960096943D /* Badge.swift in Sources */,
 				0DA5A35C2621E2D20001BACD /* makeChoice.swift in Sources */,
 				0DE3822026564BF0006F353F /* StoryMode.swift in Sources */,
@@ -392,7 +412,7 @@
 				0DC94BC4261F2E7500C47A74 /* excuseNounBank.swift in Sources */,
 				0D6C9D09261B0A520098ED84 /* buttonControl.swift in Sources */,
 				0DA5A3602621E3360001BACD /* storyBank.swift in Sources */,
-				0DE3822726565519006F353F /* LibraryButtons.swift in Sources */,
+				0DE3822726565519006F353F /* SettingsButtons.swift in Sources */,
 				0DA5A2B82621A7250001BACD /* ClassicStory.swift in Sources */,
 				0DE3822926565B24006F353F /* SettingsView.swift in Sources */,
 				0D15B7B12626107E0087C2F0 /* logLineButton.swift in Sources */,
