@@ -8,7 +8,9 @@ A log line is a summary of a story. Writers use log lines to help them focus on 
         
 A log line needs to be concise - no more than one or two sentences - yet cover the narrative's central characters and conflicts. Most importantly, it needs to hook the reader in.
 
-Log Line will generate short, compelling fictional scenarios designed to serve as a framework for narrative development. 
+Log Line's story mode will generate short, compelling fictional scenarios designed to serve as a framework for narrative development. It will create a protagonist that has positive and negative traits; an inciting incident for the narrative; and an antagonist with their own agenda.
+
+It will also periodically prompt users with a logline for a classic work of fiction. If users guess the narrative correctly, it is added to the "Collected Works".
 
 
 Excuse Mode creates tenable explanations that can be used to justify offensive, abberrant or inconsiderate behaviour.
