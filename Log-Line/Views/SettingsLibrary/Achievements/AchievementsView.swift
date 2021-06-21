@@ -10,6 +10,7 @@ import SwiftUI
 struct AchievementsView: View {
     
     
+    
     var body: some View {
         VStack (alignment: .center) {
             Text("Achievements")

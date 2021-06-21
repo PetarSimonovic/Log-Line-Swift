@@ -10,7 +10,7 @@ import Foundation
 
 
     
-    func countAchievements(_ storyBank: [Story] = storyBank) -> [String : Int] {
+    func countAchievements(_ storyBank: [Story] = masterStoryBank) -> [String : Int] {
         
         var achievementBank: [String: Int] = [:]
 
@@ -30,4 +30,22 @@ import Foundation
         return achievementBank
     
     }
+
+func checkAchievements(_ achievements: [String : Int], _ badgeName: String) -> Int {
+    if achievements.keys.contains(badgeName) {
+        return achievements[badgeName] ?? 0
+    } else {
+        return 0
+    }
     
+}
+    
+
+func assignBadge(_ player: Int, _ full: Int, _ badge: Badge) -> String {
+    if player == full {
+        return badge.symbol
+    } else {
+        return "\u{f059}"
+    }
+}
+

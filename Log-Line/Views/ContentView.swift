@@ -14,6 +14,10 @@ let logLine = LogLine()
 
 
 struct ContentView: View {
+    
+    let fullAchievements = countAchievements()
+    let playerAchievements = countAchievements(stories)
+
         
     @State var displayText: [String] = []
     @State var library: [String] = []

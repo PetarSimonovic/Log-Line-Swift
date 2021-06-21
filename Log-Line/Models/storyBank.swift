@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-var storyBank =  [
+var masterStoryBank =  [
     Story(title: "Dracula", logline: "A wise but bumbling professor must destroy an undead count before a virtuous  school teacher becomes a vampire", writer: "Bram Stoker", year: "1897", fact: "The working title of the novel was The Dead Undead", symbol: "\u{f043}", genre: "Horror"),
         Story(title: "The Lord Of The Rings", logline: "A brave but timid gentleman must destroy a magic ring before an evil necromancer takes over a world", writer: "JRR Tolkien", year: "1954", fact: "Tolkien wrote his stories to provide a world for the Elvish languages he created",  symbol: "\u{f70b}", genre: "Book"),
         Story(title: "Toy Story", logline: "A loyal but stubborn cowboy must rescue a brave astronaut before an upset boy leaves a home", writer: "Joss Whedon, Andrew Stanton, Joel Cohen, Alec Sokolow, John Lasseter, Pete Docter, Joe Ranft", year: "1996", fact: "In early drafts, Woody was a ventriloquist’s dummy", symbol: "\u{f8c0}", genre: "Animation"),
@@ -115,3 +115,4 @@ var storyBank =  [
 
 ]
 
+var storyBank = masterStoryBank
