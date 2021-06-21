@@ -18,7 +18,7 @@ var badgeBank = [
     Badge(name: "Animation", symbol: "\u{f5ae}"),
     Badge(name: "Book", symbol: "\u{f5db}"),
     Badge(name: "Historical", symbol: "\u{f70f}"),
-    Badge(name: "Superhero", symbol: "\u{f2dd}"),
+    Badge(name: "Superhero", symbol: "\u{f0e7}"),
     Badge(name: "Action", symbol:"\u{f48b}"),
     Badge(name: "Adventure", symbol: "\u{f6d9}"),
     Badge(name: "Computer Game", symbol: "\u{f8c5}"),

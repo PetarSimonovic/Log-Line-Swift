@@ -14,10 +14,14 @@ struct AboutButton: View {
             HStack {
             Text("About")
             }
+            Spacer()
+            HStack {
+                Text("\u{f05a}")
+                .font(.custom("FontAwesome6Pro-Solid", size: 30))
+                
+            }
             
         }
-        Text("\u{f05a}")
-            .font(.custom("FontAwesome6Pro-Solid", size: 30))
         .frame(alignment: .center)
         .foregroundColor(Color(UIColor.label))
         .background(Color(UIColor.systemBackground))
@@ -39,26 +43,28 @@ struct LibraryButton: View {
     var body: some View {
         NavigationLink(destination: LibraryView()) {
             Text("Collected Works")
+            Text("\u{f5db}")
+                .font(.custom("FontAwesome6Pro-Solid", size: 30))
         }
         .frame(alignment: .center)
         .foregroundColor(Color(UIColor.label))
         .background(Color(UIColor.systemBackground))
-        Text("\u{f5db}")
-            .font(.custom("FontAwesome6Pro-Solid", size: 30))
     }
+       
 }
 
 struct AchievementsButton: View {
     var body: some View {
         NavigationLink(destination: AchievementsView()) {
             Text("Achievements")
+            Text("\u{f2eb}")
+                .font(.custom("FontAwesome6Pro-Solid", size: 30))
+
         }
         .frame(alignment: .center)
         .foregroundColor(Color(UIColor.label))
         .background(Color(UIColor.systemBackground))
-        Text("\u{f2eb}")
-            .font(.custom("FontAwesome6Pro-Solid", size: 30))
-
+      
     }
 }
 
