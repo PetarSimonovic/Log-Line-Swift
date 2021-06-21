@@ -49,7 +49,7 @@ extension ContentView {
     
     var storyModeButton: some View {
         Button(action: {
-            if makeChoice(5) == 1 {
+            if makeChoice(5) == 1 && storyBank.isEmpty == false {
                 classic = true
                 story = false
                 intro = false
