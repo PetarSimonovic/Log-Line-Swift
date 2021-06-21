@@ -11,16 +11,9 @@ import SwiftUI
 struct AboutButton: View {
     var body: some View {
         NavigationLink(destination: AboutView()) {
-            HStack {
-            Text("About")
-            }
-            Spacer()
-            HStack {
                 Text("\u{f05a}")
                 .font(.custom("FontAwesome6Pro-Solid", size: 30))
-                
-            }
-            
+                Text("About")
         }
         .frame(alignment: .center)
         .foregroundColor(Color(UIColor.label))
@@ -42,9 +35,10 @@ struct AboutButton: View {
 struct LibraryButton: View {
     var body: some View {
         NavigationLink(destination: LibraryView()) {
-            Text("Collected Works")
             Text("\u{f5db}")
                 .font(.custom("FontAwesome6Pro-Solid", size: 30))
+            Text("Collected Works")
+
         }
         .frame(alignment: .center)
         .foregroundColor(Color(UIColor.label))
@@ -56,9 +50,10 @@ struct LibraryButton: View {
 struct AchievementsButton: View {
     var body: some View {
         NavigationLink(destination: AchievementsView()) {
-            Text("Achievements")
             Text("\u{f2eb}")
                 .font(.custom("FontAwesome6Pro-Solid", size: 30))
+            Text("Achievements")
+
 
         }
         .frame(alignment: .center)
@@ -68,4 +63,18 @@ struct AchievementsButton: View {
     }
 }
 
+struct SettingsButton: View {
+    var body: some View {
+        NavigationLink(destination: SettingsView()) {
+            Text("\u{f013}")
+                .font(.custom("FontAwesome6Pro-Solid", size: 30))
+            Text("Reset")
+
+        }
+        .frame(alignment: .center)
+        .foregroundColor(Color(UIColor.label))
+        .background(Color(UIColor.systemBackground))
+    }
+       
+}
 

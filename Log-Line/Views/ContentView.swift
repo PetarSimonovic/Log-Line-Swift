@@ -134,7 +134,7 @@ struct ContentView: View {
 
 struct TypeWriter: View {
     var body: some View {
-        NavigationLink(destination: SettingsView()) {
+        NavigationLink(destination: SettingsLibraryView()) {
             Text("\u{f8e7}")
                 .font(.custom("FontAwesome6Pro-Solid", size: 40))
                 .multilineTextAlignment(.center)

@@ -1,32 +1,40 @@
 //
 //  SettingsView.swift
-//  Log-Line
+//  LogLine
 //
-//  Created by Petar Simonovic on 20/05/2021.
+//  Created by Petar Simonovic on 21/06/2021.
 //
 
 import SwiftUI
 
 struct SettingsView: View {
+    
+    @State var buttonText: String = "Reset Game"
+    @State var confirm: Bool = false
+    @State var reset: Bool  = false
+    
     var body: some View {
-        VStack {
-        Spacer()
-        List {
-        AboutButton()
-        Spacer()
-        LibraryButton()
-        Spacer()
-        AchievementsButton()
-            }
-            Spacer()
-        }
-        .frame(width: 260)
-        .foregroundColor(Color(UIColor.label))
-        .background(Color(UIColor.systemBackground))
-        .font(.custom("Courier", size: 16.5))
-        .padding(5)
-        .border(Color .black, width: 0)
-    }
+        Button(action: {
+                if confirm == false {
+                buttonText = "Remove all Collected Works and Achievements?"
+                    confirm = true
+                } else if confirm == true && reset == false {
+                    storyBank = masterStoryBank
+                    stories.removeAll()
+                    deleteStories()
+                    reset = true
+                } else if confirm == true && reset == true {
+                    buttonText = "Collection reset complete"
+                }
+        }) {
+            Text(buttonText)
+                .foregroundColor(Color(UIColor.systemBackground))
+                .background(Color(UIColor.label))
+                .font(.custom("Courier", size: 16.5))
+                .padding(3)
+            
+        
+        }    }
 }
 
 struct SettingsView_Previews: PreviewProvider {

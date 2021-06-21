@@ -20,7 +20,7 @@ struct LibraryView: View {
         Spacer()
         
         VStack (alignment: .center) {
-            Text("\(stories.count) / \(storyBank.count)")
+            Text("\(stories.count) / \(masterStoryBank.count)")
         }
         
         .font(.custom("Courier", size: 18.5))

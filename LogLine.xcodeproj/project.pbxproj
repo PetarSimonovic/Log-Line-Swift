@@ -46,10 +46,11 @@
 		0DD9CFF02618B04C00E465AB /* LogLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9CFEF2618B04C00E465AB /* LogLine.swift */; };
 		0DE3822026564BF0006F353F /* StoryMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3821F26564BF0006F353F /* StoryMode.swift */; };
 		0DE3822226564E28006F353F /* ExcuseMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3822126564E28006F353F /* ExcuseMode.swift */; };
-		0DE3822726565519006F353F /* SettingsButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3822626565519006F353F /* SettingsButtons.swift */; };
-		0DE3822926565B24006F353F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3822826565B24006F353F /* SettingsView.swift */; };
+		0DE3822726565519006F353F /* SettingsLibraryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3822626565519006F353F /* SettingsLibraryButtons.swift */; };
+		0DE3822926565B24006F353F /* SettingsLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3822826565B24006F353F /* SettingsLibraryView.swift */; };
 		0DE3822D26566183006F353F /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3822C26566183006F353F /* AchievementsView.swift */; };
 		0DFF31632680A2EB00FC3160 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFF31622680A2EB00FC3160 /* AppTests.swift */; };
+		0DFF31692680EA1E00FC3160 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFF31682680EA1E00FC3160 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,11 +112,12 @@
 		0DD9CFEF2618B04C00E465AB /* LogLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLine.swift; sourceTree = "<group>"; };
 		0DE3821F26564BF0006F353F /* StoryMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryMode.swift; sourceTree = "<group>"; };
 		0DE3822126564E28006F353F /* ExcuseMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcuseMode.swift; sourceTree = "<group>"; };
-		0DE3822626565519006F353F /* SettingsButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtons.swift; sourceTree = "<group>"; };
-		0DE3822826565B24006F353F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0DE3822626565519006F353F /* SettingsLibraryButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLibraryButtons.swift; sourceTree = "<group>"; };
+		0DE3822826565B24006F353F /* SettingsLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLibraryView.swift; sourceTree = "<group>"; };
 		0DE3822C26566183006F353F /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 		0DFF31562680A18E00FC3160 /* ContentViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContentViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFF31622680A2EB00FC3160 /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
+		0DFF31682680EA1E00FC3160 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,8 +257,9 @@
 				0DE3822B2656615F006F353F /* Achievements */,
 				0DE3822A26565E5D006F353F /* Library */,
 				0D6C9CFB261A178B0098ED84 /* AboutView.swift */,
-				0DE3822626565519006F353F /* SettingsButtons.swift */,
-				0DE3822826565B24006F353F /* SettingsView.swift */,
+				0DE3822626565519006F353F /* SettingsLibraryButtons.swift */,
+				0DE3822826565B24006F353F /* SettingsLibraryView.swift */,
+				0DFF31682680EA1E00FC3160 /* SettingsView.swift */,
 			);
 			path = SettingsLibrary;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFF31692680EA1E00FC3160 /* SettingsView.swift in Sources */,
 				0D0C02372622FC44007D2121 /* LibraryView.swift in Sources */,
 				0D6FE4C5265517330096943D /* AchievementsRow.swift in Sources */,
 				0D6C9D1C261B4F340098ED84 /* posAdjBank.swift in Sources */,
@@ -462,9 +466,9 @@
 				0DC94BC4261F2E7500C47A74 /* excuseNounBank.swift in Sources */,
 				0D6C9D09261B0A520098ED84 /* buttonControl.swift in Sources */,
 				0DA5A3602621E3360001BACD /* storyBank.swift in Sources */,
-				0DE3822726565519006F353F /* SettingsButtons.swift in Sources */,
+				0DE3822726565519006F353F /* SettingsLibraryButtons.swift in Sources */,
 				0DA5A2B82621A7250001BACD /* ClassicStory.swift in Sources */,
-				0DE3822926565B24006F353F /* SettingsView.swift in Sources */,
+				0DE3822926565B24006F353F /* SettingsLibraryView.swift in Sources */,
 				0D15B7B12626107E0087C2F0 /* logLineButton.swift in Sources */,
 				0DD9CFF02618B04C00E465AB /* LogLine.swift in Sources */,
 				0DC94BC9261F307F00C47A74 /* excuseVerbBank.swift in Sources */,

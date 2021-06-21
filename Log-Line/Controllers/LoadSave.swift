@@ -48,6 +48,10 @@ func loadStories() {
     }
  }
 
+func deleteStories() {
+    UserDefaults.resetStandardUserDefaults()
+}
+
 func pruneStoryBank(_ storyCollection: inout [Story], _ stories: [Story] = stories ) {
     
     for story in stories {
