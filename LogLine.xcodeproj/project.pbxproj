@@ -28,7 +28,7 @@
 		0D6C9D26261B52590098ED84 /* verbThirdPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */; };
 		0D6FE4C5265517330096943D /* AchievementsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FE4C4265517330096943D /* AchievementsRow.swift */; };
 		0D6FE4C726551F960096943D /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FE4C626551F960096943D /* Badge.swift */; };
-		0D6FE4C9265527450096943D /* countAchivements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FE4C8265527450096943D /* countAchivements.swift */; };
+		0D6FE4C9265527450096943D /* countAchievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FE4C8265527450096943D /* countAchievements.swift */; };
 		0D9070532634761100855895 /* properNouns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9070522634761100855895 /* properNouns.swift */; };
 		0D9070572636CBA600855895 /* Font Awesome 6 Pro-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D9070562636CBA600855895 /* Font Awesome 6 Pro-Solid-900.otf */; };
 		0D90705B2636EBD800855895 /* LoadSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90705A2636EBD800855895 /* LoadSave.swift */; };
@@ -89,7 +89,7 @@
 		0D6C9D25261B52590098ED84 /* verbThirdPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verbThirdPerson.swift; sourceTree = "<group>"; };
 		0D6FE4C4265517330096943D /* AchievementsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRow.swift; sourceTree = "<group>"; };
 		0D6FE4C626551F960096943D /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
-		0D6FE4C8265527450096943D /* countAchivements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countAchivements.swift; sourceTree = "<group>"; };
+		0D6FE4C8265527450096943D /* countAchievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countAchievements.swift; sourceTree = "<group>"; };
 		0D9070522634761100855895 /* properNouns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = properNouns.swift; sourceTree = "<group>"; };
 		0D9070562636CBA600855895 /* Font Awesome 6 Pro-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 6 Pro-Solid-900.otf"; sourceTree = "<group>"; };
 		0D90705A2636EBD800855895 /* LoadSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSave.swift; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 				0DA5A35B2621E2D20001BACD /* makeChoice.swift */,
 				0D15B7D0262EBCAB0087C2F0 /* Story.swift */,
 				0D6FE4C626551F960096943D /* Badge.swift */,
-				0D6FE4C8265527450096943D /* countAchivements.swift */,
+				0D6FE4C8265527450096943D /* countAchievements.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -451,7 +451,7 @@
 				0D6C9CFC261A178B0098ED84 /* AboutView.swift in Sources */,
 				0D15B7CD262EBC540087C2F0 /* StoryRow.swift in Sources */,
 				0DC94BBF261F2B7F00C47A74 /* verbBankPast.swift in Sources */,
-				0D6FE4C9265527450096943D /* countAchivements.swift in Sources */,
+				0D6FE4C9265527450096943D /* countAchievements.swift in Sources */,
 				0DE3822D26566183006F353F /* AchievementsView.swift in Sources */,
 				0D6FE4C726551F960096943D /* Badge.swift in Sources */,
 				0DA5A35C2621E2D20001BACD /* makeChoice.swift in Sources */,

@@ -26,7 +26,7 @@ func loadStories() {
             print("Unable to Decode Stories (\(error))")
         }
     }
-    pruneStoryBank()
+    pruneStoryBank(&storyBank)
 }
 
   func saveStories() {
@@ -41,17 +41,18 @@ func loadStories() {
         // Write/Set Data
         UserDefaults.standard.set(data, forKey: "stories")
         print("Saved!")
-        pruneStoryBank()
+        pruneStoryBank(&storyBank)
 
     } catch {
         print("Unable to Encode Array of Stories (\(error))")
     }
  }
 
-func pruneStoryBank() {
+func pruneStoryBank(_ storyCollection: inout [Story], _ stories: [Story] = stories ) {
+    
     for story in stories {
-        if let collected = storyBank.firstIndex(where: {$0.title == story.title}) {
-        storyBank.remove(at: collected)
+        if let collected = storyCollection.firstIndex(where: {$0.title == story.title}) {
+        storyCollection.remove(at: collected)
          }
      }
 }

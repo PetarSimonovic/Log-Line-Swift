@@ -10,7 +10,6 @@ import Foundation
 
 let logLine = LogLine()
 
-let count = AchievementCounter()
 
 
 

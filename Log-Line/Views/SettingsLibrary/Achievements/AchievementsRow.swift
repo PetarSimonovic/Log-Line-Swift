@@ -12,14 +12,29 @@ struct AchievementsRow: View {
     
     var badge: Badge
     
+    let fullAchievements = countAchievements()
+
+    
     var body: some View {
-        
+       
+
         VStack (alignment: .leading) {
             HStack {
             Text(badge.name)
                 .font(.custom("Courier", size: 30))
                 .foregroundColor(Color(UIColor.systemBackground))
                  .background(Color(UIColor.label))
+                    .font(.custom("Courier", size: 30))
+                    .foregroundColor(Color(UIColor.systemBackground))
+                     .background(Color(UIColor.label))
+                Spacer()
+                Text("\(fullAchievements[badge.name]!)")
+                    .font(.custom("Courier", size: 30))
+                    .foregroundColor(Color(UIColor.systemBackground))
+                     .background(Color(UIColor.label))
+                        .font(.custom("Courier", size: 30))
+                        .foregroundColor(Color(UIColor.systemBackground))
+                         .background(Color(UIColor.label))
             Spacer()
             Text(badge.symbol)
                     .font(.custom("FontAwesome6Pro-Solid", size: 50))
