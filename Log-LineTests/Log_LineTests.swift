@@ -6,7 +6,9 @@
 //
 
 import XCTest
-@testable import Log_Line
+import Foundation
+import SwiftUI
+@testable import LogLine
 
 class Log_LineTests: XCTestCase {
     
@@ -82,13 +84,5 @@ class Log_LineTests: XCTestCase {
     
 
 
-
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
 }

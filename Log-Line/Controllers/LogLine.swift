@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct LogLine {
+class LogLine {
     
     
     func generateLogLine() -> [String] {

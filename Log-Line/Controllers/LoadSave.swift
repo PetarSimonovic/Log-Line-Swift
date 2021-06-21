@@ -12,8 +12,6 @@ var stories: [Story] = []
 
 func loadStories() {
     
-    count.countAchievements()
-
       
     if let data = UserDefaults.standard.data(forKey: "stories") {
         do {
@@ -28,6 +26,7 @@ func loadStories() {
             print("Unable to Decode Stories (\(error))")
         }
     }
+    pruneStoryBank()
 }
 
   func saveStories() {
@@ -42,10 +41,19 @@ func loadStories() {
         // Write/Set Data
         UserDefaults.standard.set(data, forKey: "stories")
         print("Saved!")
+        pruneStoryBank()
 
     } catch {
         print("Unable to Encode Array of Stories (\(error))")
     }
  }
+
+func pruneStoryBank() {
+    for story in stories {
+        if let collected = storyBank.firstIndex(where: {$0.title == story.title}) {
+        storyBank.remove(at: collected)
+         }
+     }
+}
 
 

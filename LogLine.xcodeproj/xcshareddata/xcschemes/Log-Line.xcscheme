@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0DD9CFBD2618956500E465AB"
-               BuildableName = "Log-Line.app"
-               BlueprintName = "Log-Line"
-               ReferencedContainer = "container:Log-Line.xcodeproj">
+               BuildableName = "LogLine.app"
+               BlueprintName = "LogLine"
+               ReferencedContainer = "container:LogLine.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0DA5A2C12621B5200001BACD"
-               BuildableName = "Log-LineTests.xctest"
-               BlueprintName = "Log-LineTests"
-               ReferencedContainer = "container:Log-Line.xcodeproj">
+               BuildableName = "LogLineTests.xctest"
+               BlueprintName = "LogLineTests"
+               ReferencedContainer = "container:LogLine.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,7 +46,17 @@
                BlueprintIdentifier = "0DD9CFD92618956600E465AB"
                BuildableName = "Log-LineUITests.xctest"
                BlueprintName = "Log-LineUITests"
-               ReferencedContainer = "container:Log-Line.xcodeproj">
+               ReferencedContainer = "container:LogLine.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0DFF31552680A18E00FC3160"
+               BuildableName = "ContentViewTests.xctest"
+               BlueprintName = "ContentViewTests"
+               ReferencedContainer = "container:LogLine.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -66,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0DD9CFBD2618956500E465AB"
-            BuildableName = "Log-Line.app"
-            BlueprintName = "Log-Line"
-            ReferencedContainer = "container:Log-Line.xcodeproj">
+            BuildableName = "LogLine.app"
+            BlueprintName = "LogLine"
+            ReferencedContainer = "container:LogLine.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -83,9 +93,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0DD9CFBD2618956500E465AB"
-            BuildableName = "Log-Line.app"
-            BlueprintName = "Log-Line"
-            ReferencedContainer = "container:Log-Line.xcodeproj">
+            BuildableName = "LogLine.app"
+            BlueprintName = "LogLine"
+            ReferencedContainer = "container:LogLine.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import Foundation
 
 @main
-struct Log_LineApp: App {
+struct LogLineApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
