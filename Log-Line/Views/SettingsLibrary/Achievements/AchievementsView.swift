@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct AchievementsView: View {
     
     
+        
+    
     
     var body: some View {
+        
+     
+
+        
         VStack (alignment: .center) {
             Text("Achievements")
         }
@@ -19,13 +26,30 @@ struct AchievementsView: View {
         .foregroundColor(Color(UIColor.systemBackground))
               .background(Color(UIColor.label))
         Spacer()
-        
-       
         .font(.custom("Courier", size: 18.5))
         .foregroundColor(Color(UIColor.label))
               .background(Color(UIColor.systemBackground))
         Spacer()
             .frame(height: 10)
+        
+        VStack{
+            HStack{
+                Text("\(countAchievementBadges(10))")
+                    .font(.custom("FontAwesome6Pro-Solid", size: 50))
+                Text("\(countAchievementBadges(25))")
+                    .font(.custom("FontAwesome6Pro-Solid", size: 50))
+            }
+            HStack{
+                Text("\(countAchievementBadges(50))")
+                    .font(.custom("FontAwesome6Pro-Solid", size: 50))
+                Text("\(countAchievementBadges(75))")
+                    .font(.custom("FontAwesome6Pro-Solid", size: 50))
+                Text("\(countAchievementBadges(100))")
+                    .font(.custom("FontAwesome6Pro-Solid", size: 50))
+
+
+            }
+        }
 
         List(badgeBank) { badge in
             VStack(alignment: .leading) {
