@@ -31,10 +31,10 @@ var badgeBank = [
 
 
 let countBadges = [
-    10 : ["Casual Viewer", "\u{f819}", "You’re happy watching a Fast and Furious movie while never remembering which one is which. Beverage, popcorn, feet up = job done."],
-    25 : ["Movie Lover", "\u{f3ff}", "Whenever you play Trivial Pursuit, you nail the film questions. You know your Spielbergs and your Scorseses, but do you know your Kieślowskis and your Kurosawas?"],
-    50 : [ "Film Addict", "\u{f8a9}", "You’re plugged into the Movie Matrix. You’re the Oracle that despondent Netflix menu surfers seek out when they need that uncut hit of movie knowledge."],
-    75 : ["Master Cinephile", "\u{f008}", "You know your Seventh Seals from your Seventh Sons. When cut, you bleed celluloid (unless you’re a Fincher fan, in which case it’s uncompressed RAW files)."],
-    100 : ["Movie God", "\u{f683}", "Mark Kermode, Mark Cousins, Roger Ebert and the entire presenting team of the /Filmcast have got nothing on your film knowledge. You could wax lyrical about movies with Quentin Tarantino over some serious gourmet coffee and never miss a beat."]
+    CountBadge(count: 10, name: "Casual Viewer", symbol: "\u{f819}", text: "You’re happy watching a Fast and Furious movie while never remembering which one is which. Beverage, popcorn, feet up = job done."),
+    CountBadge(count: 25, name: "Movie Lover", symbol: "\u{f3ff}", text: "Whenever you play Trivial Pursuit, you nail the film questions. You know your Spielbergs and your Scorseses, but do you know your Kieślowskis and your Kurosawas?"),
+    CountBadge(count: 50, name: "Film Addict", symbol: "\u{f8a9}", text: "You’re plugged into the Movie Matrix. You’re the Oracle that despondent Netflix menu surfers seek out when they need that uncut hit of movie knowledge."),
+    CountBadge(count: 75, name: "Master Cinephile", symbol: "\u{f008}", text: "You know your Seventh Seals from your Seventh Sons. When cut, you bleed celluloid (unless you’re a Fincher fan, in which case it’s uncompressed RAW files)."),
+    CountBadge(count: 100, name: "Movie God", symbol: "\u{f683}", text: "Mark Kermode, Mark Cousins, Roger Ebert and the entire presenting team of the /Filmcast have got nothing on your film knowledge. You could wax lyrical about movies with Quentin Tarantino over some serious gourmet coffee and never miss a beat.")
 ]
 

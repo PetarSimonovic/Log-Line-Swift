@@ -14,3 +14,11 @@ struct Badge: Identifiable, Codable, Hashable {
     var symbol: String
 
 }
+
+struct CountBadge : Identifiable, Codable, Hashable {
+    var id = UUID()
+    var count: Int
+    var name: String
+    var symbol: String
+    var text: String
+}
