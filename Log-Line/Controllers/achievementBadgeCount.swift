@@ -9,7 +9,7 @@ import Foundation
 
 func countAchievementBadges(_ badgeCount: Int) -> Bool {
     
-        if 100 >= badgeCount {
+    if stories.count >= badgeCount {
            return true
         } else {
          return  false

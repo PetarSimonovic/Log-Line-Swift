@@ -38,7 +38,7 @@ struct CountAchievementsRow: View {
                 }
             } else {
                 Text("\(countBadge.count) Stories")
-                 .font(.custom("Courier", size: 50))
+                 .font(.custom("Courier", size: 20))
             }
             Spacer()
                 .frame(height:10)
