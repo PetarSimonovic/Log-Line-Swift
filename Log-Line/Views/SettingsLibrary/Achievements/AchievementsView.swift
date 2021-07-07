@@ -34,35 +34,39 @@ struct AchievementsView: View {
         
         VStack{
             if countAchievementBadges(10) {
-                Text("\u{f819}")
+                HStack{
+                Text("\(countBadges[10]!)")
                 .font(.custom("FontAwesome6Pro-Solid", size: 50))
+                Text("\(countBadgeText[10]!)")
+                    .font(.custom("Courier", size: 12))
+                }
             } else {
                 Text("10 Stories")
                  .font(.custom("Courier", size: 50))
             }
             if countAchievementBadges(25) {
-                Text("\u{f3ff}")
+                Text("\(countBadges[25]!)")
                     .font(.custom("FontAwesome6Pro-Solid", size: 50))
             } else {
                 Text("25 Stories")
                  .font(.custom("Courier", size: 50))
             }
             if countAchievementBadges(50) {
-                Text("\u{f3ff}")
+                Text("\(countBadges[50]!)")
                     .font(.custom("FontAwesome6Pro-Solid", size: 50))
             } else {
                 Text("50 Stories")
                  .font(.custom("Courier", size: 50))
             }
             if countAchievementBadges(75) {
-                Text("\u{f008}")
+                Text("\(countBadges[75]!)")
                 .font(.custom("FontAwesome6Pro-Solid", size: 50))
             } else {
                 Text("75 Stories")
                  .font(.custom("Courier", size: 50))
             }
             if countAchievementBadges(100) {
-                Text("\u{f683}")
+                Text("\(countBadges[100]!)")
                 .font(.custom("FontAwesome6Pro-Solid", size: 50))
             } else {
                 Text("100 Stories")
