@@ -12,20 +12,26 @@ struct CountAchievementsRow: View {
     var countBadge: CountBadge
 
     var body: some View {
-        VStack{
+        VStack (alignment: .leading) {
             if countAchievementBadges(countBadge.count) {
-                VStack {
+                VStack  (alignment: .leading) {
                     Text("\(countBadge.name)")
                         .font(.custom("Courier", size: 20))
                         .background(Color(UIColor.label))
                         .foregroundColor(Color(UIColor.systemBackground))
                         .frame(height: 40)
-                    HStack{
-                        Text("\(countBadge.symbol)")
-                    .font(.custom("FontAwesome6Pro-Solid", size: 40))
+                    HStack {
+                        HStack {
+                            Text("\(countBadge.symbol)")
+                                
+                        .font(.custom("FontAwesome6Pro-Solid", size: 40))
+                        }
                         Spacer()
-                    Text("\(countBadge.text)")
-                        .font(.custom("Courier", size: 12))
+            
+                        HStack {
+                            Text("\(countBadge.text)")
+                                .font(.custom("Courier", size: 12))
+                        }
                     }
                     .foregroundColor(Color(UIColor.label))
                     .background(Color(UIColor.systemBackground))

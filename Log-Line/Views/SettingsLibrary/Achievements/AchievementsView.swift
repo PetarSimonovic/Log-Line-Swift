@@ -20,8 +20,7 @@ struct AchievementsView: View {
         
         
         VStack (alignment: .center) {
-            Text("Achievements")
-        }
+            Text("Credits")
         .font(.custom("Courier", size: 18.5))
         .foregroundColor(Color(UIColor.systemBackground))
               .background(Color(UIColor.label))
@@ -31,18 +30,29 @@ struct AchievementsView: View {
               .background(Color(UIColor.systemBackground))
         Spacer()
             .frame(height: 10)
-        
+        VStack {
         List(countBadges) {countBadge in
             VStack(alignment: .leading) {
             CountAchievementsRow(countBadge: countBadge)
         }
             .font(.custom("Courier", size: 16.5))
+        }
+        }
+         }
+            VStack {
+            Text("Genre Works")
+                .font(.custom("Courier", size: 18.5))
+                .foregroundColor(Color(UIColor.systemBackground))
+                      .background(Color(UIColor.label))
+
+            VStack {
 
         List(badgeBank) { badge in
             VStack(alignment: .leading) {
                 AchievementsRow(badge: badge)
             }
             .font(.custom("Courier", size: 16.5))
+        }
           
             
         }
