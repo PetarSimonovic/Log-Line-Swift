@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 let countBadges = [
     10 : "\u{f819}",
     25 : "\u{f3ff}",
@@ -15,13 +16,11 @@ let countBadges = [
     100 : "\u{f683}",
 ]
 
-func countAchievementBadges(_ badgeCount: Int) -> String {
+func countAchievementBadges(_ badgeCount: Int) -> Bool {
     
         if stories.count > badgeCount {
-            return countBadges[badgeCount]!
+           return true
         } else {
-        return "\(badgeCount)"
-
-
+         return  false
   }
 }

@@ -16,8 +16,8 @@ struct AchievementsView: View {
     
     var body: some View {
         
-     
-
+       
+        
         
         VStack (alignment: .center) {
             Text("Achievements")
@@ -33,23 +33,43 @@ struct AchievementsView: View {
             .frame(height: 10)
         
         VStack{
-            HStack{
-                Text("\(countAchievementBadges(10))")
-                    .font(.custom("FontAwesome6Pro-Solid", size: 50))
-                Text("\(countAchievementBadges(25))")
-                    .font(.custom("FontAwesome6Pro-Solid", size: 50))
+            if countAchievementBadges(10) {
+                Text("\u{f819}")
+                .font(.custom("FontAwesome6Pro-Solid", size: 50))
+            } else {
+                Text("10 Stories")
+                 .font(.custom("Courier", size: 50))
             }
-            HStack{
-                Text("\(countAchievementBadges(50))")
+            if countAchievementBadges(25) {
+                Text("\u{f3ff}")
                     .font(.custom("FontAwesome6Pro-Solid", size: 50))
-                Text("\(countAchievementBadges(75))")
-                    .font(.custom("FontAwesome6Pro-Solid", size: 50))
-                Text("\(countAchievementBadges(100))")
-                    .font(.custom("FontAwesome6Pro-Solid", size: 50))
-
-
+            } else {
+                Text("25 Stories")
+                 .font(.custom("Courier", size: 50))
             }
-        }
+            if countAchievementBadges(50) {
+                Text("\u{f3ff}")
+                    .font(.custom("FontAwesome6Pro-Solid", size: 50))
+            } else {
+                Text("50 Stories")
+                 .font(.custom("Courier", size: 50))
+            }
+            if countAchievementBadges(75) {
+                Text("\u{f008}")
+                .font(.custom("FontAwesome6Pro-Solid", size: 50))
+            } else {
+                Text("75 Stories")
+                 .font(.custom("Courier", size: 50))
+            }
+            if countAchievementBadges(100) {
+                Text("\u{f683}")
+                .font(.custom("FontAwesome6Pro-Solid", size: 50))
+            } else {
+                Text("100 Stories")
+                 .font(.custom("Courier", size: 50))
+            }
+                 
+            }
 
         List(badgeBank) { badge in
             VStack(alignment: .leading) {
