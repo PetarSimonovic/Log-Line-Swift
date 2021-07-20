@@ -49,7 +49,7 @@ struct AboutView: View {
                 Spacer()
                     .frame(height: 10)
                 VStack {
-                    Text("Collect classic works and add them to your library.")
+                    Text("LogLine's Story Mode will periodically test your narrative knowledge by challenging you to name a classic work. Collected works are added to your library. Check your progress through achievements.")
                 }
 
             }
